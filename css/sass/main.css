@@ -1,3 +1,107 @@
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --burberry-soda: #7f8fa6;
+  --pensive: #dcdde1;
+  --lynx-white: #f5f6fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 html {
   font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.5rem;
+}
+
+.header {
+  background-color: var(--pensive);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+}
+.header__1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--burberry-soda);
+}
+.header__logo {
+  width: 20rem;
+  height: 10rem;
+  margin: 1.5rem 3rem;
+  border-radius: 1rem;
+}
+.header__logo--caption {
+  font-size: 3rem;
+  margin-top: -3rem;
+  text-transform: uppercase;
+}
+.header__text {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+.header__text--call {
+  display: flex;
+}
+.header__text--num {
+  font-size: 2.5rem;
+  margin-left: 1rem;
+}
+.header__text svg {
+  width: 3rem;
+  height: 3rem;
+  margin-top: 0.7rem;
+}
+.header__text--email {
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+.header__text a {
+  text-decoration: none;
+}
+.header__2 {
+  height: 10%;
+  width: 100%;
+}
+.header__nav {
+  width: 70%;
+  margin-left: 10rem;
+}
+.header__nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+.header__nav--link {
+  list-style: none;
+}
+.header__nav--item {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.machala {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 3rem;
+  left: 50rem;
 }/*# sourceMappingURL=main.css.map */

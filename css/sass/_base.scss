@@ -1,5 +1,31 @@
-$color-black: #000;
+:root {
+    --color-black: #000;
+    --color-white: #fff;
+    --burberry-soda: #7f8fa6;
+    --pensive: #dcdde1;
+    --lynx-white: #f5f6fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 
 html {
     font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 1.5rem;
 }

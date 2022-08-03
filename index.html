@@ -16,35 +16,52 @@
     <meta name="theme-color" content="#5faff1">
     <!-- FAVICON LINKS -->
     <link rel="stylesheet" href="./css/sass/main.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Rubik+Bubbles&family=Rubik+Microbe&family=Rubik+Mono+One&family=Rubik+Moonrocks&family=Rubik+Wet+Paint&family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet">
+
   </head>
 
   <body>
     <header>
       <div class="header">
         <div class="header__1">
-          <!-- <img src="./img/logo-min.jpeg" alt="Business Logo" class="header__logo"> -->
+          <figure>
+            <img src="./img/logo-min.jpeg" alt="Business Logo" class="header__logo">
+            <figcaption class="header__logo--caption">Machala Laundry Service</figcaption>
+          </figure>
           <div class="header__text">
-            <p><a href="tel: +2347061516180">WANT A LAUNDER?
-                CALL US NOW!</a> <span class="header__text--email"><a href="mailto">Easyboi@myself.com</a></span></p>
+            <div class="header__text--call">
+              <svg>
+                <use xlink:href="./img/sprite.svg#icon-phone"></use>
+              </svg>
+              <p class="header__text--num"><a href=" tel: +2347061516180">WANT A LAUNDER?
+                  CALL US NOW!</a> </p>
+            </div>
+            <p class="header__text--email"><a href="mailto">Easyboi@myself.com</a></p>
           </div>
         </div>
 
         <div class="header__2">
           <nav class="header__nav">
             <ul>
-              <li class="header__nav--link"><a href="#" class="header__nav--item">Home</a></li>
-              <li class="header__nav--link"><a href="#" class="header__nav--item">About</a></li>
-              <li class="header__nav--link"><a href="#" class="header__nav--item">Services</a></li>
-              <li class="header__nav--link"><a href="#" class="header__nav--item">Stories</a></li>
-              <li class="header__nav--link"><a href="#" class="header__nav--item">Contact Us</a></li>
+              <li class="header__nav--link"><a href="#home" class="header__nav--item">Home</a></li>
+              <li class="header__nav--link"><a href="#about" class="header__nav--item">About</a></li>
+              <li class="header__nav--link"><a href="#service" class="header__nav--item">Services</a></li>
+              <li class="header__nav--link"><a href="#story" class="header__nav--item">Stories</a></li>
+              <li class="header__nav--link"><a href="#contact" class="header__nav--item">Contact Us</a></li>
             </ul>
           </nav>
         </div>
       </div>
+      <img src="./img/Wizkid.jpg" alt="Machala" class="machala">
     </header>
 
     <main>
-      <section class="home">
+      <section class="home" id="home">
         <div class="bg">
 
         </div>
@@ -56,7 +73,7 @@
         </p>
       </section>
 
-      <section class="about">
+      <section class="about" id="about">
         <div class="">
           <h1>About</h1>
           <p>A full service Laundry provider headquartered in Asaba. Machala Laundry Service has the knowledge, skills,
@@ -74,7 +91,7 @@
         </div>
       </section>
 
-      <section class="services">
+      <section class="services" id="service">
         <div class="">
           <p>Clean laundry always <span>This is how we work</span></p>
         </div>
@@ -128,12 +145,12 @@
         </div>
       </section>
 
-      <!-- <section class="stories">
+      <!-- <section class="stories id="story">
 
       </section> -->
 
       <footer>
-        <section class="contact">
+        <section class="contact" id="contact">
           <div class="">
             <h2>CALL FOR A QUICK PICKUP</h2>
             <p>Our services is lightening quick from the moment your package is picked up. Satisfaction guaranteed!</p>
