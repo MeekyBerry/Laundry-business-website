@@ -1,0 +1,47 @@
+.home {
+  height: 70vh;
+
+
+  &__bg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    &--photos {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      background-image: linear-gradient(rgb(207, 225, 207), transparent), url(/img/soap.jpg), url(/img/machine-1.jpg), url(/img/machine-2.jpg), url(/img/machine-3.jpg), url(/img/machine-4.jpg), url(/img/machine-5.jpg), url(/img/machine-6.jpg), url(/img/clothes-1.jpg), url(/img/cloth-2.jpg), url(/img/iron.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__text {
+    font-size: 3rem;
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+
+    &--cloth {
+       font-size: 2rem;
+       padding: 2rem 0;
+    }
+
+    &--quick {
+      font-size: 5rem;
+    }
+
+    &--call {
+
+    }
+
+    &--reach {
+        font-size: 4rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+  }
+}

@@ -1,3 +1,3 @@
-# Laudry
+# Laundry
 
-Working on a simple responsive website for a local lundry business.
+Working on a simple responsive website for a local laundry business.

@@ -1,9 +1,13 @@
 :root {
-    --color-black: #000;
-    --color-white: #fff;
-    --burberry-soda: #7f8fa6;
-    --pensive: #dcdde1;
-    --lynx-white: #f5f6fa;
+  --color-black: #000;
+  --color-white: #fff;
+  --burberry-soda: #7f8fa6;
+  --pensive: #dcdde1;
+  --lynx-white: #f5f6fa;
+  --blue-1: #82ccdd;
+  --red-1: #e55039;
+  --red-2: #eb2f06;
+  --blue-2: #546de5;
 }
 
 * {
@@ -17,15 +21,14 @@
   box-sizing: inherit;
 }
 
-
 html {
-    font-size: 62.5%;
-    box-sizing: border-box;
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    line-height: 1.6;
-    font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.5rem;
 }

@@ -4,6 +4,10 @@
   --burberry-soda: #7f8fa6;
   --pensive: #dcdde1;
   --lynx-white: #f5f6fa;
+  --blue-1: #82ccdd;
+  --red-1: #e55039;
+  --red-2: #eb2f06;
+  --blue-2: #546de5;
 }
 
 * {
@@ -30,6 +34,8 @@ body {
 }
 
 .header {
+  height: 30vh;
+  width: 100%;
   background-color: var(--pensive);
   display: flex;
   flex-direction: column;
@@ -37,33 +43,51 @@ body {
   position: relative;
 }
 .header__1 {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid var(--burberry-soda);
+  flex-direction: column;
 }
 .header__logo {
-  width: 20rem;
-  height: 10rem;
-  margin: 1.5rem 3rem;
+  width: 25rem;
+  height: 15rem;
+  margin: 1.5rem 1rem;
   border-radius: 1rem;
 }
 .header__logo--caption {
-  font-size: 3rem;
-  margin-top: -3rem;
+  position: absolute;
+  top: 1rem;
+  left: 30rem;
   text-transform: uppercase;
+}
+.header__logo--chala {
+  display: inline-block;
+  font-size: 2rem;
+  font-family: "Rubik Microbe", cursive;
+  padding: 0.5rem 5rem;
+}
+.header__logo--dry {
+  display: inline-block;
+  font-size: 4rem;
+  font-family: "Rubik Bubbles", cursive;
+}
+.header__logo--vice {
+  display: inline-block;
+  padding: 0.5rem 15rem;
+  font-size: 2rem;
+  font-family: "Rubik Wet Paint", cursive;
 }
 .header__text {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 5rem;
 }
-.header__text--call {
+.header__text--icon {
   display: flex;
+  gap: 1rem;
 }
 .header__text--num {
   font-size: 2.5rem;
-  margin-left: 1rem;
 }
 .header__text svg {
   width: 3rem;
@@ -72,22 +96,12 @@ body {
 }
 .header__text--email {
   font-size: 2rem;
-  margin-right: 2rem;
 }
 .header__text a {
   text-decoration: none;
 }
 .header__2 {
-  height: 10%;
-  width: 100%;
-}
-.header__nav {
-  width: 70%;
-  margin-left: 10rem;
-}
-.header__nav ul {
-  display: flex;
-  justify-content: space-around;
+  display: none;
 }
 .header__nav--link {
   list-style: none;
@@ -98,10 +112,166 @@ body {
 }
 
 .machala {
-  width: 10rem;
-  height: 10rem;
-  border-radius: 50%;
+  display: none;
+}
+
+.home {
+  height: 70vh;
+}
+.home__bg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.home__bg--photos {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-image: linear-gradient(rgb(207, 225, 207), transparent),
+    url(/img/soap.jpg), url(/img/machine-1.jpg), url(/img/machine-2.jpg),
+    url(/img/machine-3.jpg), url(/img/machine-4.jpg), url(/img/machine-5.jpg),
+    url(/img/machine-6.jpg), url(/img/clothes-1.jpg), url(/img/cloth-2.jpg),
+    url(/img/iron.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.home__text {
+  font-size: 3rem;
   position: absolute;
-  top: 3rem;
-  left: 50rem;
-}/*# sourceMappingURL=main.css.map */
+  top: 5rem;
+  left: 5rem;
+}
+.home__text--cloth {
+  font-size: 2rem;
+  padding: 2rem 0;
+}
+.home__text--quick {
+  font-size: 5rem;
+}
+.home__text--reach {
+  font-size: 4rem;
+}
+.home__text a {
+  text-decoration: none;
+}
+
+.about {
+  background-color: var(--blue-1);
+  font-size: 2.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+.about__desc {
+  display: flex;
+  flex-direction: column;
+}
+.about__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  margin-top: -2rem;
+}
+.about__heading {
+  font-size: 5rem;
+  padding: 2rem;
+  text-transform: uppercase;
+  font-family: "Rubik Microbe", cursive;
+}
+.about__heading--2 {
+  font-size: 5rem;
+}
+.about__heading--2 span {
+  font-size: 6rem;
+}
+.about__paragraph--1 {
+  font-weight: 900;
+  background-image: linear-gradient(var(--red-1), var(--red-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.about__paragraph--3 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.services {
+  background-color: var(--pensive);
+}
+.services__heading {
+  font-size: 2.8rem;
+  text-align: center;
+  padding: 2rem 5rem;
+  letter-spacing: 0.5rem;
+}
+.services__heading span {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.services__container {
+  background-color: var(--lynx-white);
+  width: 80%;
+  margin: 2rem auto;
+  box-shadow: 0 1rem 4rem var(--burberry-soda);
+  border-radius: 5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+.services__container--box {
+  padding: 3rem 5rem;
+}
+.services__container--head {
+  font-size: 2.5rem;
+  padding: 2rem 0;
+}
+.services__container--text {
+  padding: 1rem 2rem;
+}
+.services__container--num {
+  font-size: 5rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.information {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 2rem;
+}
+.information__heading {
+  padding: 2.5rem 0;
+}
+.information__container {
+  width: 100%;
+  height: 40rem;
+  padding: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.information__container--head {
+  padding: 2rem;
+  text-transform: uppercase;
+}
+.information__vd {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.15;
+  padding: 2rem 0;
+}
+.information__vd--content {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.contact {
+  font-size: 2.5rem;
+  text-align: center;
+} /*# sourceMappingURL=main.css.map */
