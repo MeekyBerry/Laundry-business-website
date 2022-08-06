@@ -1,5 +1,6 @@
 :root {
   --color-black: #000;
+  --color-grey: #777;
   --color-white: #fff;
   --burberry-soda: #7f8fa6;
   --pensive: #dcdde1;
@@ -10,25 +11,30 @@
   --blue-2: #546de5;
 }
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-}
-
-*,
-*::before,
-*::after {
   box-sizing: inherit;
 }
 
 html {
-  font-size: 62.5%;
-  box-sizing: border-box;
+  font-size: 50%;
 }
 
 body {
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  max-width: 100%;
+  color: var(--color-grey);
+  background-color: var(--pensive);
+}
+
+::selection {
+  background-color: #7ed56f;
+  color: #fff;
 }

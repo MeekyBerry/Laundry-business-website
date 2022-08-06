@@ -1,13 +1,53 @@
 .contact {
+  background-color: black;
+  color: var(--lynx-white);
   font-size: 2.5rem;
   text-align: center;
 
   &__box {
+    padding: 3rem;
   }
 
   &__heading {
+    padding: 2rem;
+
+    &-icon {
+      width: 10rem;
+      height: 10rem;
+      fill: var(--lynx-white);
+    }
   }
 
   &__address {
+    font-size: 4rem;
+
+  }
+
+  &__text {
+    padding: 4rem 0;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    svg {
+      fill: var(--lynx-white);
+      width: 10rem;
+      height: 10rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--lynx-white);
+    }
+
+  }
+}
+
+.attribution {
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: var(--lynx-white);
   }
 }

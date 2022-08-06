@@ -46,19 +46,21 @@
           </div>
         </div>
 
-        <div class="header__2">
-          <nav class="header__nav">
-            <ul>
-              <li class="header__nav--link"><a href="#home" class="header__nav--item">Home</a></li>
-              <li class="header__nav--link"><a href="#about" class="header__nav--item">About</a></li>
-              <li class="header__nav--link"><a href="#service" class="header__nav--item">Services</a></li>
-              <li class="header__nav--link"><a href="#story" class="header__nav--item">Stories</a></li>
-              <li class="header__nav--link"><a href="#contact" class="header__nav--item">Contact Us</a></li>
-            </ul>
-          </nav>
+        <div class="header">
+          <div class="header__2">
+            <nav class="header__nav">
+              <ul>
+                <li class="header__nav--link"><a href="#home" class="header__nav--item">Home</a></li>
+                <li class="header__nav--link"><a href="#about" class="header__nav--item">About</a></li>
+                <li class="header__nav--link"><a href="#service" class="header__nav--item">Services</a></li>
+                <li class="header__nav--link"><a href="#story" class="header__nav--item">Stories</a></li>
+                <li class="header__nav--link"><a href="#contact" class="header__nav--item">Contact Us</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
+        <img src="./img/Wizkid.jpg" alt="Machala" class="machala">
       </div>
-      <img src="./img/Wizkid.jpg" alt="Machala" class="machala">
     </header>
 
     <main>
@@ -80,7 +82,10 @@
       <section class="about" id="about">
         <div class="about__desc">
           <div class="about__photo">
-            <img src="./img/building-2-min.jpeg" alt="Business Building" class="about__img">
+            <figure>
+              <img src="./img/building-2-min.jpeg" alt="Business Building" class="about__img">
+              <figcaption>Machala Laundry Service, Providence Plaza Akpu Junction, Okpanam Road</figcaption>
+            </figure>
           </div>
           <div class="about__info">
             <h1 class="about__heading">Who we are!!!</h1>
@@ -190,20 +195,49 @@
       <footer>
         <section class="contact" id="contact">
           <div class="contact__box">
+            <svg class="contact__heading-icon">
+              <use xlink:href="./img/sprite.svg#icon-electric_car"></use>
+            </svg>
             <h2 class="contact__heading">CALL FOR A QUICK PICKUP</h2>
             <p>Our services is lightening quick from the moment your package is picked up. Satisfaction guaranteed!</p>
             <div class="contact__address">
-              <p>ADDRESS: <span>Providence Plaza Akpu Junction Okpanam Road.</span></p>
-              <span>09034789024</span>
-              <span>Easyboi@myself.com</span>
-              <span>07030849685</span>
-              <span><a href="https://www.facebook.com/groups/5384168368329844/?ref=share"
-                  target="_blank">Facebook</a></span>
+              <div class="contact__text">
+                <svg>
+                  <use xlink:href="./img/sprite.svg#icon-map-pin-alt"></use>
+                </svg>
+                <p>Providence Plaza Akpu Junction Okpanam Road.</p>
+              </div>
+              <div class="contact__text">
+                <svg>
+                  <use xlink:href="./img/sprite.svg#icon-phone-hang-up"></use>
+                </svg>
+                <p>09034789024</p>
+              </div>
+              <div class="contact__text">
+                <svg>
+                  <use xlink:href="./img/sprite.svg#icon-google2"></use>
+                </svg>
+                <p>Easyboi@myself.com</p>
+              </div>
+              <div class="contact__text">
+                <svg>
+                  <use xlink:href="./img/sprite.svg#icon-whatsapp"></use>
+                </svg>
+                <p>07061516180</p>
+              </div>
+              <div class="contact__text">
+                <svg>
+                  <use xlink:href="./img/sprite.svg#icon-facebook2"></use>
+                </svg>
+                <p><a href="https://www.facebook.com/groups/5384168368329844/?ref=share" target="_blank">Facebook</a>
+                </p>
+              </div>
             </div>
           </div>
 
           <div class="attribution">
-            <p>&copy;2022 Laundry Service | All rights reserved | Designed by <a href="#" target="_blank">meekyberry</a>
+            <p>&copy;2022 Laundry Service | All rights reserved | Designed by <a
+                href="https://www.linkedin.com/in/mikkylanky/" target="_blank">meekyberry</a>
             </p>
           </div>
         </section>

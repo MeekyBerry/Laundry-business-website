@@ -1,5 +1,6 @@
 :root {
   --color-black: #000;
+  --color-grey: #777;
   --color-white: #fff;
   --burberry-soda: #7f8fa6;
   --pensive: #dcdde1;
@@ -10,33 +11,43 @@
   --blue-2: #546de5;
 }
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-}
-
-*,
-*::before,
-*::after {
   box-sizing: inherit;
 }
 
 html {
-  font-size: 62.5%;
-  box-sizing: border-box;
+  font-size: 50%;
 }
 
 body {
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  max-width: 100%;
+  color: var(--color-grey);
+  background-color: var(--pensive);
+}
+
+::-moz-selection {
+  background-color: #7ed56f;
+  color: #fff;
+}
+
+::selection {
+  background-color: #7ed56f;
+  color: #fff;
 }
 
 .header {
-  height: 30vh;
+  height: 25vh;
   width: 100%;
-  background-color: var(--pensive);
+  background: linear-gradient(#ece9e6, #ffffff);
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -44,61 +55,73 @@ body {
 }
 .header__1 {
   width: 100%;
-  display: flex;
-  flex-direction: column;
 }
 .header__logo {
-  width: 25rem;
+  width: 20rem;
   height: 15rem;
-  margin: 1.5rem 1rem;
+  margin: 1.5rem;
   border-radius: 1rem;
 }
 .header__logo--caption {
   position: absolute;
-  top: 1rem;
-  left: 30rem;
+  top: 5%;
+  left: 40%;
   text-transform: uppercase;
+  font-size: 3rem;
 }
 .header__logo--chala {
-  display: inline-block;
-  font-size: 2rem;
+  display: block;
+  font-weight: 700;
+  text-align: center;
   font-family: "Rubik Microbe", cursive;
-  padding: 0.5rem 5rem;
+  background: linear-gradient(#0082c8, #799f0c);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  letter-spacing: 0.5rem;
 }
 .header__logo--dry {
-  display: inline-block;
-  font-size: 4rem;
+  display: block;
+  font-size: 5rem;
   font-family: "Rubik Bubbles", cursive;
+  background: linear-gradient(#667db6, #0082c8, #0082c8, #667db6);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
 }
 .header__logo--vice {
-  display: inline-block;
-  padding: 0.5rem 15rem;
-  font-size: 2rem;
+  display: block;
+  text-align: center;
   font-family: "Rubik Wet Paint", cursive;
+  background: linear-gradient(#1fa2ff, #12d8fa, #a6ffcb);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
 }
 .header__text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 1rem 10rem;
 }
 .header__text--icon {
   display: flex;
-  gap: 1rem;
+  justify-content: center;
 }
 .header__text--num {
   font-size: 2.5rem;
+  font-weight: 700;
 }
 .header__text svg {
-  width: 3rem;
-  height: 3rem;
-  margin-top: 0.7rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 1rem;
 }
 .header__text--email {
-  font-size: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-left: -1.5rem;
 }
 .header__text a {
   text-decoration: none;
+  color: var(--color-grey);
 }
 .header__2 {
   display: none;
@@ -117,8 +140,10 @@ body {
 
 .home {
   height: 70vh;
+  width: 100%;
 }
 .home__bg {
+  margin: 1.5rem 0;
   width: 100%;
   height: 100%;
   position: relative;
@@ -126,37 +151,34 @@ body {
 .home__bg--photos {
   height: 100%;
   width: 100%;
-  display: flex;
-  background-image: linear-gradient(rgb(207, 225, 207), transparent),
-    url(/img/soap.jpg), url(/img/machine-1.jpg), url(/img/machine-2.jpg),
-    url(/img/machine-3.jpg), url(/img/machine-4.jpg), url(/img/machine-5.jpg),
-    url(/img/machine-6.jpg), url(/img/clothes-1.jpg), url(/img/cloth-2.jpg),
-    url(/img/iron.jpg);
+  background-image: linear-gradient(rgb(207, 225, 207), transparent), url(/img/soap.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .home__text {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  padding: 0 2rem;
   position: absolute;
-  top: 5rem;
-  left: 5rem;
+  top: 10%;
+  left: 5%;
 }
 .home__text--cloth {
-  font-size: 2rem;
-  padding: 2rem 0;
+  font-size: 3rem;
 }
 .home__text--quick {
-  font-size: 5rem;
+  font-size: 4.5rem;
+  font-weight: 900;
 }
 .home__text--reach {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .home__text a {
   text-decoration: none;
 }
 
 .about {
-  background-color: var(--blue-1);
+  width: 100%;
+  background: linear-gradient(to bottom, #ffefba, #ffffff);
   font-size: 2.5rem;
   padding: 2rem;
   text-align: center;
@@ -165,11 +187,15 @@ body {
   display: flex;
   flex-direction: column;
 }
-.about__img {
+.about__photo {
   width: 100%;
   height: 100%;
-  border-radius: 1rem;
-  margin-top: -2rem;
+}
+.about__img {
+  width: 70rem;
+  height: 80%;
+  border-radius: 3rem;
+  box-shadow: 0 2rem 2rem var(--lynx-white);
 }
 .about__heading {
   font-size: 5rem;
@@ -187,7 +213,7 @@ body {
   font-weight: 900;
   background-image: linear-gradient(var(--red-1), var(--red-2));
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   color: transparent;
 }
 .about__paragraph--3 {
@@ -196,7 +222,7 @@ body {
 }
 
 .services {
-  background-color: var(--pensive);
+  background: linear-gradient(to right, #efefbb, #d4d3dd);
 }
 .services__heading {
   font-size: 2.8rem;
@@ -268,10 +294,49 @@ body {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .contact {
+  background-color: black;
+  color: var(--lynx-white);
   font-size: 2.5rem;
   text-align: center;
-} /*# sourceMappingURL=main.css.map */
+}
+.contact__box {
+  padding: 3rem;
+}
+.contact__heading {
+  padding: 2rem;
+}
+.contact__heading-icon {
+  width: 10rem;
+  height: 10rem;
+  fill: var(--lynx-white);
+}
+.contact__address {
+  font-size: 4rem;
+}
+.contact__text {
+  padding: 4rem 0;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.contact__text svg {
+  fill: var(--lynx-white);
+  width: 10rem;
+  height: 10rem;
+}
+.contact__text a {
+  text-decoration: none;
+  color: var(--lynx-white);
+}
+
+.attribution {
+  text-align: center;
+}
+.attribution a {
+  text-decoration: none;
+  color: var(--lynx-white);
+}/*# sourceMappingURL=main.css.map */
