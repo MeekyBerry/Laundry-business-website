@@ -1,6 +1,10 @@
 .about {
   width: 100%;
-  background: linear-gradient(to bottom, #ffefba, #ffffff);
+  background: linear-gradient(
+    to bottom,
+    var(--gnocchi-beige),
+    var(--color-white)
+  );
   font-size: 2.5rem;
   padding: 2rem;
   text-align: center;
@@ -19,7 +23,7 @@
     width: 70rem;
     height: 80%;
     border-radius: 3rem;
-    box-shadow: 0 2rem 2rem var(--lynx-white);
+    box-shadow: 0 2rem 2rem var(--white-solid);
   }
 
   &__heading {
@@ -27,6 +31,15 @@
     padding: 2rem;
     text-transform: uppercase;
     font-family: "Rubik Microbe", cursive;
+    background-image: linear-gradient(
+      45deg,
+      var(--blue-chip) 0%,
+      var(--ticino-blue) 50%,
+      var(--eye-blue) 51%,
+      var(--aero) 100%
+    );
+    background-clip: text;
+    color: transparent;
 
     &--2 {
       font-size: 5rem;
@@ -43,7 +56,7 @@
   &__paragraph {
     &--1 {
       font-weight: 900;
-      background-image: linear-gradient(var(--red-1), var(--red-2));
+      background-image: linear-gradient(var(--mandarin-red), var(--tomato-red));
       background-clip: text;
       color: transparent;
     }
@@ -54,6 +67,17 @@
     &--3 {
       font-size: 3rem;
       font-weight: 700;
+      background: linear-gradient(
+        90deg,
+        var(--belladonna) 0%,
+        var(--peaceful-purple) 17%,
+        var(--washed-blue) 39%,
+        var(--dark-royalty) 59%,
+        var(--neon-blue) 85%,
+        var(--vallarta-blue) 100%
+      );
+      background-clip: text;
+      color: transparent;
     }
   }
 }

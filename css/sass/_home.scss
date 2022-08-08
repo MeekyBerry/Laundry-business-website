@@ -1,51 +1,101 @@
 .home {
   height: 70vh;
   width: 100%;
+  font-weight: 700;
 
-
-  &__bg {
-    margin: 1.5rem 0;
-    width: 100%;
+  &__container {
     height: 100%;
+    width: 100%;
     position: relative;
-
-    &--photos {
-      height: 100%;
-      width: 100%;
-      // display: flex;
-      background-image: linear-gradient(rgb(207, 225, 207), transparent), url(/img/soap.jpg); //, url(/img/machine-1.jpg), url(/img/machine-2.jpg), url(/img/machine-3.jpg), url(/img/machine-4.jpg), url(/img/machine-5.jpg), url(/img/machine-6.jpg), url(/img/clothes-1.jpg), url(/img/cloth-2.jpg), url(/img/iron.jpg); //
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
   }
 
-  &__text {
-    font-size: 2.5rem;
-    padding: 0 2rem;
-    position: absolute;
-    top: 10%;
-    left: 5%;
-    
+  &__bg {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+    position: relative;
 
-    &--cloth {
-       font-size: 3rem;
+    &--photo {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      backface-visibility: hidden;
+      transform: translateX(20rem);
+      animation: 5s animate infinite linear;
     }
 
-    &--quick {
-      font-size: 4.5rem;
-      font-weight: 900;
+    &:nth-child(1) img {
+      animation-delay: 0s;
     }
-
-    &--call {
-
+    &:nth-child(2) img {
+      animation-delay: 5s;
     }
-
-    &--reach {
-        font-size: 3rem;
+    &:nth-child(3) img {
+      animation-delay: 10s;
     }
-
-    a {
-        text-decoration: none;
+    &:nth-child(4) img {
+      animation-delay: 15s;
     }
+    &:nth-child(5) img {
+      animation-delay: 20s;
+    }
+    &:nth-child(6) img {
+      animation-delay: 25s;
+    }
+    &:nth-child(7) img {
+      animation-delay: 30s;
+    }
+    &:nth-child(8) img {
+      animation-delay: 35s;
+    }
+    &:nth-child(9) img {
+      animation-delay: 40s;
+    }
+  }
+}
+
+&__text {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 25%;
+  left: 3%;
+
+  &--cloth {
+    font-size: 3rem;
+  }
+
+  &--quick {
+    font-size: 4.5rem;
+    font-weight: 900;
+    background: linear-gradient(
+      90deg,
+      var(--american-green) 0%,
+      var(--india-green) 17%,
+      var(--dead-green) 39%,
+      var(--sage-garden) 59%,
+      var(--press-green) 85%,
+      var(--wild-forest) 100%
+    );
+    background-clip: text;
+    color: transparent;
+  }
+
+  &--call {
+  }
+
+  &--reach {
+    font-size: 3rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--wild-forest);
+    font-weight: 700;
+    font-style: oblique;
   }
 }

@@ -1,14 +1,41 @@
 :root {
+  --color-white: #fff;
+  --white-solid: #f5f6fa;
+  --heavenly-white: #ece9e6;
+  --pensive: #dcdde1;
+  --light-kiri-mist: #d4d3dd;
+  --lime-flip: #cfe1cf;
+  --gnocchi-beige: #ffefba;
+  --schabziger-yellow: #efefbb;
   --color-black: #000;
   --color-grey: #777;
-  --color-white: #fff;
-  --burberry-soda: #7f8fa6;
-  --pensive: #dcdde1;
-  --lynx-white: #f5f6fa;
-  --blue-1: #82ccdd;
-  --red-1: #e55039;
-  --red-2: #eb2f06;
-  --blue-2: #546de5;
+  --montage: #7f8fa6;
+  --thick-blue: #546de5;
+  --vivid-blue: #0082c8;
+  --blue-chip: #1e5799;
+  --ticino-blue: #2989d8;
+  --eye-blue: #207cca;
+  --light-blue-1: #1fa2ff;
+  --light-blue-2: #12d8fa;
+  --aero: #7db9e8;
+  --spray: #82ccdd;
+  --hippie-blue: #667db6;
+  --washed-blue: rgba(147, 211, 224, 1);
+  --dark-royalty: rgba(4, 4, 108, 1);
+  --neon-blue: rgba(0, 212, 255, 1);
+  --vallarta-blue: rgba(52, 102, 142);
+  --pea-green: #799f0c;
+  --neo-mint: #a6ffcb;
+  --american-green: rgba(57, 185, 50, 0.6);
+  --india-green: rgba(21, 132, 8, 0.1);
+  --dead-green: rgba(147, 224, 170, 0.9);
+  --sage-garden: rgba(123, 173, 114, 0.7);
+  --wild-forest: rgba(52, 142, 68, 0.6);
+  --press-green: rgba(97, 106, 119, 0.5);
+  --mandarin-red: #e55039;
+  --tomato-red: #eb2f06;
+  --belladonna: rgba(36, 0, 19, 0.7);
+  --peaceful-purple: rgba(104, 8, 132, 0.6);
 }
 
 *,
@@ -47,7 +74,7 @@ body {
 .header {
   height: 25vh;
   width: 100%;
-  background: linear-gradient(#ece9e6, #ffffff);
+  background: linear-gradient(var(--heavenly-white), var(--color-white));
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -74,9 +101,9 @@ body {
   font-weight: 700;
   text-align: center;
   font-family: "Rubik Microbe", cursive;
-  background: linear-gradient(#0082c8, #799f0c);
+  background: linear-gradient(var(--vivid-blue), var(--pea-green));
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   color: transparent;
   letter-spacing: 0.5rem;
 }
@@ -84,18 +111,27 @@ body {
   display: block;
   font-size: 5rem;
   font-family: "Rubik Bubbles", cursive;
-  background: linear-gradient(#667db6, #0082c8, #0082c8, #667db6);
+  background-image: linear-gradient(
+    var(--hippie-blue),
+    var(--vivid-blue),
+    var(--vivid-blue),
+    var(--hippie-blue)
+  );
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 .header__logo--vice {
   display: block;
   text-align: center;
   font-family: "Rubik Wet Paint", cursive;
-  background: linear-gradient(#1fa2ff, #12d8fa, #a6ffcb);
+  background-image: linear-gradient(
+    var(--light-blue-1),
+    var(--light-blue-2),
+    var(--neo-mint)
+  );
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 .header__text {
@@ -141,26 +177,75 @@ body {
 .home {
   height: 70vh;
   width: 100%;
+  font-weight: 700;
 }
-.home__bg {
-  margin: 1.5rem 0;
-  width: 100%;
+.home__container {
   height: 100%;
+  width: 100%;
   position: relative;
 }
-.home__bg--photos {
+.home__bg {
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(rgb(207, 225, 207), transparent), url(/img/soap.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+  position: relative;
+}
+.home__bg--photo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateX(200px);
+  -webkit-animation: 5s animate infinite linear;
+  animation: 5s animate infinite linear;
+}
+.home__bg--photo:nth-child(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.home__bg--photo:nth-child(2) {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+.home__bg--photo:nth-child(3) {
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+}
+.home__bg--photo:nth-child(4) {
+  -webkit-animation-delay: 15s;
+  animation-delay: 15s;
+}
+.home__bg--photo:nth-child(5) {
+  -webkit-animation-delay: 20s;
+  animation-delay: 20s;
+}
+.home__bg--photo:nth-child(6) {
+  -webkit-animation-delay: 25s;
+  animation-delay: 25s;
+}
+.home__bg--photo:nth-child(7) {
+  -webkit-animation-delay: 30s;
+  animation-delay: 30s;
+}
+.home__bg--photo:nth-child(8) {
+  -webkit-animation-delay: 35s;
+  animation-delay: 35s;
+}
+.home__bg--photo:nth-child(9) {
+  -webkit-animation-delay: 40s;
+  animation-delay: 40s;
 }
 .home__text {
   font-size: 2.5rem;
-  padding: 0 2rem;
   position: absolute;
-  top: 10%;
-  left: 5%;
+  top: 25%;
+  left: 3%;
 }
 .home__text--cloth {
   font-size: 3rem;
@@ -168,17 +253,36 @@ body {
 .home__text--quick {
   font-size: 4.5rem;
   font-weight: 900;
+  background: linear-gradient(
+    90deg,
+    var(--american-green) 0%,
+    var(--india-green) 17%,
+    var(--dead-green) 39%,
+    var(--sage-garden) 59%,
+    var(--press-green) 85%,
+    var(--wild-forest) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 .home__text--reach {
   font-size: 3rem;
 }
 .home__text a {
   text-decoration: none;
+  color: var(--wild-forest);
+  font-weight: 700;
+  font-style: oblique;
 }
 
 .about {
   width: 100%;
-  background: linear-gradient(to bottom, #ffefba, #ffffff);
+  background: linear-gradient(
+    to bottom,
+    var(--gnocchi-beige),
+    var(--color-white)
+  );
   font-size: 2.5rem;
   padding: 2rem;
   text-align: center;
@@ -195,13 +299,23 @@ body {
   width: 70rem;
   height: 80%;
   border-radius: 3rem;
-  box-shadow: 0 2rem 2rem var(--lynx-white);
+  box-shadow: 0 2rem 2rem var(--white-solid);
 }
 .about__heading {
   font-size: 5rem;
   padding: 2rem;
   text-transform: uppercase;
   font-family: "Rubik Microbe", cursive;
+  background-image: linear-gradient(
+    45deg,
+    var(--blue-chip) 0%,
+    var(--ticino-blue) 50%,
+    var(--eye-blue) 51%,
+    var(--aero) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 .about__heading--2 {
   font-size: 5rem;
@@ -211,18 +325,34 @@ body {
 }
 .about__paragraph--1 {
   font-weight: 900;
-  background-image: linear-gradient(var(--red-1), var(--red-2));
+  background-image: linear-gradient(var(--mandarin-red), var(--tomato-red));
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 .about__paragraph--3 {
   font-size: 3rem;
   font-weight: 700;
+  background: linear-gradient(
+    90deg,
+    var(--belladonna) 0%,
+    var(--peaceful-purple) 17%,
+    var(--washed-blue) 39%,
+    var(--dark-royalty) 59%,
+    var(--neon-blue) 85%,
+    var(--vallarta-blue) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .services {
-  background: linear-gradient(to right, #efefbb, #d4d3dd);
+  background: linear-gradient(
+    to right,
+    var(--schabziger-yellow),
+    var(--light-kiri-mist)
+  );
 }
 .services__heading {
   font-size: 2.8rem;
@@ -235,10 +365,10 @@ body {
   font-weight: 700;
 }
 .services__container {
-  background-color: var(--lynx-white);
+  background-color: var(--white-solid);
   width: 80%;
   margin: 2rem auto;
-  box-shadow: 0 1rem 4rem var(--burberry-soda);
+  box-shadow: 0 1rem 4rem var(--montage);
   border-radius: 5rem;
   font-size: 2rem;
   text-align: center;
@@ -294,12 +424,12 @@ body {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .contact {
-  background-color: black;
-  color: var(--lynx-white);
+  background-color: var(--color-black);
+  color: var(--white-solid);
   font-size: 2.5rem;
   text-align: center;
 }
@@ -312,7 +442,7 @@ body {
 .contact__heading-icon {
   width: 10rem;
   height: 10rem;
-  fill: var(--lynx-white);
+  fill: var(--white-solid);
 }
 .contact__address {
   font-size: 4rem;
@@ -324,13 +454,13 @@ body {
   gap: 3rem;
 }
 .contact__text svg {
-  fill: var(--lynx-white);
+  fill: var(--white-solid);
   width: 10rem;
   height: 10rem;
 }
 .contact__text a {
   text-decoration: none;
-  color: var(--lynx-white);
+  color: var(--white-solid);
 }
 
 .attribution {
@@ -338,5 +468,27 @@ body {
 }
 .attribution a {
   text-decoration: none;
-  color: var(--lynx-white);
-}/*# sourceMappingURL=main.css.map */
+  color: var(--white-solid);
+}
+
+@-webkit-keyframes animate {
+  25% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(-400px);
+  }
+}
+
+@keyframes animate {
+  25% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(-400px);
+  }
+} /*# sourceMappingURL=main.css.map */
