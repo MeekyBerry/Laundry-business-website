@@ -1,11 +1,53 @@
-@keyframes animate {
-  25% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-
-  50% {
+@keyframes slideIn {
+  0% {
+    background-image: linear-gradient(var(--dead-green), var(--wild-forest)),
+      url("/img/machine-1.jpg");
     opacity: 0;
-    transform: translateX(-50rem);
+  }
+  10% {
+    background-image: linear-gradient(var(--wild-forest), var(--dead-green)),
+      url("/img/clothes-1.jpg");
+    opacity: 1;
+  }
+  20% {
+    background-image: linear-gradient(var(--dead-green), var(--wild-forest)),
+      url("/img/machine-2.jpg");
+    opacity: 0;
+  }
+  30% {
+    background-image: linear-gradient(var(--wild-forest), var(--american-green)),
+      url("/img/machine-3.jpg");
+    opacity: 1;
+  }
+  40% {
+    background-image: linear-gradient(45deg, var(--press-green), transparent),
+      url("/img/building-1-min.jpeg");
+    opacity: 0;
+  }
+  55% {
+    background-image: linear-gradient(var(--american-green), var(--sage-garden)),
+      url("/img/full-card-min.jpeg");
+    opacity: 1;
+  }
+  65% {
+    background-image: linear-gradient(var(--sage-garden), var(--dead-green)),
+      url("/img/machine-4.jpg");
+    opacity: 0;
+  }
+  // 75% {
+  //   background-image: linear-gradient(var(--dead-green), var(--sage-garden)),
+  //     url("/img/business-card-min.jpeg");
+  //   opacity: 1;
+  // }
+
+  90% {
+    background-image: linear-gradient(var(--sage-garden), var(--sage-garden)),
+      url("/img/soap.jpg");
+    opacity: 0;
+  }
+  100% {
+    background-image: linear-gradient(var(--sage-garden), var(--wild-forest)),
+      url("/img/machine-5.jpg");
+    opacity: 1;
   }
 }

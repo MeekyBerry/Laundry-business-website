@@ -2,6 +2,11 @@
   height: 70vh;
   width: 100%;
   font-weight: 700;
+  background-image: linear-gradient(
+    105deg,
+    var(--energise),
+    var(--american-green)
+  );
 
   &__container {
     height: 100%;
@@ -12,90 +17,75 @@
   &__bg {
     height: 100%;
     width: 100%;
-    display: flex;
-    align-items: flex-start;
-    overflow: hidden;
-    position: relative;
 
-    &--photo {
+    &--slide {
       width: 100%;
       height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      opacity: 0;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
       backface-visibility: hidden;
-      transform: translateX(20rem);
-      animation: 5s animate infinite linear;
-    }
-
-    &:nth-child(1) img {
-      animation-delay: 0s;
-    }
-    &:nth-child(2) img {
-      animation-delay: 5s;
-    }
-    &:nth-child(3) img {
-      animation-delay: 10s;
-    }
-    &:nth-child(4) img {
-      animation-delay: 15s;
-    }
-    &:nth-child(5) img {
-      animation-delay: 20s;
-    }
-    &:nth-child(6) img {
-      animation-delay: 25s;
-    }
-    &:nth-child(7) img {
-      animation-delay: 30s;
-    }
-    &:nth-child(8) img {
-      animation-delay: 35s;
-    }
-    &:nth-child(9) img {
-      animation-delay: 40s;
+      animation: slideIn 70s linear infinite normal forwards 1s;
+      transform: translateX(0);
     }
   }
-}
 
-&__text {
-  font-size: 2.5rem;
-  position: absolute;
-  top: 25%;
-  left: 3%;
-
-  &--cloth {
-    font-size: 3rem;
-  }
-
-  &--quick {
-    font-size: 4.5rem;
-    font-weight: 900;
-    background: linear-gradient(
-      90deg,
-      var(--american-green) 0%,
-      var(--india-green) 17%,
-      var(--dead-green) 39%,
-      var(--sage-garden) 59%,
-      var(--press-green) 85%,
-      var(--wild-forest) 100%
-    );
-    background-clip: text;
-    color: transparent;
-  }
-
-  &--call {
-  }
-
-  &--reach {
-    font-size: 3rem;
-  }
-
-  a {
-    text-decoration: none;
-    color: var(--wild-forest);
+  &__text {
+    font-size: 5rem;
+    font-family: "Dosis", sans-serif;
     font-weight: 700;
-    font-style: oblique;
+    position: absolute;
+    padding: 0 2.5rem;
+    top: 20%;
+    left: 0%;
+    color: var(--ma-white);
+    line-height: 1.9;
+
+    &--cloth {
+      font-size: 5rem;
+      font-weight: 500;
+      color: var(--lynx-white);
+    }
+
+    &--quick {
+      display: block;
+      text-align: center;
+      font-size: 10rem;
+      font-weight: 800;
+      letter-spacing: 1rem;
+      color: var(--dark-royalty);
+      background-image: linear-gradient(
+        120deg,
+        var(--lynx-white),
+        var(--green-essence) 100%
+      );
+      background-repeat: no-repeat;
+      background-size: 100% 0.3em;
+      background-position: 0 90%;
+      transition: background-size 0.25s ease-in;
+
+      &:hover {
+        background-size: 100% 88% !important;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 6rem;
+      font-weight: 800;
+      font-style: oblique;
+      letter-spacing: 0.5rem;
+      background-image: linear-gradient(
+        90deg,
+        var(--dark-royalty) 0%,
+        var(--vivid-blue) 17%,
+        var(--dark-royalty) 39%,
+        var(--vivid-blue) 59%,
+        var(--dark-royalty) 85%,
+        var(--vivid-blue) 100%
+      );
+      background-clip: text;
+      color: transparent;
+    }
   }
 }

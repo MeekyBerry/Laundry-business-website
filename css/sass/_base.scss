@@ -4,12 +4,15 @@
   --white-solid: #f5f6fa;
   --heavenly-white: #ece9e6;
   --pensive: #dcdde1;
+  --lynx-white: #f7f7f7;
+  --ma-white: rgb(245, 248, 251);
 
   // LIGHT COLORS
   --light-kiri-mist: #d4d3dd;
   --lime-flip: #cfe1cf;
   --gnocchi-beige: #ffefba;
   --schabziger-yellow: #efefbb;
+  --green-essence: rgba(234, 236, 198, 0.8);
 
   // DARK COLORS
   --color-black: #000;
@@ -31,16 +34,18 @@
   --dark-royalty: rgba(4, 4, 108, 1);
   --neon-blue: rgba(0, 212, 255, 1);
   --vallarta-blue: rgba(52, 102, 142);
+  --lynx-screen-blue: rgb(43, 192, 228);
 
   // GREEN COLORS
   --pea-green: #799f0c;
   --neo-mint: #a6ffcb;
-  --american-green: rgba(57, 185, 50, 0.6);
+  --american-green: rgba(57, 185, 50, 0.8);
   --india-green: rgba(21, 132, 8, 0.1);
-  --dead-green: rgba(147, 224, 170, 0.9);
+  --dead-green: rgba(147, 224, 170, 0.7);
   --sage-garden: rgba(123, 173, 114, 0.7);
-  --wild-forest: rgba(52, 142, 68, 0.6);
+  --wild-forest: rgba(52, 142, 68, 0.7);
   --press-green: rgba(97, 106, 119, 0.5);
+  --energise: rgba(126, 213, 111, 0.8);
 
   // RED COLORS
   --mandarin-red: #e55039;
@@ -75,6 +80,6 @@ body {
 }
 
 ::selection {
-  background-color: #7ed56f;
-  color: #fff;
+  background-color: var(--energise);
+  color: var(--ma-white);
 }
