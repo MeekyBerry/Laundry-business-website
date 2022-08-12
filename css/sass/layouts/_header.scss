@@ -27,7 +27,7 @@
 
     &--chala {
       display: block;
-      font-weight: 700;
+      font-weight: var(--bold);
       text-align: center;
       font-family: "Rubik Microbe", cursive;
       background: linear-gradient(var(--vivid-blue), var(--pea-green));
@@ -53,7 +53,7 @@
     &--vice {
       display: block;
       text-align: center;
-      font-family: "Rubik Wet Paint", cursive;
+      font-family: "Rubik Wet Paint", sans-serif;
       background-image: linear-gradient(
         var(--light-blue-1),
         var(--light-blue-2),
@@ -74,7 +74,7 @@
 
     &--num {
       font-size: 2.5rem;
-      font-weight: 700;
+      font-weight: var(--bold);
       // transform: translateX(3rem);
     }
 
@@ -86,7 +86,7 @@
 
     &--email {
       font-size: 3rem;
-      font-weight: 700;
+      font-weight: var(--bold);
       margin-left: -1.5rem;
     }
 
@@ -95,38 +95,4 @@
       color: var(--color-grey);
     }
   }
-
-  &__2 {
-    display: none;
-    // height: 10%;
-    // width: 100%;
-  }
-  &__nav {
-    // width: 70%;
-    // margin-left: 10rem;
-
-    ul {
-      // display: flex;
-      // justify-content: space-around;
-    }
-
-    &--link {
-      list-style: none;
-    }
-
-    &--item {
-      text-decoration: none;
-      text-transform: uppercase;
-    }
-  }
-}
-
-.machala {
-  display: none;
-  // width: 10rem;
-  // height: 10rem;
-  // border-radius: 50%;
-  // position: absolute;
-  // top: 2rem;
-  // left: 40rem;
 }

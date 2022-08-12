@@ -28,6 +28,12 @@
   --neon-blue: rgba(0, 212, 255, 1);
   --vallarta-blue: rgba(52, 102, 142);
   --lynx-screen-blue: rgb(43, 192, 228);
+  --christmas-blue: rgba(50, 137, 185, 0.6);
+  --naval: rgba(8, 44, 132, 0.01);
+  --black-drop: rgba(147, 168, 224, 0.9);
+  --house-blue: rgba(114, 158, 173, 0.7);
+  --goblin-blue: rgba(97, 114, 119, 0.5);
+  --discovery-bay: rgba(36, 107, 122, 0.6);
   --pea-green: #799f0c;
   --neo-mint: #a6ffcb;
   --american-green: rgba(57, 185, 50, 0.8);
@@ -41,8 +47,19 @@
   --tomato-red: #eb2f06;
   --belladonna: rgba(36, 0, 19, 0.7);
   --peaceful-purple: rgba(104, 8, 132, 0.6);
+  --font-Dosis: "Dosis", sans-serif;
+  --italic: italic;
+  --boldest: 900;
+  --bold: 700;
 }
 
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
 *,
 *::after,
 *::before {
@@ -103,7 +120,7 @@ body {
 }
 .header__logo--chala {
   display: block;
-  font-weight: 700;
+  font-weight: var(--bold);
   text-align: center;
   font-family: "Rubik Microbe", cursive;
   background: linear-gradient(var(--vivid-blue), var(--pea-green));
@@ -124,7 +141,7 @@ body {
 .header__logo--vice {
   display: block;
   text-align: center;
-  font-family: "Rubik Wet Paint", cursive;
+  font-family: "Rubik Wet Paint", sans-serif;
   background-image: linear-gradient(var(--light-blue-1), var(--light-blue-2), var(--neo-mint));
   -webkit-background-clip: text;
           background-clip: text;
@@ -139,7 +156,7 @@ body {
 }
 .header__text--num {
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: var(--bold);
 }
 .header__text svg {
   width: 2.5rem;
@@ -148,22 +165,39 @@ body {
 }
 .header__text--email {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: var(--bold);
   margin-left: -1.5rem;
 }
 .header__text a {
   text-decoration: none;
   color: var(--color-grey);
 }
-.header__2 {
+
+.header__nav {
   display: none;
+  position: fixed;
+  right: 0;
+  top: 30rem;
+  background-color: var(--tomato-red);
+  width: 100%;
+  height: auto;
+}
+.header__nav ul {
+  display: flex;
+  flex-wrap: wrap;
 }
 .header__nav--link {
   list-style: none;
+  padding: 2rem;
 }
 .header__nav--item {
   text-decoration: none;
   text-transform: uppercase;
+  width: 100%;
+  color: var(--white-solid);
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: var(--font-Dosis);
 }
 
 .machala {
@@ -199,8 +233,8 @@ body {
 }
 .home__text {
   font-size: 5rem;
-  font-family: "Dosis", sans-serif;
-  font-weight: 700;
+  font-family: var(--font-Dosis);
+  font-weight: var(--bold);
   position: absolute;
   padding: 0 2.5rem;
   top: 20%;
@@ -244,8 +278,8 @@ body {
 .about {
   width: 100%;
   background: linear-gradient(to bottom, var(--gnocchi-beige), var(--color-white));
-  font-size: 2.5rem;
-  padding: 2rem;
+  font-size: 3rem;
+  padding: 2rem 3rem;
   text-align: center;
 }
 .about__desc {
@@ -259,14 +293,22 @@ body {
 .about__img {
   width: 70rem;
   height: 80%;
-  border-radius: 3rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5rem;
   box-shadow: 0 2rem 2rem var(--white-solid);
+}
+.about__img--caption {
+  font-style: var(--italic);
+  font-weight: 700;
 }
 .about__heading {
   font-size: 5rem;
-  padding: 2rem;
+  padding: 2.5rem;
+  word-spacing: 2rem;
+  letter-spacing: 0.5rem;
   text-transform: uppercase;
-  font-family: "Rubik Microbe", cursive;
+  font-family: "Rubik Microbe", sans-serif;
   background-image: linear-gradient(45deg, var(--blue-chip) 0%, var(--ticino-blue) 50%, var(--eye-blue) 51%, var(--aero) 100%);
   -webkit-background-clip: text;
           background-clip: text;
@@ -274,38 +316,62 @@ body {
 }
 .about__heading--2 {
   font-size: 5rem;
+  padding: 2rem;
+  color: var(--blue-chip);
+  word-spacing: 2rem;
 }
 .about__heading--2 span {
-  font-size: 6rem;
+  font-size: 8rem;
+  display: inline-block;
+  color: var(--aero);
+  font-weight: 800;
+  font-family: var(--font-Dosis);
+}
+.about__heading--3 {
+  padding: 2rem 1.5rem;
+  font-weight: var(--bold);
 }
 .about__paragraph--1 {
-  font-weight: 900;
+  padding: 2rem 0;
+  font-weight: var(--boldest);
   background-image: linear-gradient(var(--mandarin-red), var(--tomato-red));
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
+  font-style: var(--italic);
+}
+.about__paragraph--2 {
+  font-weight: var(--boldest);
 }
 .about__paragraph--3 {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: var(--bold);
   background: linear-gradient(90deg, var(--belladonna) 0%, var(--peaceful-purple) 17%, var(--washed-blue) 39%, var(--dark-royalty) 59%, var(--neon-blue) 85%, var(--vallarta-blue) 100%);
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
+  padding: 1.5rem;
 }
 
 .services {
   background: linear-gradient(to right, var(--schabziger-yellow), var(--light-kiri-mist));
 }
 .services__heading {
-  font-size: 2.8rem;
+  font-size: 5rem;
   text-align: center;
-  padding: 2rem 5rem;
-  letter-spacing: 0.5rem;
+  font-weight: var(--bold);
+  font-family: var(--font-Dosis);
+  text-shadow: 2px 2px 2px var(--aero);
+  word-spacing: 1rem;
+  width: 75%;
+  margin: 0 auto;
 }
 .services__heading span {
-  font-size: 3.5rem;
-  font-weight: 700;
+  display: inline-block;
+  font-size: 6rem;
+  font-weight: var(--boldest);
+  font-style: var(--italic);
+  text-shadow: 2px 2px 2px var(--tomato-red);
 }
 .services__container {
   background-color: var(--white-solid);
@@ -313,36 +379,54 @@ body {
   margin: 2rem auto;
   box-shadow: 0 1rem 4rem var(--montage);
   border-radius: 5rem;
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
 }
 .services__container--box {
-  padding: 3rem 5rem;
+  padding: 5rem;
+}
+.services__container--box svg {
+  filter: opacity(0.5) drop-shadow(0 0 0 var(--aero));
+}
+.services__container--box img {
+  width: 20rem;
+  height: 20rem;
+  filter: opacity(0.5) drop-shadow(0 0 0 var(--aero));
 }
 .services__container--head {
-  font-size: 2.5rem;
+  font-size: 4rem;
   padding: 2rem 0;
+  text-shadow: 2px 2px 2px var(--tomato-red);
 }
 .services__container--text {
-  padding: 1rem 2rem;
+  padding: 3rem;
+}
+.services__container--text-1 {
+  color: var(--color-black);
+  font-weight: var(--bold);
+  background: radial-gradient(circle, var(--christmas-blue) 0%, var(--naval) 17%, var(--black-drop) 39%, var(--house-blue) 59%, var(--goblin-blue) 85%, var(--discovery-bay) 100%);
+  border-radius: 2rem;
 }
 .services__container--num {
   font-size: 5rem;
-  font-weight: 900;
-  font-style: italic;
+  font-weight: var(--boldest);
+  font-style: var(--italic);
+  color: var(--color-black);
 }
 
 .information {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   text-align: center;
   padding: 2rem;
 }
 .information__heading {
   padding: 2.5rem 0;
+  font-size: 4rem;
+  text-shadow: 2px 2px 2px var(--tomato-red);
 }
 .information__container {
   width: 100%;
-  height: 40rem;
+  height: auto;
   padding: 2rem;
   position: relative;
   display: flex;
@@ -353,6 +437,7 @@ body {
 .information__container--head {
   padding: 2rem;
   text-transform: uppercase;
+  text-shadow: 2px 2px 2px var(--tomato-red);
 }
 .information__vd {
   position: absolute;
@@ -385,7 +470,6 @@ body {
 .contact__heading-icon {
   width: 10rem;
   height: 10rem;
-  fill: var(--white-solid);
 }
 .contact__address {
   font-size: 4rem;
@@ -396,8 +480,28 @@ body {
   align-items: center;
   gap: 3rem;
 }
-.contact__text svg {
-  fill: var(--white-solid);
+.contact__text-location {
+  fill: var(--tomato-red);
+  width: 10rem;
+  height: 10rem;
+}
+.contact__text-phone {
+  fill: var(--energise);
+  width: 10rem;
+  height: 10rem;
+}
+.contact__text-mail {
+  fill: var(--mandarin-red);
+  width: 10rem;
+  height: 10rem;
+}
+.contact__text-whatsapp {
+  fill: var(--energise);
+  width: 10rem;
+  height: 10rem;
+}
+.contact__text-facebook {
+  fill: var(--ticino-blue);
   width: 10rem;
   height: 10rem;
 }
@@ -412,6 +516,7 @@ body {
 .attribution a {
   text-decoration: none;
   color: var(--white-solid);
+  font-style: var(--italics);
 }
 
 @-webkit-keyframes slideIn {
@@ -490,4 +595,88 @@ body {
     background-image: linear-gradient(var(--sage-garden), var(--wild-forest)), url("/img/machine-5.jpg");
     opacity: 1;
   }
+}
+.hamburger {
+  padding: 2rem 2rem;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+}
+.hamburger:hover {
+  opacity: 0.7;
+}
+.hamburger.is-active:hover {
+  opacity: 0.7;
+}
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #000;
+}
+
+.hamburger-box {
+  width: 5rem;
+  height: 1rem;
+  display: inline-block;
+  position: relative;
+  top: -2.5rem;
+  left: 2rem;
+}
+
+.hamburger-inner {
+  display: block;
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 5rem;
+  height: 1rem;
+  background-color: #000;
+  border-radius: 5rem;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+.hamburger-inner::before, .hamburger-inner::after {
+  content: "";
+  display: block;
+}
+.hamburger-inner::before {
+  top: -2rem;
+}
+.hamburger-inner::after {
+  bottom: -2rem;
+}
+
+.hamburger--stand .hamburger-inner {
+  transition: transform 0.075s 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19), background-color 0s 0.075s linear;
+}
+.hamburger--stand .hamburger-inner::before {
+  transition: top 0.075s 0.075s ease-in, transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger--stand .hamburger-inner::after {
+  transition: bottom 0.075s 0.075s ease-in, transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger--stand.is-active .hamburger-inner {
+  transform: rotate(90deg);
+  background-color: transparent !important;
+  transition: transform 0.075s 0s cubic-bezier(0.215, 0.61, 0.355, 1), background-color 0s 0.15s linear;
+}
+.hamburger--stand.is-active .hamburger-inner::before {
+  top: 0;
+  transform: rotate(-45deg);
+  transition: top 0.075s 0.1s ease-out, transform 0.075s 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.hamburger--stand.is-active .hamburger-inner::after {
+  bottom: 0;
+  transform: rotate(45deg);
+  transition: bottom 0.075s 0.1s ease-out, transform 0.075s 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
 }/*# sourceMappingURL=main.css.map */

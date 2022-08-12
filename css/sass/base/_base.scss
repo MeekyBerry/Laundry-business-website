@@ -1,0 +1,28 @@
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 50%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  max-width: 100%;
+  color: var(--color-grey);
+  background-color: var(--pensive);
+}
+
+::selection {
+  background-color: var(--energise);
+  color: var(--ma-white);
+}

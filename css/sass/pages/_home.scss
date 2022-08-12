@@ -7,6 +7,7 @@
     var(--energise),
     var(--american-green)
   );
+//  margin-top: 2.5rem;
 
   &__container {
     height: 100%;
@@ -32,8 +33,8 @@
 
   &__text {
     font-size: 5rem;
-    font-family: "Dosis", sans-serif;
-    font-weight: 700;
+    font-family: var(--font-Dosis);
+    font-weight: var(--bold);
     position: absolute;
     padding: 0 2.5rem;
     top: 20%;

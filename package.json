@@ -1,0 +1,25 @@
+{
+  "name": "machala-laundry",
+  "version": "1.0.0",
+  "description": "Responsive Landing page for Machala laundry business",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch css/scss/main.scss -o css/sass/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeekyBerry/Laudry.git"
+  },
+  "author": "Elue Michael",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MeekyBerry/Laudry/issues"
+  },
+  "homepage": "https://github.com/MeekyBerry/Laudry#readme",
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}
+
+ // "hamburgers": "^1.2.1", (dependecy)

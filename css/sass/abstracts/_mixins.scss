@@ -1,0 +1,49 @@
+@mixin absTop {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+// Media queries manager
+
+// 0 - 600px       Phone  (the normal screensize applied in the initial style)
+// 600px - 900px   Tablet Portrait
+// 900px - 1200px  Tablet Lanscape
+// 1200px - 1800px   Big Desktop
+// 1800px +        Large Screens
+
+// // Break point arguments
+// - phone
+// - tab-port
+// - tab-land
+// - big-deskt
+// - large scrn
+
+
+// 1em == 16px
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } // 600px
+  }
+
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px
+  }
+
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px
+  }
+
+  @if $breakpoint == big-screen {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800px
+  }
+}

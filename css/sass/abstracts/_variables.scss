@@ -1,0 +1,102 @@
+:root {
+  // WHITE COLORS
+  --color-white: #fff;
+  --white-solid: #f5f6fa;
+  --heavenly-white: #ece9e6;
+  --pensive: #dcdde1;
+  --lynx-white: #f7f7f7;
+  --ma-white: rgb(245, 248, 251);
+
+  // LIGHT COLORS
+  --light-kiri-mist: #d4d3dd;
+  --lime-flip: #cfe1cf;
+  --gnocchi-beige: #ffefba;
+  --schabziger-yellow: #efefbb;
+  --green-essence: rgba(234, 236, 198, 0.8);
+
+  // DARK COLORS
+  --color-black: #000;
+  --color-grey: #777;
+  --montage: #7f8fa6;
+
+  // BLUE COLORS
+  --thick-blue: #546de5;
+  --vivid-blue: #0082c8;
+  --blue-chip: #1e5799;
+  --ticino-blue: #2989d8;
+  --eye-blue: #207cca;
+  --light-blue-1: #1fa2ff;
+  --light-blue-2: #12d8fa;
+  --aero: #7db9e8;
+  --spray: #82ccdd;
+  --hippie-blue: #667db6;
+  --washed-blue: rgba(147, 211, 224, 1);
+  --dark-royalty: rgba(4, 4, 108, 1);
+  --neon-blue: rgba(0, 212, 255, 1);
+  --vallarta-blue: rgba(52, 102, 142);
+  --lynx-screen-blue: rgb(43, 192, 228);
+  --christmas-blue: rgba(50, 137, 185, 0.6);
+  --naval: rgba(8, 44, 132, 0.01);
+  --black-drop: rgba(147, 168, 224, 0.9);
+  --house-blue: rgba(114, 158, 173, 0.7);
+  --goblin-blue: rgba(97, 114, 119, 0.5);
+  --discovery-bay: rgba(36, 107, 122, 0.6);
+
+  // GREEN COLORS
+  --pea-green: #799f0c;
+  --neo-mint: #a6ffcb;
+  --american-green: rgba(57, 185, 50, 0.8);
+  --india-green: rgba(21, 132, 8, 0.1);
+  --dead-green: rgba(147, 224, 170, 0.7);
+  --sage-garden: rgba(123, 173, 114, 0.7);
+  --wild-forest: rgba(52, 142, 68, 0.7);
+  --press-green: rgba(97, 106, 119, 0.5);
+  --energise: rgba(126, 213, 111, 0.8);
+
+  // RED COLORS
+  --mandarin-red: #e55039;
+  --tomato-red: #eb2f06;
+
+  // PURPLE COLORS
+  --belladonna: rgba(36, 0, 19, 0.7);
+  --peaceful-purple: rgba(104, 8, 132, 0.6);
+
+  // FONTS
+  --font-Dosis: "Dosis", sans-serif;
+  --italic: italic;
+  --boldest: 900;
+  --bold: 700;
+}
+
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+
+// Settings
+// ==================================================
+$hamburger-padding-x           : 2rem !default;
+$hamburger-padding-y           : 2rem !default;
+$hamburger-layer-width         : 5rem !default;
+$hamburger-layer-height        : 1rem !default;
+$hamburger-layer-spacing       : 1rem !default;
+$hamburger-layer-color         : #000 !default;
+$hamburger-layer-border-radius : 5rem !default;
+$hamburger-hover-opacity       : 0.7 !default;
+$hamburger-active-layer-color  : $hamburger-layer-color !default;
+$hamburger-active-hover-opacity: $hamburger-hover-opacity !default;
+
+// To use CSS filters as the hover effect instead of opacity,
+// set $hamburger-hover-use-filter as true and
+// change the value of $hamburger-hover-filter accordingly.
+$hamburger-hover-use-filter   : false !default;
+$hamburger-hover-filter       : opacity(50%) !default;
+$hamburger-active-hover-filter: $hamburger-hover-filter !default;
+
+$hamburger-types: (
+  stand,
+
+) !default;
