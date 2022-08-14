@@ -1,5 +1,5 @@
 .home {
-  height: 70vh;
+  height: 75vh;
   width: 100%;
   font-weight: 700;
   background-image: linear-gradient(
@@ -7,7 +7,6 @@
     var(--energise),
     var(--american-green)
   );
-  //  margin-top: 2.2rem;
 
   &__container {
     height: 100%;
@@ -32,7 +31,7 @@
   }
 
   &__text {
-    font-size: 5rem;
+    font-size: 2.5rem;
     font-family: var(--font-Dosis);
     font-weight: var(--bold);
     position: absolute;
@@ -40,10 +39,10 @@
     top: 20%;
     left: 0%;
     color: var(--ma-white);
-    line-height: 1.9;
+    // line-height: 1.6;
 
     &--cloth {
-      font-size: 5rem;
+      font-size: 3rem;
       font-weight: 500;
       color: var(--lynx-white);
     }
@@ -51,7 +50,7 @@
     &--quick {
       display: block;
       text-align: center;
-      font-size: 10rem;
+      font-size: 5rem;
       font-weight: 800;
       letter-spacing: 1rem;
       color: var(--dark-royalty);
@@ -61,18 +60,18 @@
         var(--green-essence) 100%
       );
       background-repeat: no-repeat;
-      background-size: 100% 0.3em;
-      background-position: 0 90%;
+      background-size: 100% 1rem;
+      background-position: 0 75%;
       transition: background-size 0.25s ease-in;
 
       &:hover {
-        background-size: 100% 88% !important;
+        background-size: 100% 60% !important;
       }
     }
 
     a {
       text-decoration: none;
-      font-size: 6rem;
+      font-size: 3.5rem;
       font-weight: 800;
       font-style: oblique;
       letter-spacing: 0.5rem;

@@ -6,7 +6,7 @@
   );
 
   &__heading {
-    font-size: 5rem;
+    font-size: 3rem;
     text-align: center;
     font-weight: var(--bold);
     font-family: var(--font-Dosis);
@@ -17,7 +17,7 @@
 
     span {
       display: inline-block;
-      font-size: 6rem;
+      font-size: 3rem;
       font-weight: var(--boldest);
       font-style: var(--italic);
       text-shadow: 2px 2px 2px var(--tomato-red);
@@ -26,54 +26,55 @@
 
   &__container {
     background-color: var(--white-solid);
-    width: 80%;
+    width: 60%;
     margin: 2rem auto;
     box-shadow: 0 1rem 4rem var(--montage);
     border-radius: 5rem;
-    font-size: 3rem;
     text-align: center;
 
     &--box {
-      padding: 5rem;
+      padding: 2rem;
 
       svg {
+        width: 10rem;
+        height: 10rem;
         filter: opacity(0.5) drop-shadow(0 0 0 var(--aero));
       }
 
       img {
-        width: 20rem;
-        height: 20rem;
+        width: 10rem;
+        height: 10rem;
         filter: opacity(0.5) drop-shadow(0 0 0 var(--aero));
       }
     }
 
     &--head {
-      font-size: 4rem;
-      padding: 2rem 0;
+      font-size: 2rem;
+      padding: 1rem 0;
       text-shadow: 2px 2px 2px var(--tomato-red);
     }
 
     &--text {
-      padding: 3rem;
+      padding: 1rem;
 
       &-1 {
         color: var(--color-black);
         font-weight: var(--bold);
-        background: radial-gradient(
-          circle,
-          var(--christmas-blue) 0%,
-          var(--naval) 17%,
-          var(--black-drop) 39%,
-          var(--house-blue) 59%,
-          var(--goblin-blue) 85%,
-          var(--discovery-bay) 100%
-        );
+        // background: radial-gradient(
+        //   circle,
+        //   var(--christmas-blue) 0%,
+        //   var(--naval) 17%,
+        //   var(--black-drop) 39%,
+        //   var(--house-blue) 59%,
+        //   var(--goblin-blue) 85%,
+        //   var(--discovery-bay) 100%
+        // );
         border-radius: 2rem;
       }
     }
 
     &--num {
-      font-size: 5rem;
+      font-size: 3rem;
       font-weight: var(--boldest);
       font-style: var(--italic);
       color: var(--color-black);
@@ -82,20 +83,20 @@
 }
 
 .information {
-  font-size: 3.5rem;
+  font-size: 1.8rem;
   text-align: center;
-  padding: 2rem;
+  padding: 0rem 2rem;
 
   &__heading {
-    padding: 2.5rem 0;
-    font-size: 4rem;
+    padding: 1rem 0;
+    font-size: 2.2rem;
     text-shadow: 2px 2px 2px var(--tomato-red);
   }
 
   &__container {
     width: 100%;
     height: auto;
-    padding: 2rem;
+    padding: 1rem 2rem;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -103,7 +104,7 @@
     align-items: center;
 
     &--head {
-      padding: 2rem;
+      padding: 1rem;
       text-transform: uppercase;
       text-shadow: 2px 2px 2px var(--tomato-red);
     }

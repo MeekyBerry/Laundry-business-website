@@ -1,5 +1,5 @@
 .header {
-  height: 25vh;
+  height: 20vh;
   width: 100%;
   background: linear-gradient(var(--heavenly-white), var(--color-white));
   display: flex;
@@ -9,20 +9,23 @@
 
   &__1 {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__logo {
-    width: 20rem;
-    height: 15rem;
-    margin: 1.5rem;
+    width: 15rem;
+    height: 10rem;
+    margin: 1rem;
     border-radius: 1rem;
 
     &--caption {
       position: absolute;
-      top: 5%;
-      left: 40%;
+      top: 2rem;
+      left: 25%;
       text-transform: uppercase;
-      font-size: 3rem;
+      font-size: 1.5rem;
     }
 
     &--chala {
@@ -38,7 +41,7 @@
 
     &--dry {
       display: block;
-      font-size: 5rem;
+      font-size: 2.5rem;
       font-family: "Rubik Bubbles", cursive;
       background-image: linear-gradient(
         var(--hippie-blue),
@@ -66,28 +69,28 @@
 
   &__text {
     padding: 1rem 10rem;
+    text-align: center;
+    // margin: auto;
 
     &--icon {
       display: flex;
       justify-content: center;
+      align-items: center;
     }
 
     &--num {
-      font-size: 2.5rem;
+      font-size: 1.5rem;
       font-weight: var(--bold);
-      // transform: translateX(3rem);
     }
 
     svg {
-      width: 2.5rem;
-      height: 2.5rem;
-      margin: 1rem;
+      width: 2rem;
+      height: 2rem;
     }
 
     &--email {
-      font-size: 3rem;
+      font-size: 2rem;
       font-weight: var(--bold);
-      margin-left: -1.5rem;
     }
 
     a {

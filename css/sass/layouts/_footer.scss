@@ -1,61 +1,60 @@
 .contact {
   background-color: var(--color-black);
   color: var(--white-solid);
-  font-size: 2.5rem;
   text-align: center;
 
   &__box {
-    padding: 3rem;
+    padding: 1rem;
   }
 
   &__heading {
-    padding: 2rem;
+    padding: 1rem;
 
     &-icon {
-      width: 10rem;
-      height: 10rem;
-      // fill: var(--white-solid);
+      width: 3rem;
+      height: 3rem;
+      fill: var(--white-solid);
     }
   }
 
   &__address {
-    font-size: 4rem;
+    font-size: 1.5rem;
   }
 
   &__text {
-    padding: 4rem 0;
+    padding: 1rem 0;
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 1rem;
 
     &-location {
       fill: var(--tomato-red);
-      width: 10rem;
-      height: 10rem;
+      width: 3rem;
+      height: 3rem;
     }
 
     &-phone {
       fill: var(--energise);
-      width: 10rem;
-      height: 10rem;
+      width: 3rem;
+      height: 3rem;
     }
 
     &-mail {
       fill: var(--mandarin-red);
-      width: 10rem;
-      height: 10rem;
+      width: 3rem;
+      height: 3rem;
     }
 
     &-whatsapp {
       fill: var(--energise);
-      width: 10rem;
-      height: 10rem;
+      width: 3rem;
+      height: 3rem;
     }
 
     &-facebook {
       fill: var(--ticino-blue);
-      width: 10rem;
-      height: 10rem;
+      width: 3rem;
+      height: 3rem;
     }
 
     a {
