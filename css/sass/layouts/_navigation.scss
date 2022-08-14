@@ -1,62 +1,111 @@
 .header {
   &__2 {
-    // display: none;
-    // height: 10%;
-    // width: 100%;
+    width: 100%;
+    // position: relative;
   }
 
   &__nav {
-    display: none;
-    position: fixed;
-    right: 0;
-    top: 30rem;
-    background-color: var(--tomato-red);
-    width: 100%;
-    height: auto;
-    // z-index: 10;
-    // transform: translateX(100%);
+    background-color: var(--white-solid);
+    // padding: 1rem;
+    width: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
+    transition: width 3s linear;
+    overflow-x: hidden;
+    z-index: 10;
+    margin: 0 auto;
+    position: relative;
+    // top: 0;
 
-    // &--close {
+    &:active {
+      width: 70%;
 
-    // }
+      ul {
+        width: 100%;
+      }
 
-    // &--menu {
-    //   width: 6rem;
-    //   height: 6rem;
-    //   border: none;
-    //   font-size: 5rem;
-    //   color: var(--aero);
-    //   transform: translate(3rem, -2rem);
-    //   cursor: pointer;
+      &--link {
+        opacity: 1;
+        transform: rotateY(360deg);
+      }
 
-    // }
+      &.line1 {
+        transform: rotate(-765deg) translateY(0.6rem);
+      }
+
+      &.line2 {
+        transform: rotate(765deg) translateY(-0.6rem);
+      }
+    }
 
     ul {
       display: flex;
-      // gap: 1rem;
-      flex-wrap: wrap;
+      // flex-wrap: wrap;
+      transition: width 3s linear;
+      padding: 0;
+      margin: 0;
+      width: 0;
     }
 
     &--link {
       list-style: none;
-      padding: 2rem;
+      padding: 0 2rem;
+      transform: rotateY(0deg);
+      opacity: 0;
+      transition: transform 3s linear, opacity 3s linear;
     }
 
     &--item {
       text-decoration: none;
       text-transform: uppercase;
       width: 100%;
-      color: var(--white-solid);
+      color: var(--neon-blue);
       font-size: 2.5rem;
       font-weight: 700;
       font-family: var(--font-Dosis);
-      // white-space: nowrap;
+      position: relative;
+      // top: 0;
+      // left: 0;
+      margin: 0 10px;
+    }
+  }
+
+  &__icon {
+    background-color: var(--white-solid);
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    height: 5rem;
+    width: 5rem;
+
+    &:focus {
+      outline: 0;
+    }
+
+    &-line {
+      background-color: var(--neon-blue);
+      height: 0.7rem;
+      width: 5rem;
+      position: absolute;
+      top: 1rem;
+      left: 0.5rem;
+      transition: transform 3s linear;
+
+      &.line2 {
+        top: auto;
+        bottom: 1rem;
+      }
     }
   }
 }
 
-// .open-nav {
-//   transform: translateX(0%);
+// .line2 {
+//   top: auto;
+//   bottom: 1rem;
 // }
 
 .machala {
