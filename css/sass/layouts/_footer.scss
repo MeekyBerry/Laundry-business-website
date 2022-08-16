@@ -8,12 +8,13 @@
   }
 
   &__heading {
-    padding: 1rem;
+    padding: .5rem;
+    color: var(--neon-blue);
 
     &-icon {
       width: 3rem;
       height: 3rem;
-      fill: var(--white-solid);
+      fill: var(--neon-blue);
     }
   }
 
@@ -28,14 +29,12 @@
         "box2 box3" 1fr
         "box4 box5" 1fr
         / 1fr 1fr;
-        justify-items: center;
-     
+      justify-items: center;
     }
 
     @include respond(laptop) {
       font-size: 1.5rem;
-      grid:
-      "box1 box1 box2 box3 box4 box5" 1fr;
+      grid: "box1 box1 box2 box3 box4 box5" 1fr;
       justify-items: space-between;
     }
   }
@@ -67,37 +66,30 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    
-    &-location {
-      fill: var(--tomato-red);
+
+    svg {
       width: 3rem;
       height: 3rem;
-      grid-row: 1 / 2;
-      grid-column: 1 / span 3;
+    }
+
+    &-location {
+      fill: var(--tomato-red);
     }
 
     &-phone {
       fill: var(--energise);
-      width: 3rem;
-      height: 3rem;
     }
 
     &-mail {
       fill: var(--ticino-blue);
-      width: 3rem;
-      height: 3rem;
     }
 
     &-whatsapp {
       fill: var(--energise);
-      width: 3rem;
-      height: 3rem;
     }
 
     &-facebook {
       fill: var(--ticino-blue);
-      width: 3rem;
-      height: 3rem;
     }
 
     a {
@@ -112,7 +104,7 @@
 
   a {
     text-decoration: none;
-    color: var(--white-solid);
+    color: var(--neon-blue);
     font-style: var(--italics);
   }
 }

@@ -44,6 +44,11 @@
     left: 0%;
     color: var(--ma-white);
 
+    @include respond(laptop) {
+      padding: 5rem 30rem;
+      font-size: 5rem;
+    }
+
     &--cloth {
       font-size: 3rem;
       font-weight: 500;

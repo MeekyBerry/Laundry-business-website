@@ -25,11 +25,20 @@
   }
 
   &__img {
-    width: 35rem;
+    width: 50rem;
     height: 35rem;
     object-fit: cover;
     border-radius: 2rem;
     box-shadow: 0 2rem 2rem var(--white-solid);
+
+    @include respond(tab-land) {
+      width: 70rem;
+      height: 50rem;
+    }
+
+    // @include respond(phone) {
+    //   width: 35rem;
+    // }
 
     &--caption {
       font-style: var(--italic);
@@ -54,6 +63,10 @@
     );
     background-clip: text;
     color: transparent;
+
+    @include respond(tab-land) {
+      font-size: 4rem;
+    }
 
     &--2 {
       font-size: 2.5rem;
