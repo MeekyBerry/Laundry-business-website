@@ -8,6 +8,10 @@
     var(--american-green)
   );
 
+  @include respond(tab-port) {
+    height: 80vh;
+  }
+
   &__container {
     height: 100%;
     width: 100%;
@@ -39,7 +43,6 @@
     top: 20%;
     left: 0%;
     color: var(--ma-white);
-    // line-height: 1.6;
 
     &--cloth {
       font-size: 3rem;
@@ -86,6 +89,7 @@
       );
       background-clip: text;
       color: transparent;
+      cursor: pointer;
     }
   }
 }

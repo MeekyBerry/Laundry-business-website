@@ -12,6 +12,12 @@
   &__desc {
     display: flex;
     flex-direction: column;
+
+    @include respond(tab-land) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 
   &__photo {

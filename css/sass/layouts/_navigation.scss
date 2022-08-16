@@ -1,8 +1,8 @@
 nav {
-  transform: translate(33rem, -5rem);
+  margin-top: -4.5rem;
   background: linear-gradient(var(--heavenly-white), var(--color-white));
-  padding: 3rem 0.5rem;
-  width: 8rem;
+  padding: 2rem 0.5rem;
+  width: 5rem;
   display: flex;
   border: none;
   align-items: center;
@@ -11,21 +11,38 @@ nav {
   box-shadow: 0 0.5rem 0.5rem var(--color-black-light);
   transition: width 0.6s linear;
   overflow: hidden;
-  position: relative;
-  z-index: 10;
+  align-self: flex-end;
+
+  @include respond(tab-land) {
+    background: unset;
+    box-shadow: unset;
+    border-radius: unset;
+  }
 }
 
 nav.active {
-  width: 40rem;
+  width: 60%;
+
+  @include respond(phone-normal) {
+    width: 30rem;
+  }
+
+  @include respond(tab-land) {
+    width: 50%;
+  }
 }
 
 nav ul {
   display: flex;
   list-style-type: none;
-  padding: 0 1rem;
+  padding: 0;
   margin: 0;
   width: 0;
   transition: width 0.6s linear;
+
+  @include respond(tab-land) {
+    justify-content: space-around;
+  }
 }
 
 nav.active ul {
@@ -46,22 +63,38 @@ nav.active ul li {
 nav ul a {
   position: relative;
   text-decoration: none;
-  padding: 0 0.5rem;
+  padding: 1rem 0.3rem;
   color: var(--color-black);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 500;
   font-family: var(--font-Dosis);
   text-transform: uppercase;
+  cursor: pointer;
+
+  @include respond(tab-land) {
+    font-size: 2rem;
+    color: var(--neon-blue);
+
+    &:hover {
+      background-color: var(--color-white);
+    }
+  }
 }
 
 .icon {
-  background-color: var(--white-solid);
+  background-color: var(--heavenly-white);
   border: 0;
   cursor: pointer;
   padding: 2rem;
   position: relative;
-  height: 1.5rem;
-  width: 1.5rem;
+  top: 0;
+  right: 0;
+  height: 1rem;
+  width: 1rem;
+
+  @include respond(tab-land) {
+    display: none;
+  }
 }
 
 .icon:focus {
