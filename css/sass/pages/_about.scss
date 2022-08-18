@@ -16,7 +16,7 @@
     @include respond(tab-land) {
       flex-direction: row;
       align-items: center;
-      justify-content: space-between;
+      gap: 3rem;
     }
   }
 
@@ -25,20 +25,20 @@
   }
 
   &__img {
-    width: 50rem;
+    width: 40rem;
     height: 35rem;
     object-fit: cover;
     border-radius: 2rem;
     box-shadow: 0 2rem 2rem var(--white-solid);
 
-    @include respond(tab-land) {
+    @include respond(tab-port) {
       width: 70rem;
       height: 50rem;
     }
 
-    // @include respond(phone) {
-    //   width: 35rem;
-    // }
+    @include respond(tab-land) {
+      width: 70rem;
+    }
 
     &--caption {
       font-style: var(--italic);
@@ -65,7 +65,7 @@
     color: transparent;
 
     @include respond(tab-land) {
-      font-size: 4rem;
+      font-size: 3.5rem;
     }
 
     &--2 {
@@ -118,4 +118,25 @@
       padding: 1rem;
     }
   }
+}
+
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+
+.active.fade-right {
+  animation: fade-right 1s ease-in;
 }
