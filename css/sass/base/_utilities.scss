@@ -1,0 +1,44 @@
+.web-scroll {
+  position: relative;
+  transform: translateY(15rem);
+  opacity: 0;
+  transition: 2s all ease;
+
+  &.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.reveal {
+  position: relative;
+  opacity: 0;
+
+  &.active {
+    opacity: 1;
+  }
+}
+
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+
+// .nav-scroll {
+//   position: relative;
+//   transform: translateY(15rem);
+//   opacity: 0;
+//   transition: 2s all ease;
+// }
+
+// .nav-scroll.active {
+//   transform: translateY(0);
+//   opacity: 1;
+// }

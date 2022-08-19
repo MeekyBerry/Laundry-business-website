@@ -27,14 +27,18 @@
 
   </head>
 
+  <!-- <body class="dark-mode"> -->
+
   <body>
     <header>
       <div class="header">
         <div class="header__1">
           <figure>
             <img src="./img/logo-min.jpeg" alt="Business Logo" class="header__logo">
-            <figcaption class="header__logo--caption"><span class="header__logo--chala">Machala </span> <span
-                class="header__logo--dry">Laundry </span> <span class="header__logo--vice">Service </span></figcaption>
+            <figcaption class="header__logo--caption"><span class="header__logo--chala">Machala </span> <br>
+              <span class="header__logo--dry">Laundry </span> <br>
+              <span class="header__logo--vice">Service </span>
+            </figcaption>
           </figure>
           <div class="header__text">
             <div class="header__text--icon">
@@ -50,19 +54,20 @@
 
         <nav class="active" id="nav">
           <ul>
-            <li><a href="#home" class>Home</a></li>
+            <li><a href="#home" class="active bar">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#service">Services</a></li>
             <!-- <li><a href="#story">Stories</a></li> -->
             <li><a href="#contact">Contact Us</a></li>
           </ul>
           <button class="icon" id="toggle">
-            <div class="line line1"></div>
-            <div class="line line2"></div>
+            <div class="icon__line icon--line1"></div>
+            <div class="icon__line icon--line2"></div>
           </button>
         </nav>
       </div>
     </header>
+    <!-- <button onclick="myFunction()">Toggle dark mode</button> -->
 
     <main>
       <section class="home" id="home">
@@ -72,6 +77,7 @@
           </div>
           <div class="home__text">
             <p class="home__text-message">
+              <span>live your life to the fullest again</span>
               <span>live your life to the fullest again</span>
               <span>live your life to the fullest again</span>
               <span>live your life to the fullest again</span>
@@ -97,7 +103,7 @@
       </section>
 
       <section class="about" id="about">
-        <div class="about__desc reveal fade-bottom">
+        <div class="about__desc reveal fade-bottom web-scroll">
           <div class="about__photo">
             <figure>
               <img src="./img/building-2-min.jpeg" alt="Business Building" class="about__img">
@@ -123,7 +129,7 @@
 
       <section class="services" id="service">
         <h1 class="services__heading">Clean laundry always <span>This is how we work</span></h1>
-        <div class="services__container reveal fade-left">
+        <div class="services__container reveal fade-left web-scroll">
           <div class="services__container--box">
             <svg>
               <use xlink:href="./img/sprite.svg#icon-t-shirt"></use>
@@ -231,25 +237,26 @@
                 <svg class="contact__text-phone">
                   <use xlink:href="./img/sprite.svg#icon-phone-hang-up"></use>
                 </svg>
-                <p><a href="tel: 09034789024">09034789024</a></p>
+                <p><a href="tel: 09034789024" class="contact__text-link">09034789024</a></p>
               </div>
               <div class="contact__text contact__box3">
                 <svg class="contact__text-mail">
                   <use xlink:href="./img/sprite.svg#icon-mail2"></use>
                 </svg>
-                <p><a href="mailto: Easyboi@myself.com">Easyboi@myself.com</a></p>
+                <p><a href="mailto: Easyboi@myself.com" class="contact__text-link">Easyboi@myself.com</a></p>
               </div>
               <div class="contact__text contact__box4">
                 <svg class="contact__text-whatsapp">
                   <use xlink:href="./img/sprite.svg#icon-whatsapp"></use>
                 </svg>
-                <p><a href="#">07061516180</a></p>
+                <p><a href="#" class="contact__text-link">07061516180</a></p>
               </div>
               <div class="contact__text contact__box5">
                 <svg class="contact__text-facebook">
                   <use xlink:href="./img/sprite.svg#icon-facebook2"></use>
                 </svg>
-                <p><a href="https://www.facebook.com/groups/5384168368329844/?ref=share" target="_blank">Machala Laundry
+                <p><a href="https://www.facebook.com/groups/5384168368329844/?ref=share" target="_blank"
+                    class="contact__text-link">Machala Laundry
                     Service</a>
                 </p>
               </div>

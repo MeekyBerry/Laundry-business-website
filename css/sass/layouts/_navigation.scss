@@ -18,65 +18,82 @@ nav {
     box-shadow: unset;
     border-radius: unset;
   }
-}
 
-nav.active {
-  width: 60%;
+  &.active {
+    width: 60%;
 
-  @include respond(phone-normal) {
-    width: 30rem;
+    @include respond(phone-normal) {
+      width: 30rem;
+    }
+
+    @include respond(tab-land) {
+      width: 50%;
+    }
+
+    ul {
+      width: 100%;
+
+      li {
+        opacity: 1;
+        transform: rotateY(360deg);
+      }
+    }
+
+    & .icon--line1 {
+      transform: rotate(-765deg) translateY(0.5rem);
+    }
+
+    & .icon--line2 {
+      transform: rotate(765deg) translateY(-0.5rem);
+    }
   }
 
-  @include respond(tab-land) {
-    width: 50%;
-  }
-}
+  ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 0;
+    transition: width 0.6s linear;
 
-nav ul {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  width: 0;
-  transition: width 0.6s linear;
+    @include respond(tab-land) {
+      justify-content: space-around;
+    }
 
-  @include respond(tab-land) {
-    justify-content: space-around;
-  }
-}
+    li {
+      transform: rotateY(0deg);
+      opacity: 0;
+      transition: transform 0.6s linear, opacity 0.6s linear;
+    }
 
-nav.active ul {
-  width: 100%;
-}
+    a {
+      &:link,
+      &:visited {
+        position: relative;
+        text-decoration: none;
+        padding: 1rem 0.3rem;
+        color: var(--neon-blue);
+        font-size: 1.3rem;
+        font-weight: 500;
+        font-family: var(--font-Dosis);
+        text-transform: uppercase;
+        cursor: pointer;
+      }
 
-nav ul li {
-  transform: rotateY(0deg);
-  opacity: 0;
-  transition: transform 0.6s linear, opacity 0.6s linear;
-}
+      @include respond(tab-land) {
+        &:link,
+        &:visited {
+          font-size: 2rem;
+          color: var(--neon-blue);
+        }
 
-nav.active ul li {
-  opacity: 1;
-  transform: rotateY(360deg);
-}
-
-nav ul a {
-  position: relative;
-  text-decoration: none;
-  padding: 1rem 0.3rem;
-  color: var(--color-black);
-  font-size: 1.3rem;
-  font-weight: 500;
-  font-family: var(--font-Dosis);
-  text-transform: uppercase;
-  cursor: pointer;
-
-  @include respond(tab-land) {
-    font-size: 2rem;
-    color: var(--neon-blue);
-
-    &:hover {
-      background-color: var(--color-white);
+        &:hover,
+        &:active {
+          background-color: var(--color-white);
+          transition: 0.5s ease-out;
+          letter-spacing: 3px;
+        }
+      }
     }
   }
 }
@@ -95,31 +112,23 @@ nav ul a {
   @include respond(tab-land) {
     display: none;
   }
-}
 
-.icon:focus {
-  outline: 0;
-}
+  &:focus {
+    outline: 0;
+  }
 
-.icon .line {
-  background-color: var(--neon-blue);
-  height: 0.2rem;
-  width: 2rem;
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  transition: transform 0.6s linear;
-}
+  &__line {
+    background-color: var(--neon-blue);
+    height: 0.2rem;
+    width: 2rem;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    transition: transform 0.6s linear;
+  }
 
-.icon .line2 {
-  top: auto;
-  bottom: 1.5rem;
-}
-
-nav.active .icon .line1 {
-  transform: rotate(-765deg) translateY(0.5rem);
-}
-
-nav.active .icon .line2 {
-  transform: rotate(765deg) translateY(-0.5rem);
+  &--line2 {
+    top: auto;
+    bottom: 1.5rem;
+  }
 }

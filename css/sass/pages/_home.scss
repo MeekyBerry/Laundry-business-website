@@ -1,12 +1,14 @@
 .home {
   height: 75vh;
   width: 100%;
+  margin-top: 10rem;
   font-weight: 700;
   background-image: linear-gradient(
     105deg,
     var(--energise),
     var(--american-green)
   );
+  overflow: hidden;
 
   @include respond(tab-port) {
     height: 80vh;
@@ -34,91 +36,90 @@
     }
   }
 
-&__text {
-  width: 100%;
-  font-size: 2.5rem;
-  font-family: var(--font-Dosis);
-  font-weight: var(--bold);
-  position: absolute;
-  // padding: 0 2rem;
-  top: 10%;
-  left: 0%;
-  color: var(--ma-white);
-  line-height: 1;
+  &__text {
+    width: 100%;
+    font-size: 2.5rem;
+    font-family: var(--font-Dosis);
+    font-weight: var(--bold);
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    color: var(--ma-white);
+    line-height: 1;
 
-  @include respond(laptop) {
-    padding: 0rem 50rem;
-    font-size: 5.5rem;
-  }
+    @include respond(laptop) {
+      padding: 0rem 50rem;
+      font-size: 5.5rem;
+    }
 
-  &-message {
-    color: var(--pensive);
-    white-space: nowrap;
-    animation: slide-left 10s linear infinite;
+    &-message {
+      color: var(--pensive);
+      white-space: nowrap;
+      animation: slide-left 10s linear infinite;
 
-    span {
-      margin-right: 20rem;
+      span {
+        margin-right: 20rem;
+      }
+    }
+
+    &-scroller {
+      // height: 0rem;
+      position: relative;
+      // overflow-y: hidden;
+
+      div {
+        position: absolute;
+        top: 5rem;
+        animation: slide 5s infinite;
+      }
+    }
+
+    &--cloth {
+      font-size: 3rem;
+      font-weight: 500;
+      color: var(--lynx-white);
+    }
+
+    &--quick {
+      display: block;
+      text-align: center;
+      font-size: 5rem;
+      font-weight: 800;
+      letter-spacing: 1rem;
+      color: var(--dark-royalty);
+      background-image: linear-gradient(
+        120deg,
+        var(--lynx-white),
+        var(--green-essence) 100%
+      );
+      background-repeat: no-repeat;
+      background-size: 100% 1rem;
+      background-position: 0 75%;
+      transition: background-size 0.25s ease-in;
+
+      &:hover {
+        background-size: 100% 60% !important;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 3.5rem;
+      font-weight: 800;
+      font-style: oblique;
+      letter-spacing: 0.5rem;
+      background-image: linear-gradient(
+        90deg,
+        var(--dark-royalty) 0%,
+        var(--vivid-blue) 17%,
+        var(--dark-royalty) 39%,
+        var(--vivid-blue) 59%,
+        var(--dark-royalty) 85%,
+        var(--vivid-blue) 100%
+      );
+      background-clip: text;
+      color: transparent;
+      cursor: pointer;
     }
   }
-
-  &-scroller {
-    // height: 0rem;
-    position: relative;
-    // overflow-y: hidden;
-
-    div {
-      position: absolute;
-      top: 5rem;
-      animation: slide 5s infinite;
-    }
-  }
-
-  &--cloth {
-    font-size: 3rem;
-    font-weight: 500;
-    color: var(--lynx-white);
-  }
-
-  &--quick {
-    display: block;
-    text-align: center;
-    font-size: 5rem;
-    font-weight: 800;
-    letter-spacing: 1rem;
-    color: var(--dark-royalty);
-    background-image: linear-gradient(
-      120deg,
-      var(--lynx-white),
-      var(--green-essence) 100%
-    );
-    background-repeat: no-repeat;
-    background-size: 100% 1rem;
-    background-position: 0 75%;
-    transition: background-size 0.25s ease-in;
-
-    &:hover {
-      background-size: 100% 60% !important;
-    }
-  }
-
-  a {
-    text-decoration: none;
-    font-size: 3.5rem;
-    font-weight: 800;
-    font-style: oblique;
-    letter-spacing: 0.5rem;
-    background-image: linear-gradient(
-      90deg,
-      var(--dark-royalty) 0%,
-      var(--vivid-blue) 17%,
-      var(--dark-royalty) 39%,
-      var(--vivid-blue) 59%,
-      var(--dark-royalty) 85%,
-      var(--vivid-blue) 100%
-    );
-    background-clip: text;
-    color: transparent;
-    cursor: pointer;
-  }
-}
 }

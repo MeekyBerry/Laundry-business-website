@@ -1,11 +1,14 @@
 .header {
-  height: 18vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 20vh;
   width: 100%;
   padding: 1rem;
   background: linear-gradient(var(--heavenly-white), var(--color-white));
   display: flex;
   flex-direction: column;
-  position: relative;
+  z-index: 100;
 
   &__1 {
     width: 100%;
@@ -14,27 +17,26 @@
   }
 
   &__logo {
-    width: 15rem;
-    height: 8rem;
+    width: 10rem;
+    height: 5rem;
     border-radius: 1rem;
 
     &--caption {
       display: none;
 
-      @include respond(phone-normal) {
+      @include respond(tab-port) {
         display: block;
         position: absolute;
-        top: 1rem;
-        left: 18rem;
+        top: 0.5rem;
+        left: 12rem;
         text-transform: uppercase;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
       }
     }
 
     &--chala {
-      display: block;
       font-weight: var(--bold);
-      text-align: center;
+      // text-align: center;
       font-family: "Rubik Microbe", cursive;
       background: linear-gradient(var(--vivid-blue), var(--pea-green));
       background-clip: text;
@@ -43,8 +45,8 @@
     }
 
     &--dry {
-      display: block;
-      font-size: 2rem;
+      position: inherit;
+      left: 7rem;
       font-family: "Rubik Bubbles", cursive;
       background-image: linear-gradient(
         var(--hippie-blue),
@@ -57,8 +59,8 @@
     }
 
     &--vice {
-      display: block;
-      text-align: center;
+      position: inherit;
+      left: 12rem;
       font-family: "Rubik Wet Paint", sans-serif;
       background-image: linear-gradient(
         var(--light-blue-1),
@@ -71,9 +73,9 @@
   }
 
   &__text {
-    padding: 0rem 0.1rem;
-    text-align: center;
-    font-size: 1.2rem;
+    padding: 0rem 1rem;
+    // text-align: center;
+    font-size: 1.1rem;
 
     @include respond(tab-land) {
       display: flex;
