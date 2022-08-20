@@ -59,7 +59,6 @@
   }
 
   &__box1 {
-    white-space: nowrap;
     color: var(--lynx-screen-blue);
 
     @include respond(phone-normal) {

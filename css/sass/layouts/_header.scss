@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 15vh;
+  height: 17vh;
   width: 100%;
   padding: 1rem;
   background: linear-gradient(var(--heavenly-white), var(--color-white));
@@ -26,12 +26,17 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+
   }
 
   &__logo {
     width: 18rem;
     height: 10rem;
     border-radius: 1rem;
+
+    @include respond(phone-smallest) {
+      margin: 2rem 0;
+    }
 
     @include respond(tab-port) {
       height: 11rem;

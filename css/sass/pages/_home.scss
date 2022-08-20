@@ -50,6 +50,11 @@
     left: 15rem;
     color: var(--ma-white);
 
+    @include respond(phone-smallest) {
+      font-size: 5rem;
+      left: 3rem;
+    }
+
     @include respond(tab-port) {
       line-height: 1.3;
     }

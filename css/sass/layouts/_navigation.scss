@@ -1,5 +1,5 @@
 nav {
-  margin-top: -5rem;
+  margin-top: -5.2rem;
   background: linear-gradient(var(--heavenly-white), var(--color-white));
   padding: 2.5rem 0;
   width: 5rem;
@@ -13,6 +13,10 @@ nav {
   overflow: hidden;
   align-self: flex-end;
   z-index: 20;
+
+  @include respond(phone-smallest) {
+    margin-top: -7rem;
+  }
 
   @include respond(tab-land) {
     background: unset;
@@ -72,7 +76,7 @@ nav {
       &:visited {
         position: relative;
         text-decoration: none;
-        padding: 1rem;
+        padding: 1rem .5rem;
         color: var(--lynx-screen-blue);
         font-weight: 500;
         font-family: var(--font-Dosis);

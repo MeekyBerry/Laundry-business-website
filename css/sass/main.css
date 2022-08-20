@@ -36,13 +36,13 @@
   --discovery-bay: rgba(36, 107, 122, 0.6);
   --pea-green: #799f0c;
   --neo-mint: #a6ffcb;
-  --american-green: rgba(57, 185, 50, 0.7);
+  --american-green: rgba(57, 185, 50, 0.6);
   --india-green: rgba(21, 132, 8, 0.1);
-  --dead-green: rgba(147, 224, 170, 0.7);
-  --sage-garden: rgba(123, 173, 114, 0.7);
-  --wild-forest: rgba(52, 142, 68, 0.7);
+  --dead-green: rgba(147, 224, 170, 0.6);
+  --sage-garden: rgba(123, 173, 114, 0.6);
+  --wild-forest: rgba(52, 142, 68, 0.6);
   --press-green: rgba(97, 106, 119, 0.5);
-  --energise: rgba(126, 213, 111, 0.7);
+  --energise: rgba(126, 213, 111, 0.6);
   --mandarin-red: #e55039;
   --tomato-red: #eb2f06;
   --belladonna: rgba(36, 0, 19, 0.7);
@@ -65,7 +65,7 @@
 html {
   font-size: 37.5%;
 }
-@media only screen and (min-width: 20em) {
+@media only screen and (max-width: 23.4em) {
   html {
     font-size: 31.25%;
   }
@@ -117,7 +117,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  height: 15vh;
+  height: 17vh;
   width: 100%;
   padding: 1rem;
   background: linear-gradient(var(--heavenly-white), var(--color-white));
@@ -149,6 +149,11 @@ body {
   width: 18rem;
   height: 10rem;
   border-radius: 1rem;
+}
+@media only screen and (max-width: 23.4em) {
+  .header__logo {
+    margin: 2rem 0;
+  }
 }
 @media only screen and (min-width: 37.5em) {
   .header__logo {
@@ -239,7 +244,7 @@ body {
 }
 
 nav {
-  margin-top: -5rem;
+  margin-top: -5.2rem;
   background: linear-gradient(var(--heavenly-white), var(--color-white));
   padding: 2.5rem 0;
   width: 5rem;
@@ -253,6 +258,11 @@ nav {
   overflow: hidden;
   align-self: flex-end;
   z-index: 20;
+}
+@media only screen and (max-width: 23.4em) {
+  nav {
+    margin-top: -7rem;
+  }
 }
 @media only screen and (min-width: 56.25em) {
   nav {
@@ -308,7 +318,7 @@ nav ul li {
 nav ul a:link, nav ul a:visited {
   position: relative;
   text-decoration: none;
-  padding: 1rem;
+  padding: 1rem 0.5rem;
   color: var(--lynx-screen-blue);
   font-weight: 500;
   font-family: var(--font-Dosis);
@@ -409,6 +419,12 @@ nav ul a:link, nav ul a:visited {
   top: 5rem;
   left: 15rem;
   color: var(--ma-white);
+}
+@media only screen and (max-width: 23.4em) {
+  .home__text {
+    font-size: 5rem;
+    left: 3rem;
+  }
 }
 @media only screen and (min-width: 37.5em) {
   .home__text {
@@ -512,12 +528,17 @@ nav ul a:link, nav ul a:visited {
   width: 100%;
 }
 .about__img {
-  width: 70rem;
+  width: 60rem;
   height: 40rem;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 2rem;
   box-shadow: 0 2rem 2rem var(--white-solid);
+}
+@media only screen and (max-width: 23.4em) {
+  .about__img {
+    width: auto;
+  }
 }
 @media only screen and (min-width: 37.5em) {
   .about__img {
@@ -587,7 +608,7 @@ nav ul a:link, nav ul a:visited {
 .about__paragraph--3 {
   font-size: 3rem;
   font-weight: var(--bold);
-  background: linear-gradient(90deg, var(--belladonna) 0%, var(--peaceful-purple) 17%, var(--washed-blue) 39%, var(--dark-royalty) 59%, var(--neon-blue) 85%, var(--vallarta-blue) 100%);
+  background: linear-gradient(90deg, var(--belladonna) 0%, var(--peaceful-purple) 17%, var(--washed-blue) 39%, var(--dark-royalty) 59%, var(--lynx-screen-blue) 85%, var(--vallarta-blue) 100%);
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
@@ -789,7 +810,6 @@ nav ul a:link, nav ul a:visited {
   }
 }
 .contact__box1 {
-  white-space: nowrap;
   color: var(--lynx-screen-blue);
 }
 @media only screen and (min-width: 31.25em) {

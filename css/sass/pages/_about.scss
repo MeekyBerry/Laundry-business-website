@@ -25,11 +25,15 @@
   }
 
   &__img {
-    width: 70rem;
+    width: 60rem;
     height: 40rem;
     object-fit: cover;
     border-radius: 2rem;
     box-shadow: 0 2rem 2rem var(--white-solid);
+
+    @include respond(phone-smallest) {
+      width: auto;
+    }
 
     @include respond(tab-port) {
       width: 70rem;
@@ -115,7 +119,7 @@
         var(--peaceful-purple) 17%,
         var(--washed-blue) 39%,
         var(--dark-royalty) 59%,
-        var(--neon-blue) 85%,
+        var(--lynx-screen-blue) 85%,
         var(--vallarta-blue) 100%
       );
       background-clip: text;
