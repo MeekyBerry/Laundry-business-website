@@ -26,7 +26,6 @@
   --hippie-blue: #667db6;
   --washed-blue: rgba(147, 211, 224, 1);
   --dark-royalty: rgba(4, 4, 108, 1);
-  --neon-blue: rgba(0, 212, 255, 1);
   --vallarta-blue: rgba(52, 102, 142);
   --lynx-screen-blue: rgb(43, 192, 228);
   --christmas-blue: rgba(50, 137, 185, 0.6);
@@ -48,6 +47,7 @@
   --tomato-red: #eb2f06;
   --belladonna: rgba(36, 0, 19, 0.7);
   --peaceful-purple: rgba(104, 8, 132, 0.6);
+  --font-default: "Poppins", sans-serif;
   --font-Dosis: "Dosis", sans-serif;
   --italic: italic;
   --boldest: 900;
@@ -55,24 +55,24 @@
 }
 
 *,
-*::after,
-*::before {
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
 }
 
 html {
-  font-size: 50%;
+  font-size: 37.5%;
 }
 @media only screen and (min-width: 20em) {
   html {
     font-size: 31.25%;
   }
 }
-@media only screen and (min-width: 23.44em) {
+@media only screen and (min-width: 37.5em) {
   html {
-    font-size: 37.5%;
+    font-size: 50%;
   }
 }
 @media only screen and (min-width: 56.25em) {
@@ -85,7 +85,7 @@ html {
     font-size: 62.5%;
   }
 }
-@media only screen and (max-width: 100em) {
+@media only screen and (min-width: 100em) {
   html {
     font-size: 75%;
   }
@@ -93,11 +93,12 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-default);
   font-weight: 400;
   line-height: 1.6;
-  font-size: 1.8rem;
-  max-width: 100%;
+  font-size: 2.5rem;
+  width: 100%;
+  height: 100%;
   color: var(--color-grey);
   background-color: var(--pensive);
 }
@@ -116,7 +117,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  height: 20vh;
+  height: 15vh;
   width: 100%;
   padding: 1rem;
   background: linear-gradient(var(--heavenly-white), var(--color-white));
@@ -124,15 +125,36 @@ body {
   flex-direction: column;
   z-index: 100;
 }
+@media only screen and (min-width: 37.5em) {
+  .header {
+    height: 25vh;
+  }
+}
+@media only screen and (min-width: 56.25em) {
+  .header {
+    height: 30vh;
+  }
+}
+@media only screen and (min-width: 75em) {
+  .header {
+    height: 22vh;
+  }
+}
 .header__1 {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 .header__logo {
-  width: 10rem;
-  height: 5rem;
+  width: 18rem;
+  height: 10rem;
   border-radius: 1rem;
+}
+@media only screen and (min-width: 37.5em) {
+  .header__logo {
+    height: 11rem;
+    width: 20rem;
+  }
 }
 .header__logo--caption {
   display: none;
@@ -142,25 +164,24 @@ body {
     display: block;
     position: absolute;
     top: 0.5rem;
-    left: 12rem;
+    left: 22rem;
     text-transform: uppercase;
-    font-size: 1.2rem;
   }
 }
 .header__logo--chala {
   font-weight: var(--bold);
   font-family: "Rubik Microbe", cursive;
-  background: linear-gradient(var(--vivid-blue), var(--pea-green));
+  background: linear-gradient(var(--lynx-screen-blue), var(--mandarin-red));
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.3rem;
 }
 .header__logo--dry {
   position: inherit;
   left: 7rem;
   font-family: "Rubik Bubbles", cursive;
-  background-image: linear-gradient(var(--hippie-blue), var(--vivid-blue), var(--vivid-blue), var(--hippie-blue));
+  background-image: linear-gradient(var(--hippie-blue), var(--lynx-screen-blue), var(--tomato-red), var(--lynx-screen-blue));
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
@@ -169,78 +190,69 @@ body {
   position: inherit;
   left: 12rem;
   font-family: "Rubik Wet Paint", sans-serif;
-  background-image: linear-gradient(var(--light-blue-1), var(--light-blue-2), var(--neo-mint));
+  background-image: linear-gradient(var(--tomato-red), var(--lynx-screen-blue), var(--mandarin-red));
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
 }
 .header__text {
   padding: 0rem 1rem;
-  font-size: 1.1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+@media only screen and (min-width: 37.5em) {
+  .header__text {
+    font-size: 1.5rem;
+  }
 }
 @media only screen and (min-width: 56.25em) {
   .header__text {
     display: flex;
     align-items: flex-start;
     gap: 0.5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 .header__text--icon {
   display: flex;
   align-items: center;
 }
-.header__text--num {
-  font-weight: var(--bold);
-}
-@media only screen and (min-width: 56.25em) {
-  .header__text--num {
-    color: var(--hippie-blue);
-  }
-}
 .header__text svg {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  fill: currentColor;
 }
 @media only screen and (min-width: 56.25em) {
   .header__text svg {
-    width: 2.5rem;
-    height: 2.5rem;
     fill: var(--hippie-blue);
   }
 }
-.header__text--email {
+.header__text a:link, .header__text a:visited {
+  text-decoration: none;
+  color: inherit;
   font-weight: var(--bold);
 }
 @media only screen and (min-width: 56.25em) {
-  .header__text--email {
-    color: var(--neon-blue);
-  }
-}
-.header__text a {
-  text-decoration: none;
-  color: var(--color-grey);
-}
-@media only screen and (min-width: 56.25em) {
-  .header__text a {
-    color: unset;
+  .header__text a:link, .header__text a:visited {
+    color: var(--hippie-blue);
   }
 }
 
 nav {
-  margin-top: -4.5rem;
+  margin-top: -5rem;
   background: linear-gradient(var(--heavenly-white), var(--color-white));
-  padding: 2rem 0.5rem;
+  padding: 2.5rem 0;
   width: 5rem;
   display: flex;
   border: none;
   align-items: center;
   justify-content: center;
-  border-radius: 0.4rem;
+  border-radius: 0.5rem;
   box-shadow: 0 0.5rem 0.5rem var(--color-black-light);
   transition: width 0.6s linear;
   overflow: hidden;
   align-self: flex-end;
+  z-index: 20;
 }
 @media only screen and (min-width: 56.25em) {
   nav {
@@ -254,7 +266,7 @@ nav.active {
 }
 @media only screen and (min-width: 31.25em) {
   nav.active {
-    width: 30rem;
+    width: 45rem;
   }
 }
 @media only screen and (min-width: 56.25em) {
@@ -296,23 +308,23 @@ nav ul li {
 nav ul a:link, nav ul a:visited {
   position: relative;
   text-decoration: none;
-  padding: 1rem 0.3rem;
-  color: var(--neon-blue);
-  font-size: 1.3rem;
+  padding: 1rem;
+  color: var(--lynx-screen-blue);
   font-weight: 500;
   font-family: var(--font-Dosis);
   text-transform: uppercase;
+  font-size: 2rem;
   cursor: pointer;
 }
 @media only screen and (min-width: 56.25em) {
   nav ul a:link, nav ul a:visited {
     font-size: 2rem;
-    color: var(--neon-blue);
+    color: var(--lynx-screen-blue);
   }
   nav ul a:hover, nav ul a:active {
-    background-color: var(--color-white);
-    transition: 0.5s ease-out;
-    letter-spacing: 3px;
+    background-color: var(--white-solid);
+    transition: 0.3s ease-out;
+    letter-spacing: 0.2rem;
   }
 }
 
@@ -324,8 +336,8 @@ nav ul a:link, nav ul a:visited {
   position: relative;
   top: 0;
   right: 0;
-  height: 1rem;
-  width: 1rem;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 @media only screen and (min-width: 56.25em) {
   .icon {
@@ -336,13 +348,13 @@ nav ul a:link, nav ul a:visited {
   outline: 0;
 }
 .icon__line {
-  background-color: var(--neon-blue);
+  background-color: var(--lynx-screen-blue);
   height: 0.2rem;
   width: 2rem;
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
-  transition: transform 0.6s linear;
+  transition: transform 0.5s linear;
 }
 .icon--line2 {
   top: auto;
@@ -350,7 +362,7 @@ nav ul a:link, nav ul a:visited {
 }
 
 .home {
-  height: 75vh;
+  height: 85vh;
   width: 100%;
   margin-top: 10rem;
   font-weight: 700;
@@ -359,7 +371,12 @@ nav ul a:link, nav ul a:visited {
 }
 @media only screen and (min-width: 37.5em) {
   .home {
-    height: 80vh;
+    height: 78vh;
+  }
+}
+@media only screen and (min-width: 75em) {
+  .home {
+    height: 88vh;
   }
 }
 .home__container {
@@ -385,66 +402,87 @@ nav ul a:link, nav ul a:visited {
 }
 .home__text {
   width: 100%;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-family: var(--font-Dosis);
   font-weight: var(--bold);
   position: absolute;
-  top: 10%;
-  left: 0%;
+  top: 5rem;
+  left: 15rem;
   color: var(--ma-white);
-  line-height: 1;
+}
+@media only screen and (min-width: 37.5em) {
+  .home__text {
+    line-height: 1.3;
+  }
+}
+@media only screen and (min-width: 56.25em) {
+  .home__text {
+    font-size: 3rem;
+  }
 }
 @media only screen and (min-width: 75em) {
   .home__text {
-    padding: 0rem 50rem;
-    font-size: 5.5rem;
+    padding: 3rem 20rem;
   }
 }
-.home__text-message {
+.home__text-slide {
   color: var(--pensive);
   white-space: nowrap;
   -webkit-animation: slide-left 10s linear infinite;
           animation: slide-left 10s linear infinite;
 }
-.home__text-message span {
+.home__text-slide span {
   margin-right: 20rem;
+  text-transform: uppercase;
 }
-.home__text-scroller {
+.home__text-box {
   position: relative;
+  text-align: center;
 }
-.home__text-scroller div {
+.home__text-box div {
   position: absolute;
   top: 5rem;
   -webkit-animation: slide 5s infinite;
           animation: slide 5s infinite;
 }
-.home__text--cloth {
-  font-size: 3rem;
+@media only screen and (min-width: 37.5em) {
+  .home__text-box div {
+    top: 0rem;
+  }
+}
+@media only screen and (min-width: 75em) {
+  .home__text-box div {
+    top: 3rem;
+  }
+}
+.home__text--span {
   font-weight: 500;
   color: var(--lynx-white);
 }
 .home__text--quick {
-  display: block;
+  display: inline-block;
+  width: 100%;
   text-align: center;
+  text-transform: uppercase;
   font-size: 5rem;
   font-weight: 800;
-  letter-spacing: 1rem;
+  font-family: var(--font-default);
+  letter-spacing: 0.5rem;
   color: var(--dark-royalty);
   background-image: linear-gradient(120deg, var(--lynx-white), var(--green-essence) 100%);
   background-repeat: no-repeat;
   background-size: 100% 1rem;
-  background-position: 0 75%;
-  transition: background-size 0.25s ease-in;
+  background-position: 0 70%;
+  transition: background-size 0.3s ease-in;
 }
 .home__text--quick:hover {
-  background-size: 100% 60% !important;
+  background-size: 100% 60%;
 }
-.home__text a {
+.home__text a:link, .home__text a:visited {
   text-decoration: none;
-  font-size: 3.5rem;
   font-weight: 800;
   font-style: oblique;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.3rem;
   background-image: linear-gradient(90deg, var(--dark-royalty) 0%, var(--vivid-blue) 17%, var(--dark-royalty) 39%, var(--vivid-blue) 59%, var(--dark-royalty) 85%, var(--vivid-blue) 100%);
   -webkit-background-clip: text;
           background-clip: text;
@@ -455,7 +493,6 @@ nav ul a:link, nav ul a:visited {
 .about {
   width: 100%;
   background: linear-gradient(to bottom, var(--gnocchi-beige), var(--color-white));
-  font-size: 1.6rem;
   padding: 1rem 2rem;
   text-align: center;
 }
@@ -465,17 +502,18 @@ nav ul a:link, nav ul a:visited {
 }
 @media only screen and (min-width: 56.25em) {
   .about__desc {
+    font-size: 2rem;
     flex-direction: row;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
   }
 }
 .about__photo {
   width: 100%;
 }
 .about__img {
-  width: 40rem;
-  height: 35rem;
+  width: 70rem;
+  height: 40rem;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 2rem;
@@ -489,19 +527,26 @@ nav ul a:link, nav ul a:visited {
 }
 @media only screen and (min-width: 56.25em) {
   .about__img {
-    width: 70rem;
+    width: 55rem;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 75em) {
+  .about__img {
+    width: 65rem;
   }
 }
 .about__img--caption {
   font-style: var(--italic);
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.8rem;
 }
 .about__heading {
-  font-size: 2rem;
+  font-size: 4rem;
+  font-weight: var(--bold);
   padding: 1rem;
-  word-spacing: 1rem;
-  letter-spacing: 0.3rem;
+  word-spacing: 0.5rem;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
   font-family: "Rubik Microbe", sans-serif;
   background-image: linear-gradient(45deg, var(--blue-chip) 0%, var(--ticino-blue) 50%, var(--eye-blue) 51%, var(--aero) 100%);
@@ -509,13 +554,9 @@ nav ul a:link, nav ul a:visited {
           background-clip: text;
   color: transparent;
 }
-@media only screen and (min-width: 56.25em) {
-  .about__heading {
-    font-size: 3.5rem;
-  }
-}
 .about__heading--2 {
-  font-size: 2.5rem;
+  font-size: 4rem;
+  font-weight: var(--bold);
   padding: 0.5rem;
   color: var(--blue-chip);
   word-spacing: 2rem;
@@ -531,18 +572,20 @@ nav ul a:link, nav ul a:visited {
 }
 .about__paragraph--1 {
   padding: 1rem;
+  font-size: 3rem;
+  font-style: var(--italic);
   font-weight: var(--boldest);
   background-image: linear-gradient(var(--mandarin-red), var(--tomato-red));
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
-  font-style: var(--italic);
 }
 .about__paragraph--2 {
   font-weight: var(--boldest);
+  font-size: 2rem;
 }
 .about__paragraph--3 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: var(--bold);
   background: linear-gradient(90deg, var(--belladonna) 0%, var(--peaceful-purple) 17%, var(--washed-blue) 39%, var(--dark-royalty) 59%, var(--neon-blue) 85%, var(--vallarta-blue) 100%);
   -webkit-background-clip: text;
@@ -555,33 +598,34 @@ nav ul a:link, nav ul a:visited {
   background: linear-gradient(to right, var(--schabziger-yellow), var(--light-kiri-mist));
 }
 .services__heading {
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
   font-weight: var(--bold);
   font-family: var(--font-Dosis);
-  text-shadow: 2px 2px 2px var(--aero);
-  word-spacing: 1rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem var(--aero);
+  word-spacing: 0.5rem;
   width: 75%;
   margin: 0 auto;
+  padding: 1rem;
 }
 .services__heading span {
-  display: inline-block;
-  font-size: 3rem;
+  display: block;
   font-weight: var(--boldest);
   font-style: var(--italic);
-  text-shadow: 2px 2px 2px var(--tomato-red);
+  text-shadow: 0.2rem 0.2rem 0.2rem var(--tomato-red);
+  text-transform: uppercase;
 }
 .services__container {
   background-color: var(--white-solid);
-  width: 60%;
-  margin: 2rem auto;
+  width: 80%;
+  margin: 5rem auto;
   box-shadow: 0 1rem 3rem var(--montage);
-  border-radius: 3rem;
+  border-radius: 2rem;
   text-align: center;
 }
 @media only screen and (min-width: 37.5em) {
   .services__container {
-    width: 80%;
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -591,6 +635,7 @@ nav ul a:link, nav ul a:visited {
   .services__container {
     width: 100%;
     border-radius: unset;
+    box-shadow: unset;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto auto;
   }
@@ -598,23 +643,30 @@ nav ul a:link, nav ul a:visited {
 .services__container--box {
   padding: 2rem;
 }
+@media only screen and (min-width: 37.5em) {
+  .services__container--box {
+    font-size: 2rem;
+  }
+}
 .services__container--box svg {
-  width: 10rem;
-  height: 10rem;
+  width: 15rem;
+  height: 15rem;
   filter: opacity(0.5) drop-shadow(0 0 0 var(--aero));
 }
 .services__container--box img {
-  width: 10rem;
-  height: 10rem;
+  width: 15rem;
+  height: 15rem;
   filter: opacity(0.5) drop-shadow(0 0 0 var(--aero));
 }
 .services__container--head {
-  font-size: 2rem;
+  font-size: 3rem;
   padding: 1rem 0;
-  text-shadow: 2px 2px 2px var(--tomato-red);
+  text-transform: uppercase;
+  text-shadow: 0.2rem 0.2rem 0.2rem var(--tomato-red);
 }
 .services__container--text {
   padding: 1rem;
+  color: var(--color-grey);
 }
 @media only screen and (min-width: 37.5em) {
   .services__container--text {
@@ -622,23 +674,16 @@ nav ul a:link, nav ul a:visited {
     align-self: end;
   }
 }
-.services__container--text-1 {
-  color: var(--color-black);
-  font-weight: var(--bold);
-  border-radius: 2rem;
-}
-.services__container--num {
+.services__container--text span {
   font-size: 3rem;
   font-weight: var(--boldest);
   font-style: var(--italic);
-  color: var(--color-black);
-  cursor: pointer;
+  color: var(--lynx-screen-blue);
 }
 
 .information {
-  font-size: 1.8rem;
   text-align: center;
-  padding: 0rem 2rem;
+  padding: 0rem 3.5rem;
 }
 @media only screen and (min-width: 56.25em) {
   .information {
@@ -646,15 +691,24 @@ nav ul a:link, nav ul a:visited {
   }
 }
 .information__heading {
-  padding: 1rem 0;
+  padding-top: 1rem;
   text-align: center;
-  font-size: 2.2rem;
-  text-shadow: 2px 2px 2px var(--tomato-red);
+  font-size: 4rem;
+  color: var(--white-solid);
+  word-spacing: 0.3rem;
+  text-transform: uppercase;
+  background: linear-gradient(120deg, var(--vivid-blue), var(--neo-mint) 100%);
+}
+@media only screen and (min-width: 75em) {
+  .information__heading {
+    background: unset;
+    color: var(--lynx-screen-blue);
+  }
 }
 .information__container {
   width: 100%;
-  height: auto;
-  padding: 5rem 2rem;
+  height: 100%;
+  padding: 5rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -664,7 +718,9 @@ nav ul a:link, nav ul a:visited {
 .information__container--head {
   padding: 1rem;
   text-transform: uppercase;
-  text-shadow: 2px 2px 2px var(--tomato-red);
+  font-size: 3.5rem;
+  font-weight: var(--boldest);
+  letter-spacing: 0.3rem;
 }
 .information__vd {
   position: absolute;
@@ -672,12 +728,14 @@ nav ul a:link, nav ul a:visited {
   left: 0;
   height: 100%;
   width: 100%;
-  opacity: 0.15;
+  opacity: 0.1;
   padding: 2rem 0;
 }
 .information__vd--content {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .contact {
@@ -686,31 +744,29 @@ nav ul a:link, nav ul a:visited {
   text-align: center;
 }
 .contact__box {
-  padding: 1rem;
+  padding: 3rem;
 }
 .contact__heading {
-  padding: 0.5rem;
   color: var(--neon-blue);
 }
 .contact__heading-icon {
-  width: 3rem;
-  height: 3rem;
-  fill: var(--neon-blue);
+  width: 10rem;
+  height: 10rem;
+  fill: var(--lynx-screen-blue);
 }
 .contact__address {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 @media only screen and (min-width: 56.25em) {
   .contact__address {
-    font-size: 2.5rem;
     display: grid;
-    grid: "box1 box1" 1fr "box2 box3" 1fr "box4 box5" 1fr/1fr 1fr;
+    grid: "box1 box1" 1fr "box2 box3" 1fr "box4 box5" 1fr;
     justify-items: center;
   }
 }
 @media only screen and (min-width: 75em) {
   .contact__address {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     grid: "box1 box1 box2 box3 box4 box5" 1fr;
     justify-items: space-between;
   }
@@ -732,15 +788,44 @@ nav ul a:link, nav ul a:visited {
     grid-area: box5;
   }
 }
+.contact__box1 {
+  white-space: nowrap;
+  color: var(--lynx-screen-blue);
+}
+@media only screen and (min-width: 31.25em) {
+  .contact__box1 {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 37.5em) {
+  .contact__box1 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 75em) {
+  .contact__box1 {
+    font-size: 1.3rem;
+  }
+}
 .contact__text {
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  justify-content: space-between;
 }
 .contact__text svg {
-  width: 3rem;
-  height: 3rem;
+  width: 5rem;
+  height: 5rem;
+  transition: all 0.5s;
+}
+@media only screen and (min-width: 75em) {
+  .contact__text svg {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+.contact__text svg:hover {
+  transform: scale(1.5);
 }
 .contact__text-location {
   fill: var(--tomato-red);
@@ -758,28 +843,28 @@ nav ul a:link, nav ul a:visited {
   fill: var(--ticino-blue);
 }
 .contact__text-link:link, .contact__text-link:visited {
-  color: var(--dark-royalty);
-  background-color: var(--lynx-white);
-  text-decoration: none;
-  text-transform: uppercase;
   display: inline-block;
   padding: 0.5rem;
-  transition: all 0.3s;
+  text-decoration: none;
+  text-transform: uppercase;
   font-weight: 700;
+  color: var(--lynx-screen-blue);
+  background-image: linear-gradient(60deg, transparent 50%, var(--lynx-white) 50%);
+  background-size: 220%;
+  transition: all 0.5s;
 }
-.contact__text-link:hover, .contact__text-link:active {
+.contact__text-link:active, .contact__text-link:hover {
   color: var(--american-green);
-  transform: rotate(2deg) scale(1.1) translateX(1rem);
-  transition: 0.5s ease-out;
-  letter-spacing: 2px;
+  background-position: 100%;
+  letter-spacing: 0.5rem;
 }
 
 .attribution {
   text-align: center;
 }
-.attribution a {
+.attribution a:link, .attribution a:visited {
   text-decoration: none;
-  color: var(--neon-blue);
+  color: var(--lynx-screen-blue);
   font-style: var(--italics);
 }
 

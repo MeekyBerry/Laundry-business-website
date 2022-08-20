@@ -1,17 +1,18 @@
 nav {
-  margin-top: -4.5rem;
+  margin-top: -5rem;
   background: linear-gradient(var(--heavenly-white), var(--color-white));
-  padding: 2rem 0.5rem;
+  padding: 2.5rem 0;
   width: 5rem;
   display: flex;
   border: none;
   align-items: center;
   justify-content: center;
-  border-radius: 0.4rem;
+  border-radius: 0.5rem;
   box-shadow: 0 0.5rem 0.5rem var(--color-black-light);
   transition: width 0.6s linear;
   overflow: hidden;
   align-self: flex-end;
+  z-index: 20;
 
   @include respond(tab-land) {
     background: unset;
@@ -23,7 +24,7 @@ nav {
     width: 60%;
 
     @include respond(phone-normal) {
-      width: 30rem;
+      width: 45rem;
     }
 
     @include respond(tab-land) {
@@ -71,12 +72,12 @@ nav {
       &:visited {
         position: relative;
         text-decoration: none;
-        padding: 1rem 0.3rem;
-        color: var(--neon-blue);
-        font-size: 1.3rem;
+        padding: 1rem;
+        color: var(--lynx-screen-blue);
         font-weight: 500;
         font-family: var(--font-Dosis);
         text-transform: uppercase;
+        font-size: 2rem;
         cursor: pointer;
       }
 
@@ -84,14 +85,14 @@ nav {
         &:link,
         &:visited {
           font-size: 2rem;
-          color: var(--neon-blue);
+          color: var(--lynx-screen-blue);
         }
 
         &:hover,
         &:active {
-          background-color: var(--color-white);
-          transition: 0.5s ease-out;
-          letter-spacing: 3px;
+          background-color: var(--white-solid);
+          transition: 0.3s ease-out;
+          letter-spacing: 0.2rem;
         }
       }
     }
@@ -106,8 +107,8 @@ nav {
   position: relative;
   top: 0;
   right: 0;
-  height: 1rem;
-  width: 1rem;
+  height: 1.5rem;
+  width: 1.5rem;
 
   @include respond(tab-land) {
     display: none;
@@ -118,13 +119,13 @@ nav {
   }
 
   &__line {
-    background-color: var(--neon-blue);
+    background-color: var(--lynx-screen-blue);
     height: 0.2rem;
     width: 2rem;
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
-    transition: transform 0.6s linear;
+    transition: transform 0.5s linear;
   }
 
   &--line2 {

@@ -2,13 +2,25 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 20vh;
+  height: 15vh;
   width: 100%;
   padding: 1rem;
   background: linear-gradient(var(--heavenly-white), var(--color-white));
   display: flex;
   flex-direction: column;
   z-index: 100;
+
+  @include respond(tab-port) {
+    height: 25vh;
+  }
+
+  @include respond(tab-land) {
+    height: 30vh;
+  }
+
+  @include respond(laptop) {
+    height: 22vh;
+  }
 
   &__1 {
     width: 100%;
@@ -17,9 +29,14 @@
   }
 
   &__logo {
-    width: 10rem;
-    height: 5rem;
+    width: 18rem;
+    height: 10rem;
     border-radius: 1rem;
+
+    @include respond(tab-port) {
+      height: 11rem;
+      width: 20rem;
+    }
 
     &--caption {
       display: none;
@@ -28,20 +45,18 @@
         display: block;
         position: absolute;
         top: 0.5rem;
-        left: 12rem;
+        left: 22rem;
         text-transform: uppercase;
-        font-size: 1.2rem;
       }
     }
 
     &--chala {
       font-weight: var(--bold);
-      // text-align: center;
       font-family: "Rubik Microbe", cursive;
-      background: linear-gradient(var(--vivid-blue), var(--pea-green));
+      background: linear-gradient(var(--lynx-screen-blue), var(--mandarin-red));
       background-clip: text;
       color: transparent;
-      letter-spacing: 0.5rem;
+      letter-spacing: 0.3rem;
     }
 
     &--dry {
@@ -50,9 +65,9 @@
       font-family: "Rubik Bubbles", cursive;
       background-image: linear-gradient(
         var(--hippie-blue),
-        var(--vivid-blue),
-        var(--vivid-blue),
-        var(--hippie-blue)
+        var(--lynx-screen-blue),
+        var(--tomato-red),
+        var(--lynx-screen-blue)
       );
       background-clip: text;
       color: transparent;
@@ -63,9 +78,9 @@
       left: 12rem;
       font-family: "Rubik Wet Paint", sans-serif;
       background-image: linear-gradient(
-        var(--light-blue-1),
-        var(--light-blue-2),
-        var(--neo-mint)
+        var(--tomato-red),
+        var(--lynx-screen-blue),
+        var(--mandarin-red)
       );
       background-clip: text;
       color: transparent;
@@ -74,14 +89,18 @@
 
   &__text {
     padding: 0rem 1rem;
-    // text-align: center;
-    font-size: 1.1rem;
+    text-align: center;
+    font-size: 2rem;
+
+    @include respond(tab-port) {
+      font-size: 1.5rem;
+    }
 
     @include respond(tab-land) {
       display: flex;
       align-items: flex-start;
       gap: 0.5rem;
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
 
     &--icon {
@@ -89,39 +108,26 @@
       align-items: center;
     }
 
-    &--num {
-      font-weight: var(--bold);
-
-      @include respond(tab-land) {
-        color: var(--hippie-blue);
-      }
-    }
-
     svg {
-      width: 1.5rem;
-      height: 1.5rem;
+      width: 2rem;
+      height: 2rem;
+      fill: currentColor;
 
       @include respond(tab-land) {
-        width: 2.5rem;
-        height: 2.5rem;
         fill: var(--hippie-blue);
       }
     }
 
-    &--email {
-      font-weight: var(--bold);
-
-      @include respond(tab-land) {
-        color: var(--neon-blue);
-      }
-    }
-
     a {
-      text-decoration: none;
-      color: var(--color-grey);
+      &:link,
+      &:visited {
+        text-decoration: none;
+        color: inherit;
+        font-weight: var(--bold);
 
-      @include respond(tab-land) {
-        color: unset;
+        @include respond(tab-land) {
+          color: var(--hippie-blue);
+        }
       }
     }
   }

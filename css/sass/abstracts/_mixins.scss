@@ -4,25 +4,23 @@
   left: 0;
 }
 
-// Media queries manager
-
-// 0 - 600px       Phone  (the normal screensize applied in the initial style)
+// Media queries manager 
 // 320px - 375px   Phone-smallest
-// 375px - 600px   Phone
-// 500px           Phone normal
-// 600px - 900px   Tablet Portrait
-// 900px - 1200px  Tablet Landscape
-// 1200px - 1600px   Laptop
-// 1600px +        Large Screens
+// 375px - 600px   // Phone (the normal screen size used in the initial styling)
+// 500px           // Phone normal
+// 600px - 900px   // Tablet Portrait
+// 900px - 1200px  // Tablet Landscape
+// 1200px - 1600px // Laptop
+// 1600px upwards  // Large Screens
 
-// // Break point arguments
+// // // // Break point arguments  // // // //
 // - phone-smallest
-//-  phone
+// - phone
 // - phone-normal
 // - tab-port
 // - tab-land
 // - laptop
-// - large scrn
+// - large screen
 
 // 1em == 16px
 
@@ -64,8 +62,8 @@
   }
 
   @if $breakpoint == large-screen {
-    @media only screen and (max-width: 100em) {
+    @media only screen and (min-width: 100em) {
       @content;
-    } //1800px
+    } //1600px
   }
 }

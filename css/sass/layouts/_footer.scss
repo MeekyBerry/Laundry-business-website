@@ -4,36 +4,33 @@
   text-align: center;
 
   &__box {
-    padding: 1rem;
+    padding: 3rem;
   }
 
   &__heading {
-    padding: 0.5rem;
     color: var(--neon-blue);
 
     &-icon {
-      width: 3rem;
-      height: 3rem;
-      fill: var(--neon-blue);
+      width: 10rem;
+      height: 10rem;
+      fill: var(--lynx-screen-blue);
     }
   }
 
   &__address {
-    font-size: 1.5rem;
+    font-size: 2rem;
 
     @include respond(tab-land) {
-      font-size: 2.5rem;
       display: grid;
       grid:
         "box1 box1" 1fr
         "box2 box3" 1fr
-        "box4 box5" 1fr
-        / 1fr 1fr;
+        "box4 box5" 1fr;
       justify-items: center;
     }
 
     @include respond(laptop) {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       grid: "box1 box1 box2 box3 box4 box5" 1fr;
       justify-items: space-between;
     }
@@ -61,15 +58,42 @@
     }
   }
 
+  &__box1 {
+    white-space: nowrap;
+    color: var(--lynx-screen-blue);
+
+    @include respond(phone-normal) {
+      font-size: 2.5rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 2rem;
+    }
+
+    @include respond(laptop) {
+      font-size: 1.3rem;
+    }
+  }
+
   &__text {
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    justify-content: space-between;
 
     svg {
-      width: 3rem;
-      height: 3rem;
+      width: 5rem;
+      height: 5rem;
+      transition: all 0.5s;
+
+      @include respond(laptop) {
+        width: 3rem;
+        height: 3rem;
+      }
+
+      &:hover {
+        transform: scale(1.5);
+      }
     }
 
     &-location {
@@ -95,22 +119,26 @@
     &-link {
       &:link,
       &:visited {
-        color: var(--dark-royalty);
-        background-color: var(--lynx-white);
-        text-decoration: none;
-        text-transform: uppercase;
         display: inline-block;
         padding: 0.5rem;
-        transition: all 0.3s;
+        text-decoration: none;
+        text-transform: uppercase;
         font-weight: 700;
+        color: var(--lynx-screen-blue);
+        background-image: linear-gradient(
+          60deg,
+          transparent 50%,
+          var(--lynx-white) 50%
+        );
+        background-size: 220%;
+        transition: all 0.5s;
       }
 
-      &:hover,
-      &:active {
+      &:active,
+      &:hover {
         color: var(--american-green);
-        transform: rotate(2deg) scale(1.1) translateX(1rem);
-        transition: 0.5s ease-out;
-        letter-spacing: 2px;
+        background-position: 100%;
+        letter-spacing: 0.5rem;
       }
     }
   }
@@ -120,8 +148,11 @@
   text-align: center;
 
   a {
-    text-decoration: none;
-    color: var(--neon-blue);
-    font-style: var(--italics);
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: var(--lynx-screen-blue);
+      font-style: var(--italics);
+    }
   }
 }
