@@ -36,13 +36,13 @@
   --discovery-bay: rgba(36, 107, 122, 0.6);
   --pea-green: #799f0c;
   --neo-mint: #a6ffcb;
-  --american-green: rgba(57, 185, 50, 0.6);
+  --american-green: rgba(57, 185, 50, 0.5);
   --india-green: rgba(21, 132, 8, 0.1);
-  --dead-green: rgba(147, 224, 170, 0.6);
-  --sage-garden: rgba(123, 173, 114, 0.6);
-  --wild-forest: rgba(52, 142, 68, 0.6);
+  --dead-green: rgba(147, 224, 170, 0.5);
+  --sage-garden: rgba(123, 173, 114, 0.5);
+  --wild-forest: rgba(52, 142, 68, 0.5);
   --press-green: rgba(97, 106, 119, 0.5);
-  --energise: rgba(126, 213, 111, 0.6);
+  --energise: rgba(126, 213, 111, 0.5);
   --mandarin-red: #e55039;
   --tomato-red: #eb2f06;
   --belladonna: rgba(36, 0, 19, 0.7);
@@ -244,9 +244,9 @@ body {
 }
 
 nav {
-  margin-top: -5.2rem;
+  margin-top: -4rem;
   background: linear-gradient(var(--heavenly-white), var(--color-white));
-  padding: 2.5rem 0;
+  padding: 1rem;
   width: 5rem;
   display: flex;
   border: none;
@@ -261,7 +261,7 @@ nav {
 }
 @media only screen and (max-width: 23.4em) {
   nav {
-    margin-top: -7rem;
+    margin-top: -5rem;
   }
 }
 @media only screen and (min-width: 56.25em) {
@@ -545,7 +545,7 @@ nav ul a:link, nav ul a:visited {
 }
 @media only screen and (max-width: 23.4em) {
   .about__img {
-    width: auto;
+    width: 50rem;
   }
 }
 @media only screen and (min-width: 37.5em) {
@@ -894,6 +894,10 @@ nav ul a:link, nav ul a:visited {
   color: var(--lynx-screen-blue);
   font-style: var(--italics);
 }
+.attribution__validator {
+  width: 8.8rem;
+  height: 3rem;
+}
 
 .web-scroll {
   position: relative;
@@ -932,78 +936,60 @@ nav ul a:link, nav ul a:visited {
 @-webkit-keyframes slideIn {
   0% {
     background-image: linear-gradient(var(--dead-green), var(--wild-forest)), url("/img/machine-1.jpg");
-    opacity: 0;
   }
   10% {
     background-image: linear-gradient(var(--wild-forest), var(--dead-green)), url("/img/clothes-1.jpg");
-    opacity: 1;
   }
   20% {
     background-image: linear-gradient(var(--dead-green), var(--wild-forest)), url("/img/machine-2.jpg");
-    opacity: 0;
   }
   30% {
     background-image: linear-gradient(var(--wild-forest), var(--american-green)), url("/img/machine-3.jpg");
-    opacity: 1;
   }
   40% {
     background-image: linear-gradient(45deg, var(--press-green), transparent), url("/img/building-1-min.jpeg");
-    opacity: 0;
   }
   55% {
     background-image: linear-gradient(var(--american-green), var(--sage-garden)), url("/img/full-card-min.jpeg");
-    opacity: 1;
   }
   65% {
     background-image: linear-gradient(var(--sage-garden), var(--dead-green)), url("/img/machine-4.jpg");
-    opacity: 0;
   }
   90% {
     background-image: linear-gradient(var(--sage-garden), var(--sage-garden)), url("/img/soap.jpg");
-    opacity: 0;
   }
   100% {
     background-image: linear-gradient(var(--sage-garden), var(--wild-forest)), url("/img/machine-5.jpg");
-    opacity: 1;
   }
 }
 
 @keyframes slideIn {
   0% {
     background-image: linear-gradient(var(--dead-green), var(--wild-forest)), url("/img/machine-1.jpg");
-    opacity: 0;
   }
   10% {
     background-image: linear-gradient(var(--wild-forest), var(--dead-green)), url("/img/clothes-1.jpg");
-    opacity: 1;
   }
   20% {
     background-image: linear-gradient(var(--dead-green), var(--wild-forest)), url("/img/machine-2.jpg");
-    opacity: 0;
   }
   30% {
     background-image: linear-gradient(var(--wild-forest), var(--american-green)), url("/img/machine-3.jpg");
-    opacity: 1;
   }
   40% {
     background-image: linear-gradient(45deg, var(--press-green), transparent), url("/img/building-1-min.jpeg");
-    opacity: 0;
   }
   55% {
     background-image: linear-gradient(var(--american-green), var(--sage-garden)), url("/img/full-card-min.jpeg");
-    opacity: 1;
   }
   65% {
     background-image: linear-gradient(var(--sage-garden), var(--dead-green)), url("/img/machine-4.jpg");
-    opacity: 0;
   }
   90% {
     background-image: linear-gradient(var(--sage-garden), var(--sage-garden)), url("/img/soap.jpg");
-    opacity: 0;
   }
   100% {
     background-image: linear-gradient(var(--sage-garden), var(--wild-forest)), url("/img/machine-5.jpg");
-    opacity: 1;
   }
 }
 @-webkit-keyframes fade-bottom {

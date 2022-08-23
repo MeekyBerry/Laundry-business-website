@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="Pick up and delivery service. The service includes: washing and folding, dry cleaning pick-up and delivery, fold, iron and box services.">
+    <meta name="Keywords" content="Pickup, Washing, Folding, Dry cleaning and Delivery services">
+    <meta name="author" content="Elue Michael">
+    <meta http-equiv="Cache-Control: max-age=31536000" content="public">
     <title>Machala Laundry Service</title>
     <!-- FAVICON LINKS -->
     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon-min.png">
@@ -13,8 +18,14 @@
     <link rel="manifest" href="./img/favicon/site.webmanifest">
     <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5faff1">
     <meta name="msapplication-TileColor" content="#5faff1">
-    <meta name="theme-color" content="#5faff1">
+    <meta name="themes-color" content="#5faff1">
     <!-- FAVICON LINKS -->
+    <!-- PRELOAD TAG -->
+    <link rel="preload" href="./css/sass/main.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com" as="font">
+    <link rel="preload" href="https://fonts.gstatic.com" as="font">
+    <link rel="preload" href="./script.js" as="script">
+    <!-- PRELOAD TAG -->
     <link rel="stylesheet" href="./css/sass/main.css">
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,9 +33,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;700;800&family=Poppins:wght@400;700;900&family=Rubik+Bubbles&family=Rubik+Microbe&family=Rubik+Mono+One&family=Rubik+Moonrocks&family=Rubik+Wet+Paint&family=Rubik:wght@400;500;700&display=swap"
       rel="stylesheet">
-
     <script src="./script.js" defer></script>
-
   </head>
 
   <!-- <body class="dark-mode"> -->
@@ -113,8 +122,10 @@
           </div>
           <div class="about__info">
             <h1 class="about__heading">Who we are!!!</h1>
-            <p class="about__paragraph">A full service Laundry provider headquartered in Asaba. Machala Laundry Service
-              has the knowledge, skills,
+            <p class="about__paragraph">A full service Laundry provider headquartered in Asaba. Machala Laundry is a
+              Private laundry service for your washing, ironing and folding of laundry. Modern, fast and friendly
+              services. At Machala Laundry we take pride in having
+              the knowledge, skills,
               expert resources and products required to make your Laundry operations
               excellent.</p>
             <h2 class="about__heading--2">Wash and fold <span>Laundry Service</span></h2>
@@ -134,14 +145,14 @@
             <svg>
               <use xlink:href="./img/sprite.svg#icon-t-shirt"></use>
             </svg>
-            <h4 class="services__container--head">WE PICK YOUR CLOTHES</h4>
+            <h3 class="services__container--head">WE PICK YOUR CLOTHES</h3>
             <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming
               clothes!</p>
           </div>
 
           <div class="services__container--box">
             <img src="./img/icon2-1.png" alt="Cloth Icon">
-            <h4 class="services__container--head">QUICKER DELIVERY</h4>
+            <h3 class="services__container--head">QUICKER DELIVERY</h3>
             <p>We ensure delivery in the quickest of the turnaround time in the industry at a maximum of 3 hours
               service. Superior quality of service with speed!</p>
           </div>
@@ -150,7 +161,7 @@
             <svg>
               <use xlink:href="./img/sprite.svg#icon-direction"></use>
             </svg>
-            <h4 class="services__container--head">DELIVERY AT THE DOORSTEP!</h4>
+            <h3 class="services__container--head">DELIVERY AT THE DOORSTEP!</h3>
             <p>We have prioritized the concept of pickup and delivery in the shortest possible time. We intend keeping
               it that way!</p>
           </div>
@@ -159,7 +170,7 @@
             <svg>
               <use xlink:href="./img/sprite.svg#icon-like"></use>
             </svg>
-            <h4 class="services__container--head">Satisfaction guaranteed</h4>
+            <h3 class="services__container--head">Satisfaction guaranteed</h3>
             <p>With our innovative solutions and cost effectiveness, we strive to satisfy our customers and always
               succeed!</p>
           </div>
@@ -170,7 +181,7 @@
           </div>
         </div>
 
-        <h2 class="information__heading">Always the Best Service</h2>
+        <div class="information__heading">Always the Best Service</div>
         <div class="information reveal fade-right">
           <div class="information__container">
             <div class="information__vd">
@@ -255,7 +266,7 @@
                   <use xlink:href="./img/sprite.svg#icon-facebook2"></use>
                 </svg>
                 <p><a href="https://www.facebook.com/groups/5384168368329844/?ref=share" target="_blank"
-                    class="contact__text-link">Machala Laundry
+                    rel="noopener noreferrer" class="contact__text-link">Machala Laundry
                     Service</a>
                 </p>
               </div>
@@ -264,11 +275,11 @@
 
           <div class="attribution">
             <p>&copy;2022 Laundry Service | All rights reserved | Designed by <a
-                href="https://www.linkedin.com/in/mikkylanky/" target="_blank">meekyberry</a>
+                href="https://www.linkedin.com/in/mikkylanky/" target="_blank" rel="noopener noreferrer">meekyberry</a>
             </p>
             <p>
               <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                <img class="attribution__validator" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
                   alt="Valid CSS!" />
               </a>
             </p>

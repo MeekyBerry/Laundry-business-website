@@ -32,7 +32,7 @@
     box-shadow: 0 2rem 2rem var(--white-solid);
 
     @include respond(phone-smallest) {
-      width: auto;
+      width: 50rem;
     }
 
     @include respond(tab-port) {
