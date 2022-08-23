@@ -797,7 +797,6 @@ nav ul a:link, nav ul a:visited {
   .contact__address {
     font-size: 1.3rem;
     grid: "box1 box1 box2 box3 box4 box5" 1fr;
-    justify-items: space-between;
   }
 }
 @media only screen and (min-width: 56.25em) {

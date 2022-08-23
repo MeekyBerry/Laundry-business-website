@@ -32,7 +32,6 @@
     @include respond(laptop) {
       font-size: 1.3rem;
       grid: "box1 box1 box2 box3 box4 box5" 1fr;
-      justify-items: space-between;
     }
   }
 
