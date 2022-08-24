@@ -7,26 +7,26 @@
 }
 
 html {
-  font-size: 37.5%;             // 1rem = 6px /// 375px
+  font-size: 37.5%; // 1rem = 6px /// 375px
 
   @include respond(phone-smallest) {
-    font-size: 31.25%;          // 1rem = 5px /// 320px
+    font-size: 31.25%; // 1rem = 5px /// 320px
   }
 
   @include respond(tab-port) {
-    font-size: 50%;             //  1rem = 8px /// 600px
+    font-size: 50%; //  1rem = 8px /// 600px
   }
 
   @include respond(tab-land) {
-    font-size: 56.25%;          //   1rem = 9px /// 900px
+    font-size: 56.25%; //   1rem = 9px /// 900px
   }
 
   @include respond(laptop) {
-    font-size: 62.5%;           //  1rem = 10px //  1200px
+    font-size: 62.5%; //  1rem = 10px //  1200px
   }
 
   @include respond(large-screen) {
-    font-size: 75%;              //  1rem = 12px //  1600px
+    font-size: 75%; //  1rem = 12px //  1600px
   }
 }
 
@@ -42,12 +42,31 @@ body {
   background-color: var(--pensive);
 }
 
-// .dark-mode {
-//   background-color: black;
-//   color: white;
-// }
-
 ::selection {
   background-color: var(--energise);
   color: var(--ma-white);
+}
+
+/// PERSONALIZED MEDIA QUERIES ////
+@media screen and (prefers-reduced-motion: reduce) {
+  * {
+    /* Very short durations means JavaScript that relies on events still works */
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+@media (inverted-colors) {
+  img,
+  video {
+    filter: invert(100%);
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--color-grey);
+    color: var(--pensive);
+  }
 }
