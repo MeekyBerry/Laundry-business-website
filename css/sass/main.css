@@ -241,7 +241,7 @@ video {
     height: 14vh;
   }
 }
-@media only screen and (min-device-width: 23.43em) and (max-device-width: 56em) {
+@media only screen and (min-device-width: 23.43em) and (max-device-width: 56em) and (-webkit-min-device-pixel-ratio: 3) {
   .header {
     height: 12vh;
   }
@@ -655,7 +655,7 @@ nav ul a:link, nav ul a:visited {
     height: 95vh;
   }
 }
-@media only screen and (min-device-width: 23.43em) and (max-device-width: 56em) {
+@media only screen and (min-device-width: 23.43em) and (max-device-width: 56em) and (-webkit-min-device-pixel-ratio: 3) {
   .home {
     height: 95vh;
   }
@@ -783,7 +783,7 @@ nav ul a:link, nav ul a:visited {
     left: 5rem;
   }
 }
-@media only screen and (min-device-width: 23.43em) and (max-device-width: 56em) {
+@media only screen and (min-device-width: 23.43em) and (max-device-width: 56em) and (-webkit-min-device-pixel-ratio: 3) {
   .home__text {
     top: 15rem;
     left: 5rem;
@@ -981,7 +981,7 @@ nav ul a:link, nav ul a:visited {
     width: 50rem;
   }
 }
-@media only screen and (min-device-width: 23.43em) and (max-device-width: 56em) {
+@media only screen and (min-device-width: 23.43em) and (max-device-width: 56em) and (-webkit-min-device-pixel-ratio: 3) {
   .about__img {
     width: 50rem;
   }
