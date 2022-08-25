@@ -10,16 +10,44 @@
   flex-direction: column;
   z-index: 100;
 
+  @include respond(galaxy) {
+    height: 14vh;
+  }
+
+  @include respond(iphone6-8) {
+    height: 14vh;
+  }
+
+  @include respond(iphone) {
+    height: 12vh;
+  }
+
+  @include respond(windows-phone) {
+    height: 10vh;
+  }
+
   @include respond(tab-port) {
     height: 25vh;
+  }
+
+  @include respond(ipad) {
+    height: 12vh;
   }
 
   @include respond(tab-land) {
     height: 30vh;
   }
 
+  @include respond(ipad12) {
+    height: 12vh;
+  }
+
   @include respond(laptop) {
-    height: 22vh;
+    height: 20vh;
+  }
+
+  @include respond(large-screen) {
+    height: 18vh;
   }
 
   &__1 {

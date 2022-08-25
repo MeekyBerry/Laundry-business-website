@@ -36,13 +36,13 @@
   --discovery-bay: rgba(36, 107, 122, 0.6);
   --pea-green: #799f0c;
   --neo-mint: #a6ffcb;
-  --american-green: rgba(57, 185, 50, 0.5);
-  --india-green: rgba(21, 132, 8, 0.1);
-  --dead-green: rgba(147, 224, 170, 0.5);
-  --sage-garden: rgba(123, 173, 114, 0.5);
-  --wild-forest: rgba(52, 142, 68, 0.5);
-  --press-green: rgba(97, 106, 119, 0.5);
-  --energise: rgba(126, 213, 111, 0.5);
+  --american-green: rgba(57, 185, 50, 0.7);
+  --india-green: rgba(21, 132, 8, 0.2);
+  --dead-green: rgba(147, 224, 170, 0.7);
+  --sage-garden: rgba(123, 173, 114, 0.6);
+  --wild-forest: rgba(52, 142, 68, 0.6);
+  --press-green: rgba(97, 106, 119, 0.7);
+  --energise: rgba(126, 213, 111, 0.6);
   --mandarin-red: #e55039;
   --tomato-red: #eb2f06;
   --belladonna: rgba(36, 0, 19, 0.7);
@@ -52,29 +52,8 @@
   --italic: italic;
   --boldest: 900;
   --bold: 700;
-} /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-/* Portrait and Landscape */
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-/* Portrait and Landscape */
-/* ----------- iPhone X ----------- */
-/* Portrait and Landscape */
-/* Portrait and Landscape */
-/* ----------- iPad 1, 2, Mini and Air ----------- */
-/* Portrait and Landscape */
-/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
-/* Portrait and Landscape */
-/* ----------- iPad Pro 10.5" ----------- */
-/* Portrait and Landscape */
-/* ----------- iPad Pro 12.9" ----------- */
-/* Portrait and Landscape */
-/* ----------- Galaxy Tab S ----------- */
-/* Portrait and Landscape */
-/* ----------- Windows Phone ----------- */
-/* Portrait and Landscape */
-/* ----------- Google Pixel ----------- */
-/* Portrait and Landscape */
-/* ----------- Google Pixel XL ----------- */
-/* Portrait and Landscape */
+}
+
 *,
 *::before,
 *::after {
@@ -85,6 +64,36 @@
 
 html {
   font-size: 37.5%;
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
 }
 @media only screen and (max-width: 23.4em) {
   html {
@@ -118,8 +127,8 @@ body {
   font-weight: 400;
   line-height: 1.6;
   font-size: 2.5rem;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   color: var(--color-grey);
   background-color: var(--pensive);
 }
@@ -138,22 +147,16 @@ body {
   * {
     /* Very short durations means JavaScript that relies on events still works */
     -webkit-animation-duration: 0.001ms !important;
-    animation-duration: 0.001ms !important;
+            animation-duration: 0.001ms !important;
     -webkit-animation-iteration-count: 1 !important;
-    animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
   }
 }
 @media (inverted-colors) {
   img,
-  video {
+video {
     filter: invert(100%);
-  }
-}
-@media screen and (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--color-grey);
-    color: var(--pensive);
   }
 }
 .header {
@@ -167,10 +170,95 @@ body {
   display: flex;
   flex-direction: column;
   z-index: 100;
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+}
+@media only screen and (min-device-width: 22.5em) and (max-device-width: 57.2em) {
+  .header {
+    height: 14vh;
+  }
+}
+@media only screen and (min-device-width: 23.43em) and (max-device-width: 41.68em) {
+  .header {
+    height: 14vh;
+  }
+}
+@media only screen and (min-device-width: 23.43em) and (max-device-width: 56em) and (-webkit-min-device-pixel-ratio: 3) {
+  .header {
+    height: 12vh;
+  }
+}
+@media only screen and (min-device-width: 30em) and (max-device-width: 50em) {
+  .header {
+    height: 10vh;
+  }
 }
 @media only screen and (min-width: 37.5em) {
   .header {
     height: 25vh;
+  }
+}
+@media only screen and (min-device-width: 48em) and (max-device-width: 69.5em) {
+  .header {
+    height: 12vh;
   }
 }
 @media only screen and (min-width: 56.25em) {
@@ -178,9 +266,19 @@ body {
     height: 30vh;
   }
 }
+@media only screen and (min-device-width: 64em) and (max-device-width: 85.37em) {
+  .header {
+    height: 12vh;
+  }
+}
 @media only screen and (min-width: 75em) {
   .header {
-    height: 22vh;
+    height: 20vh;
+  }
+}
+@media only screen and (min-width: 100em) {
+  .header {
+    height: 18vh;
   }
 }
 .header__1 {
@@ -192,6 +290,18 @@ body {
   width: 18rem;
   height: 10rem;
   border-radius: 1rem;
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
 }
 @media only screen and (max-width: 23.4em) {
   .header__logo {
@@ -206,6 +316,12 @@ body {
 }
 .header__logo--caption {
   display: none;
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
 }
 @media only screen and (min-width: 37.5em) {
   .header__logo--caption {
@@ -221,7 +337,7 @@ body {
   font-family: "Rubik Microbe", cursive;
   background: linear-gradient(var(--lynx-screen-blue), var(--mandarin-red));
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   color: transparent;
   letter-spacing: 0.3rem;
 }
@@ -229,33 +345,36 @@ body {
   position: inherit;
   left: 7rem;
   font-family: "Rubik Bubbles", cursive;
-  background-image: linear-gradient(
-    var(--hippie-blue),
-    var(--lynx-screen-blue),
-    var(--tomato-red),
-    var(--lynx-screen-blue)
-  );
+  background-image: linear-gradient(var(--hippie-blue), var(--lynx-screen-blue), var(--tomato-red), var(--lynx-screen-blue));
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   color: transparent;
 }
 .header__logo--vice {
   position: inherit;
   left: 12rem;
   font-family: "Rubik Wet Paint", sans-serif;
-  background-image: linear-gradient(
-    var(--tomato-red),
-    var(--lynx-screen-blue),
-    var(--mandarin-red)
-  );
+  background-image: linear-gradient(var(--tomato-red), var(--lynx-screen-blue), var(--mandarin-red));
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   color: transparent;
 }
 .header__text {
   padding: 0rem 1rem;
   text-align: center;
   font-size: 2rem;
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
 }
 @media only screen and (min-width: 37.5em) {
   .header__text {
@@ -278,21 +397,31 @@ body {
   width: 2rem;
   height: 2rem;
   fill: currentColor;
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
 }
 @media only screen and (min-width: 56.25em) {
   .header__text svg {
     fill: var(--hippie-blue);
   }
 }
-.header__text a:link,
-.header__text a:visited {
+.header__text a:link, .header__text a:visited {
   text-decoration: none;
   color: inherit;
   font-weight: var(--bold);
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
 }
 @media only screen and (min-width: 56.25em) {
-  .header__text a:link,
-  .header__text a:visited {
+  .header__text a:link, .header__text a:visited {
     color: var(--hippie-blue);
   }
 }
@@ -300,7 +429,7 @@ body {
 nav {
   margin-top: -4rem;
   background: linear-gradient(var(--heavenly-white), var(--color-white));
-  padding: 1rem;
+  padding: 2rem 0;
   width: 5rem;
   display: flex;
   border: none;
@@ -312,6 +441,18 @@ nav {
   overflow: hidden;
   align-self: flex-end;
   z-index: 20;
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
 }
 @media only screen and (max-width: 23.4em) {
   nav {
@@ -328,6 +469,18 @@ nav {
 }
 nav.active {
   width: 60%;
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
 }
 @media only screen and (min-width: 31.25em) {
   nav.active {
@@ -359,6 +512,12 @@ nav ul {
   margin: 0;
   width: 0;
   transition: width 0.5s linear;
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
 }
 @media only screen and (min-width: 56.25em) {
   nav ul {
@@ -370,14 +529,27 @@ nav ul li {
   transform: rotateY(0deg);
   opacity: 0;
   transition: transform 0.5s linear, opacity 0.5s linear;
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
 }
 @media only screen and (min-width: 56.25em) {
   nav ul li {
     opacity: 1;
   }
 }
-nav ul a:link,
-nav ul a:visited {
+nav ul a {
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+}
+nav ul a:link, nav ul a:visited {
   position: relative;
   text-decoration: none;
   padding: 1rem 0.5rem;
@@ -389,13 +561,11 @@ nav ul a:visited {
   cursor: pointer;
 }
 @media only screen and (min-width: 56.25em) {
-  nav ul a:link,
-  nav ul a:visited {
+  nav ul a:link, nav ul a:visited {
     font-size: 2rem;
     color: var(--lynx-screen-blue);
   }
-  nav ul a:hover,
-  nav ul a:active {
+  nav ul a:hover, nav ul a:active {
     background-color: var(--white-solid);
     transition: 0.3s ease-out;
     letter-spacing: 0.2rem;
@@ -413,6 +583,12 @@ nav ul a:visited {
   height: 1.5rem;
   width: 1.5rem;
   z-index: 2000;
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
 }
 @media only screen and (min-width: 56.25em) {
   .icon {
@@ -437,20 +613,61 @@ nav ul a:visited {
 }
 
 .home {
-  height: 85vh;
+  height: 88vh;
   width: 100%;
   margin-top: 10rem;
   font-weight: 700;
-  background-image: linear-gradient(
-    105deg,
-    var(--energise),
-    var(--american-green)
-  );
+  background-image: linear-gradient(105deg, var(--energise), var(--american-green));
   overflow: hidden;
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+}
+@media only screen and (min-device-width: 23.43em) and (max-device-width: 41.68em) {
+  .home {
+    height: 95vh;
+  }
+}
+@media only screen and (min-device-width: 23.43em) and (max-device-width: 56em) and (-webkit-min-device-pixel-ratio: 3) {
+  .home {
+    height: 95vh;
+  }
 }
 @media only screen and (min-width: 37.5em) {
   .home {
     height: 78vh;
+  }
+}
+@media only screen and (min-device-width: 48em) and (max-device-width: 69.5em) {
+  .home {
+    height: 90vh;
   }
 }
 @media only screen and (min-width: 75em) {
@@ -474,9 +691,9 @@ nav ul a:visited {
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+          backface-visibility: hidden;
   -webkit-animation: slideIn 70s linear infinite normal forwards 1s;
-  animation: slideIn 70s linear infinite normal forwards 1s;
+          animation: slideIn 70s linear infinite normal forwards 1s;
   transform: translateX(0);
 }
 .home__text {
@@ -488,6 +705,66 @@ nav ul a:visited {
   top: 5rem;
   left: 15rem;
   color: var(--ma-white);
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
 }
 @media only screen and (max-width: 23.4em) {
   .home__text {
@@ -495,9 +772,34 @@ nav ul a:visited {
     left: 3rem;
   }
 }
+@media only screen and (min-device-width: 22.5em) and (max-device-width: 57.2em) {
+  .home__text {
+    top: 15rem;
+    line-height: 2.2;
+  }
+}
+@media only screen and (min-device-width: 23.43em) and (max-device-width: 41.68em) {
+  .home__text {
+    left: 5rem;
+  }
+}
+@media only screen and (min-device-width: 23.43em) and (max-device-width: 56em) and (-webkit-min-device-pixel-ratio: 3) {
+  .home__text {
+    top: 15rem;
+    left: 5rem;
+    line-height: 2;
+  }
+}
 @media only screen and (min-width: 37.5em) {
   .home__text {
     line-height: 1.3;
+  }
+}
+@media only screen and (min-device-width: 48em) and (max-device-width: 69.5em) {
+  .home__text {
+    top: 20rem;
+    line-height: 1.8;
+    font-size: 5rem;
   }
 }
 @media only screen and (min-width: 56.25em) {
@@ -505,16 +807,34 @@ nav ul a:visited {
     font-size: 3rem;
   }
 }
+@media only screen and (min-device-width: 64em) and (max-device-width: 85.37em) {
+  .home__text {
+    top: 10rem;
+    left: 15rem;
+    font-size: 6rem;
+  }
+}
 @media only screen and (min-width: 75em) {
   .home__text {
-    padding: 3rem 20rem;
+    padding: 0 20rem;
+    top: 8rem;
+    line-height: 1.3;
+    font-size: 4rem;
+  }
+}
+@media only screen and (min-width: 100em) {
+  .home__text {
+    top: 20rem;
+    left: 10rem;
+    font-size: 6rem;
+    line-height: 1.5;
   }
 }
 .home__text-slide {
   color: var(--pensive);
   white-space: nowrap;
   -webkit-animation: slide-left 10s linear infinite;
-  animation: slide-left 10s linear infinite;
+          animation: slide-left 10s linear infinite;
 }
 .home__text-slide span {
   margin-right: 20rem;
@@ -527,8 +847,18 @@ nav ul a:visited {
 .home__text-box div {
   position: absolute;
   top: 5rem;
-  -webkit-animation: slide 5s infinite;
-  animation: slide 5s infinite;
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
 }
 @media only screen and (min-width: 37.5em) {
   .home__text-box div {
@@ -554,11 +884,7 @@ nav ul a:visited {
   font-family: var(--font-default);
   letter-spacing: 0.5rem;
   color: var(--dark-royalty);
-  background-image: linear-gradient(
-    120deg,
-    var(--lynx-white),
-    var(--green-essence) 100%
-  );
+  background-image: linear-gradient(120deg, var(--lynx-white), var(--green-essence) 100%);
   background-repeat: no-repeat;
   background-size: 100% 1rem;
   background-position: 0 70%;
@@ -567,42 +893,35 @@ nav ul a:visited {
 .home__text--quick:hover {
   background-size: 100% 60%;
 }
-.home__text a:link,
-.home__text a:visited {
+.home__text a:link, .home__text a:visited {
   text-decoration: none;
   font-weight: 800;
   font-style: oblique;
   letter-spacing: 0.3rem;
-  background-image: linear-gradient(
-    90deg,
-    var(--dark-royalty) 0%,
-    var(--vivid-blue) 17%,
-    var(--dark-royalty) 39%,
-    var(--vivid-blue) 59%,
-    var(--dark-royalty) 85%,
-    var(--vivid-blue) 100%
-  );
+  background-image: linear-gradient(90deg, var(--dark-royalty) 0%, var(--vivid-blue) 17%, var(--dark-royalty) 39%, var(--vivid-blue) 59%, var(--dark-royalty) 85%, var(--vivid-blue) 100%);
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   color: transparent;
   cursor: pointer;
 }
 
 .about {
   width: 100%;
-  background: linear-gradient(
-    to bottom,
-    var(--gnocchi-beige),
-    var(--color-white)
-  );
+  background: linear-gradient(to bottom, var(--gnocchi-beige), var(--color-white));
   padding: 1rem 2rem;
   text-align: center;
 }
 .about__desc {
   display: flex;
   flex-direction: column;
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
 }
-@media only screen and (min-width: 56.25em) {
+@media only screen and (min-width: 75em) {
   .about__desc {
     font-size: 2rem;
     flex-direction: row;
@@ -615,11 +934,41 @@ nav ul a:visited {
 }
 .about__img {
   width: 60rem;
-  height: 40rem;
+  height: 55rem;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 2rem;
   box-shadow: 0 2rem 2rem var(--white-solid);
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
 }
 @media only screen and (max-width: 23.4em) {
   .about__img {
@@ -629,18 +978,21 @@ nav ul a:visited {
 @media only screen and (min-width: 37.5em) {
   .about__img {
     width: 70rem;
-    height: 50rem;
   }
 }
 @media only screen and (min-width: 56.25em) {
   .about__img {
-    width: 55rem;
-    height: auto;
+    width: 90rem;
   }
 }
 @media only screen and (min-width: 75em) {
   .about__img {
-    width: 65rem;
+    width: 75rem;
+  }
+}
+@media only screen and (min-width: 100em) {
+  .about__img {
+    width: 100rem;
   }
 }
 .about__img--caption {
@@ -656,15 +1008,9 @@ nav ul a:visited {
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   font-family: "Rubik Microbe", sans-serif;
-  background-image: linear-gradient(
-    45deg,
-    var(--blue-chip) 0%,
-    var(--ticino-blue) 50%,
-    var(--eye-blue) 51%,
-    var(--aero) 100%
-  );
+  background-image: linear-gradient(45deg, var(--blue-chip) 0%, var(--ticino-blue) 50%, var(--eye-blue) 51%, var(--aero) 100%);
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   color: transparent;
 }
 .about__heading--2 {
@@ -690,7 +1036,7 @@ nav ul a:visited {
   font-weight: var(--boldest);
   background-image: linear-gradient(var(--mandarin-red), var(--tomato-red));
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   color: transparent;
 }
 .about__paragraph--2 {
@@ -700,27 +1046,15 @@ nav ul a:visited {
 .about__paragraph--3 {
   font-size: 3rem;
   font-weight: var(--bold);
-  background: linear-gradient(
-    90deg,
-    var(--belladonna) 0%,
-    var(--peaceful-purple) 17%,
-    var(--washed-blue) 39%,
-    var(--dark-royalty) 59%,
-    var(--lynx-screen-blue) 85%,
-    var(--vallarta-blue) 100%
-  );
+  background: linear-gradient(90deg, var(--belladonna) 0%, var(--peaceful-purple) 17%, var(--washed-blue) 39%, var(--dark-royalty) 59%, var(--lynx-screen-blue) 85%, var(--vallarta-blue) 100%);
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   color: transparent;
   padding: 1rem;
 }
 
 .services {
-  background: linear-gradient(
-    to right,
-    var(--schabziger-yellow),
-    var(--light-kiri-mist)
-  );
+  background: linear-gradient(to right, var(--schabziger-yellow), var(--light-kiri-mist));
 }
 .services__heading {
   font-size: 4rem;
@@ -747,6 +1081,18 @@ nav ul a:visited {
   box-shadow: 0 1rem 3rem var(--montage);
   border-radius: 2rem;
   text-align: center;
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
 }
 @media only screen and (min-width: 37.5em) {
   .services__container {
@@ -767,6 +1113,12 @@ nav ul a:visited {
 }
 .services__container--box {
   padding: 2rem;
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
 }
 @media only screen and (min-width: 37.5em) {
   .services__container--box {
@@ -792,6 +1144,12 @@ nav ul a:visited {
 .services__container--text {
   padding: 1rem;
   color: var(--color-grey);
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
 }
 @media only screen and (min-width: 37.5em) {
   .services__container--text {
@@ -809,6 +1167,12 @@ nav ul a:visited {
 .information {
   text-align: center;
   padding: 0rem 3.5rem;
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
 }
 @media only screen and (min-width: 56.25em) {
   .information {
@@ -823,6 +1187,12 @@ nav ul a:visited {
   word-spacing: 0.3rem;
   text-transform: uppercase;
   background: linear-gradient(120deg, var(--vivid-blue), var(--neo-mint) 100%);
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
 }
 @media only screen and (min-width: 75em) {
   .information__heading {
@@ -860,13 +1230,19 @@ nav ul a:visited {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .contact {
   background-color: var(--color-black);
   color: var(--white-solid);
   text-align: center;
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
 }
 .contact__box {
   padding: 3rem;
@@ -881,6 +1257,18 @@ nav ul a:visited {
 }
 .contact__address {
   font-size: 2rem;
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
 }
 @media only screen and (min-width: 56.25em) {
   .contact__address {
@@ -913,7 +1301,24 @@ nav ul a:visited {
   }
 }
 .contact__box1 {
-  color: var(--lynx-screen-blue);
+  color: var(--lynx-screen-blue); /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
 }
 @media only screen and (min-width: 31.25em) {
   .contact__box1 {
@@ -940,6 +1345,12 @@ nav ul a:visited {
   width: 5rem;
   height: 5rem;
   transition: all 0.5s;
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
 }
 @media only screen and (min-width: 75em) {
   .contact__text svg {
@@ -965,24 +1376,18 @@ nav ul a:visited {
 .contact__text-facebook {
   fill: var(--ticino-blue);
 }
-.contact__text-link:link,
-.contact__text-link:visited {
+.contact__text-link:link, .contact__text-link:visited {
   display: inline-block;
   padding: 0.5rem;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
   color: var(--lynx-screen-blue);
-  background-image: linear-gradient(
-    60deg,
-    transparent 50%,
-    var(--lynx-white) 50%
-  );
+  background-image: linear-gradient(60deg, transparent 50%, var(--lynx-white) 50%);
   background-size: 220%;
   transition: all 0.5s;
 }
-.contact__text-link:active,
-.contact__text-link:hover {
+.contact__text-link:active, .contact__text-link:hover {
   color: var(--american-green);
   background-position: 100%;
   letter-spacing: 0.5rem;
@@ -991,8 +1396,7 @@ nav ul a:visited {
 .attribution {
   text-align: center;
 }
-.attribution a:link,
-.attribution a:visited {
+.attribution a:link, .attribution a:visited {
   text-decoration: none;
   color: var(--lynx-screen-blue);
   font-style: var(--italics);
@@ -1023,94 +1427,102 @@ nav ul a:visited {
 
 .active.fade-bottom {
   -webkit-animation: fade-bottom 1s ease-in;
-  animation: fade-bottom 1s ease-in;
+          animation: fade-bottom 1s ease-in;
 }
 
 .active.fade-left {
   -webkit-animation: fade-left 1s ease-in;
-  animation: fade-left 1s ease-in;
+          animation: fade-left 1s ease-in;
 }
 
 .active.fade-right {
   -webkit-animation: fade-right 1s ease-in;
-  animation: fade-right 1s ease-in;
+          animation: fade-right 1s ease-in;
 }
 
 @-webkit-keyframes slideIn {
   0% {
-    background-image: linear-gradient(var(--dead-green), var(--wild-forest)),
-      url("/img/machine-1.jpg");
+    background-image: linear-gradient(var(--dead-green), var(--wild-forest)), url("/img/machine-1.jpg");
+    opacity: 0;
   }
   10% {
-    background-image: linear-gradient(var(--wild-forest), var(--dead-green)),
-      url("/img/clothes-1.jpg");
+    background-image: linear-gradient(var(--wild-forest), var(--dead-green)), url("/img/clothes-1.jpg");
+    opacity: 1;
   }
   20% {
-    background-image: linear-gradient(var(--dead-green), var(--wild-forest)),
-      url("/img/machine-2.jpg");
+    background-image: linear-gradient(var(--dead-green), var(--wild-forest)), url("/img/machine-2.jpg");
+    opacity: 0;
   }
   30% {
-    background-image: linear-gradient(var(--wild-forest), var(--american-green)),
-      url("/img/machine-3.jpg");
+    background-image: linear-gradient(var(--wild-forest), var(--american-green)), url("/img/machine-3.jpg");
+    opacity: 1;
   }
   40% {
-    background-image: linear-gradient(45deg, var(--press-green), transparent),
-      url("/img/building-1-min.jpeg");
+    background-image: linear-gradient(45deg, var(--press-green), var(--india-green)), url("/img/building-1-min.jpeg");
+    opacity: 0;
   }
   55% {
-    background-image: linear-gradient(var(--american-green), var(--sage-garden)),
-      url("/img/full-card-min.jpeg");
+    background-image: linear-gradient(var(--american-green), var(--sage-garden)), url("/img/full-card-min.jpeg");
+    opacity: 1;
   }
   65% {
-    background-image: linear-gradient(var(--sage-garden), var(--dead-green)),
-      url("/img/machine-4.jpg");
+    background-image: linear-gradient(var(--sage-garden), var(--dead-green)), url("/img/machine-4.jpg");
+    opacity: 0;
+  }
+  75% {
+    background-image: linear-gradient(var(--dead-green), var(--sage-garden)), url("/img/Wizkid-min.jpg");
+    opacity: 1;
   }
   90% {
-    background-image: linear-gradient(var(--sage-garden), var(--sage-garden)),
-      url("/img/soap.jpg");
+    background-image: linear-gradient(var(--sage-garden), var(--sage-garden)), url("/img/soap.jpg");
+    opacity: 0;
   }
   100% {
-    background-image: linear-gradient(var(--sage-garden), var(--wild-forest)),
-      url("/img/machine-5.jpg");
+    background-image: linear-gradient(var(--sage-garden), var(--wild-forest)), url("/img/machine-5.jpg");
+    opacity: 1;
   }
 }
 
 @keyframes slideIn {
   0% {
-    background-image: linear-gradient(var(--dead-green), var(--wild-forest)),
-      url("/img/machine-1.jpg");
+    background-image: linear-gradient(var(--dead-green), var(--wild-forest)), url("/img/machine-1.jpg");
+    opacity: 0;
   }
   10% {
-    background-image: linear-gradient(var(--wild-forest), var(--dead-green)),
-      url("/img/clothes-1.jpg");
+    background-image: linear-gradient(var(--wild-forest), var(--dead-green)), url("/img/clothes-1.jpg");
+    opacity: 1;
   }
   20% {
-    background-image: linear-gradient(var(--dead-green), var(--wild-forest)),
-      url("/img/machine-2.jpg");
+    background-image: linear-gradient(var(--dead-green), var(--wild-forest)), url("/img/machine-2.jpg");
+    opacity: 0;
   }
   30% {
-    background-image: linear-gradient(var(--wild-forest), var(--american-green)),
-      url("/img/machine-3.jpg");
+    background-image: linear-gradient(var(--wild-forest), var(--american-green)), url("/img/machine-3.jpg");
+    opacity: 1;
   }
   40% {
-    background-image: linear-gradient(45deg, var(--press-green), transparent),
-      url("/img/building-1-min.jpeg");
+    background-image: linear-gradient(45deg, var(--press-green), var(--india-green)), url("/img/building-1-min.jpeg");
+    opacity: 0;
   }
   55% {
-    background-image: linear-gradient(var(--american-green), var(--sage-garden)),
-      url("/img/full-card-min.jpeg");
+    background-image: linear-gradient(var(--american-green), var(--sage-garden)), url("/img/full-card-min.jpeg");
+    opacity: 1;
   }
   65% {
-    background-image: linear-gradient(var(--sage-garden), var(--dead-green)),
-      url("/img/machine-4.jpg");
+    background-image: linear-gradient(var(--sage-garden), var(--dead-green)), url("/img/machine-4.jpg");
+    opacity: 0;
+  }
+  75% {
+    background-image: linear-gradient(var(--dead-green), var(--sage-garden)), url("/img/Wizkid-min.jpg");
+    opacity: 1;
   }
   90% {
-    background-image: linear-gradient(var(--sage-garden), var(--sage-garden)),
-      url("/img/soap.jpg");
+    background-image: linear-gradient(var(--sage-garden), var(--sage-garden)), url("/img/soap.jpg");
+    opacity: 0;
   }
   100% {
-    background-image: linear-gradient(var(--sage-garden), var(--wild-forest)),
-      url("/img/machine-5.jpg");
+    background-image: linear-gradient(var(--sage-garden), var(--wild-forest)), url("/img/machine-5.jpg");
+    opacity: 1;
   }
 }
 @-webkit-keyframes fade-bottom {
@@ -1188,38 +1600,4 @@ nav ul a:visited {
   100% {
     transform: translateX(-100rem);
   }
-}
-@-webkit-keyframes slide {
-  0% {
-    top: 0;
-  }
-  25% {
-    top: 0.5rem;
-  }
-  50% {
-    top: 1rem;
-  }
-  75% {
-    top: 1.5rem;
-  }
-  100% {
-    top: 2rem;
-  }
-}
-@keyframes slide {
-  0% {
-    top: 0;
-  }
-  25% {
-    top: 0.5rem;
-  }
-  50% {
-    top: 1rem;
-  }
-  75% {
-    top: 1.5rem;
-  }
-  100% {
-    top: 2rem;
-  }
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

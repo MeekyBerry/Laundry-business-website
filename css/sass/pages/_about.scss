@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
 
-    @include respond(tab-land) {
+    @include respond(laptop) {
       font-size: 2rem;
       flex-direction: row;
       align-items: center;
@@ -26,7 +26,7 @@
 
   &__img {
     width: 60rem;
-    height: 40rem;
+    height: 55rem;
     object-fit: cover;
     border-radius: 2rem;
     box-shadow: 0 2rem 2rem var(--white-solid);
@@ -37,16 +37,18 @@
 
     @include respond(tab-port) {
       width: 70rem;
-      height: 50rem;
     }
 
     @include respond(tab-land) {
-      width: 55rem;
-      height: auto;
+      width: 90rem;
     }
 
     @include respond(laptop) {
-      width: 65rem;
+      width: 75rem;
+    }
+
+    @include respond(large-screen) {
+      width: 100rem;
     }
 
     &--caption {

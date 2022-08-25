@@ -1,5 +1,5 @@
 .home {
-  height: 85vh;
+  height: 88vh;
   width: 100%;
   margin-top: 10rem;
   font-weight: 700;
@@ -10,8 +10,20 @@
   );
   overflow: hidden;
 
+  @include respond(iphone6-8) {
+    height: 95vh;
+  }
+
+  @include respond(iphone) {
+    height: 95vh;
+  }
+
   @include respond(tab-port) {
     height: 78vh;
+  }
+
+  @include respond(ipad) {
+    height: 90vh;
   }
 
   @include respond(laptop) {
@@ -55,16 +67,53 @@
       left: 3rem;
     }
 
+    @include respond(galaxy) {
+      top: 15rem;
+      line-height: 2.2;
+    }
+
+    @include respond(iphone6-8) {
+      left: 5rem;
+    }
+
+    @include respond(iphone) {
+      top: 15rem;
+      left: 5rem;
+      line-height: 2;
+    }
+
     @include respond(tab-port) {
       line-height: 1.3;
+    }
+
+    @include respond(ipad) {
+      top: 20rem;
+      line-height: 1.8;
+      font-size: 5rem;
     }
 
     @include respond(tab-land) {
       font-size: 3rem;
     }
 
+    @include respond(ipad12) {
+      top: 10rem;
+      left: 15rem;
+      font-size: 6rem;
+    }
+
     @include respond(laptop) {
-      padding: 3rem 20rem;
+      padding: 0 20rem;
+      top: 8rem;
+      line-height: 1.3;
+      font-size: 4rem;
+    }
+
+    @include respond(large-screen) {
+      top: 20rem;
+      left: 10rem;
+      font-size: 6rem;
+      line-height: 1.5;
     }
 
     &-slide {
@@ -79,15 +128,12 @@
     }
 
     &-box {
-      // height: 0rem;
       position: relative;
       text-align: center;
-      // overflow-y: hidden;
 
       div {
         position: absolute;
         top: 5rem;
-        animation: slide 5s infinite;
 
         @include respond(tab-port) {
           top: 0rem;

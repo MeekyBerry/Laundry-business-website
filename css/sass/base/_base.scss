@@ -36,8 +36,8 @@ body {
   font-weight: 400;
   line-height: 1.6;
   font-size: 2.5rem;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   color: var(--color-grey);
   background-color: var(--pensive);
 }
@@ -64,9 +64,9 @@ body {
   }
 }
 
-@media screen and (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--color-grey);
-    color: var(--pensive);
-  }
-}
+// @media screen and (prefers-color-scheme: dark) {
+//   body {
+//     background-color: var(--color-white);
+//     color: var(--color-black-light);
+//   }
+// }
