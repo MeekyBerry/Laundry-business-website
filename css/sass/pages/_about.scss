@@ -35,6 +35,10 @@
       width: 50rem;
     }
 
+    @include respond(iphone) {
+      width: 50rem;
+    }
+
     @include respond(tab-port) {
       width: 70rem;
     }

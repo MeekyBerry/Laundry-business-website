@@ -66,7 +66,7 @@
   }
   /* ----------- iPhone plus above----------- */
   @if $breakpoint == iphone {
-    @media only screen and (min-device-width: 23.43em) and (max-device-width: 56em) and (-webkit-min-device-pixel-ratio: 3) {
+    @media only screen and (min-device-width: 23.43em) and (max-device-width: 56em) {
       @content;
     } /// 375px - 896px
   }

@@ -241,7 +241,7 @@ video {
     height: 14vh;
   }
 }
-@media only screen and (min-device-width: 23.43em) and (max-device-width: 56em) and (-webkit-min-device-pixel-ratio: 3) {
+@media only screen and (min-device-width: 23.43em) and (max-device-width: 56em) {
   .header {
     height: 12vh;
   }
@@ -655,7 +655,7 @@ nav ul a:link, nav ul a:visited {
     height: 95vh;
   }
 }
-@media only screen and (min-device-width: 23.43em) and (max-device-width: 56em) and (-webkit-min-device-pixel-ratio: 3) {
+@media only screen and (min-device-width: 23.43em) and (max-device-width: 56em) {
   .home {
     height: 95vh;
   }
@@ -783,7 +783,7 @@ nav ul a:link, nav ul a:visited {
     left: 5rem;
   }
 }
-@media only screen and (min-device-width: 23.43em) and (max-device-width: 56em) and (-webkit-min-device-pixel-ratio: 3) {
+@media only screen and (min-device-width: 23.43em) and (max-device-width: 56em) {
   .home__text {
     top: 15rem;
     left: 5rem;
@@ -969,8 +969,19 @@ nav ul a:link, nav ul a:visited {
   /* ----------- iPad 1, 2, Mini and Air ----------- */
   /* ----------- iPad Pro 12.9 ----------- */
   /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
 }
 @media only screen and (max-width: 23.4em) {
+  .about__img {
+    width: 50rem;
+  }
+}
+@media only screen and (min-device-width: 23.43em) and (max-device-width: 56em) {
   .about__img {
     width: 50rem;
   }
