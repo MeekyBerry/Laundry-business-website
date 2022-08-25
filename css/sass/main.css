@@ -983,7 +983,7 @@ nav ul a:link, nav ul a:visited {
 }
 @media only screen and (min-device-width: 23.43em) and (max-device-width: 56em) and (-webkit-min-device-pixel-ratio: 3) {
   .about__img {
-    width: 50rem;
+    width: 45rem;
   }
 }
 @media only screen and (min-width: 37.5em) {
