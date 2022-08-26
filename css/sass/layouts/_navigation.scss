@@ -15,8 +15,12 @@ nav {
   z-index: 20;
 
   @include respond(phone-smallest) {
-    margin-top: -5rem;
+    margin-top: -8rem;
   }
+
+  // @include respond(iphone6-8) {
+  //   // margin-top: -10rem;
+  // }
 
   @include respond(tab-land) {
     background: unset;

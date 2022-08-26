@@ -10,44 +10,32 @@
   flex-direction: column;
   z-index: 100;
 
+  @include respond(phone-smallest) {
+    height: 15vh;
+  }
+
   @include respond(galaxy) {
-    height: 14vh;
+    height: 11vh;
   }
 
   @include respond(iphone6-8) {
-    height: 14vh;
+    height: 13vh;
   }
 
   @include respond(iphone) {
-    height: 12vh;
+    height: 11vh;
   }
 
   @include respond(windows-phone) {
-    height: 10vh;
+    height: 17vh;
   }
 
   @include respond(tab-port) {
     height: 25vh;
   }
 
-  @include respond(ipad) {
-    height: 12vh;
-  }
-
-  @include respond(tab-land) {
-    height: 30vh;
-  }
-
-  @include respond(ipad12) {
-    height: 12vh;
-  }
-
   @include respond(laptop) {
     height: 20vh;
-  }
-
-  @include respond(large-screen) {
-    height: 18vh;
   }
 
   &__1 {
@@ -138,11 +126,12 @@
     &--icon {
       display: flex;
       align-items: center;
+      gap: 1rem;
     }
 
     svg {
-      width: 2rem;
-      height: 2rem;
+      width: 3.5rem;
+      height: 3.5rem;
       fill: currentColor;
 
       @include respond(tab-land) {

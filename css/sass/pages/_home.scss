@@ -2,7 +2,6 @@
   height: 88vh;
   width: 100%;
   margin-top: 10rem;
-  font-weight: 700;
   background-image: linear-gradient(
     105deg,
     var(--energise),
@@ -19,7 +18,7 @@
   }
 
   @include respond(tab-port) {
-    height: 78vh;
+    height: 80vh;
   }
 
   @include respond(ipad) {
@@ -58,12 +57,11 @@
     font-family: var(--font-Dosis);
     font-weight: var(--bold);
     position: absolute;
-    top: 5rem;
-    left: 15rem;
+    top: 10rem;
+    left: 5rem;
     color: var(--ma-white);
 
     @include respond(phone-smallest) {
-      font-size: 5rem;
       left: 3rem;
     }
 
@@ -89,35 +87,22 @@
     @include respond(ipad) {
       top: 20rem;
       line-height: 1.8;
-      font-size: 5rem;
-    }
-
-    @include respond(tab-land) {
-      font-size: 3rem;
     }
 
     @include respond(ipad12) {
       top: 10rem;
       left: 15rem;
-      font-size: 6rem;
-    }
-
-    @include respond(laptop) {
-      padding: 0 20rem;
-      top: 8rem;
-      line-height: 1.3;
-      font-size: 4rem;
     }
 
     @include respond(large-screen) {
       top: 20rem;
       left: 10rem;
-      font-size: 6rem;
       line-height: 1.5;
     }
 
     &-slide {
       color: var(--pensive);
+      font-style: italic;
       white-space: nowrap;
       animation: slide-left 10s linear infinite;
 
@@ -128,32 +113,16 @@
     }
 
     &-box {
-      position: relative;
       text-align: center;
-
-      div {
-        position: absolute;
-        top: 5rem;
-
-        @include respond(tab-port) {
-          top: 0rem;
-        }
-
-        @include respond(laptop) {
-          top: 3rem;
-        }
-      }
     }
 
-    &--span {
+    &--msg {
       font-weight: 500;
-      color: var(--lynx-white);
+      color: var(--white-solid);
     }
 
     &--quick {
-      display: inline-block;
       width: 100%;
-      text-align: center;
       text-transform: uppercase;
       font-size: 5rem;
       font-weight: 800;

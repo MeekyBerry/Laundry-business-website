@@ -77,7 +77,7 @@
           <div class="header__text">
             <div class="header__text--icon">
               <svg>
-                <use xlink:href="./img/sprite.svg#icon-phone"></use>
+                <use xlink:href="./img/sprite.svg#icon-phone-hang-up"></use>
               </svg>
               <p><a href="tel:+2347061516180">WANT A LAUNDER?
                   CALL US NOW!</a> </p>
@@ -101,7 +101,7 @@
         </nav>
       </div>
     </header>
-    <main>
+    <main class="wrapper">
       <section class="home" id="home">
         <div class="home__container">
           <div class="home__bg">
@@ -121,14 +121,12 @@
               <span>live your life to the fullest again</span>
             </h1>
             <div class="home__text-box">
-              <div>
-                <span class="home__text--span">want to get your clothes cleaned?</span> <br>
-                <span class="home__text--quick">Quickly!</span> <br>
-                <span class="home__text--span">Call us with</span> <br>
-                <span><a href="tel:07061516180">07061516180</a></span> <br>
-                <span class="home__text--span">or send us an email &commat; </span> <br>
-                <span><a href="mailto">Easyboi@myself.com</a></span> <br>
-              </div>
+                <p class="home__text--msg">want to get your clothes cleaned?</p>
+                <p class="home__text--quick">Quickly!</p>
+                <p class="home__text--span">Call us with</p>
+                <p><a href="tel:07061516180">07061516180</a></p>
+                <p class="home__text--span">or send us an email &commat; </p>
+                <p><a href="mailto">Easyboi@myself.com</a></p>
             </div>
           </div>
         </div>
@@ -259,51 +257,55 @@
             </svg>
             <h1 class="contact__heading">CALL FOR A QUICK PICKUP</h1>
             <p>Our services is lightening quick from the moment your package is picked up. Satisfaction guaranteed!</p>
-            <div class="contact__address">
-              <div class="contact__text contact__box1">
-                <svg class="contact__text-location">
+            <ul class="contact__address">
+              <li class="contact__address--text contact__box-1">
+                <svg class="contact__address--text-location">
                   <use xlink:href="./img/sprite.svg#icon-map-pin-alt"></use>
                 </svg>
                 <p>Providence Plaza Akpu Junction Okpanam Road, Asaba. Delta State.</p>
-              </div>
-              <div class="contact__text contact__box2">
-                <svg class="contact__text-phone">
-                  <use xlink:href="./img/sprite.svg#icon-phone-hang-up"></use>
-                </svg>
-                <p><a href="tel:09034789024" class="contact__text-link">09034789024</a></p>
-              </div>
-              <div class="contact__text contact__box3">
-                <svg class="contact__text-mail">
-                  <use xlink:href="./img/sprite.svg#icon-mail2"></use>
-                </svg>
-                <p><a href="mailto:Easyboi@myself.com" class="contact__text-link">Easyboi@myself.com</a></p>
-              </div>
-              <div class="contact__text contact__box4">
-                <svg class="contact__text-whatsapp">
-                  <use xlink:href="./img/sprite.svg#icon-whatsapp"></use>
-                </svg>
-                <p><a href="#" class="contact__text-link">07061516180</a></p>
-              </div>
-              <div class="contact__text contact__box5">
-                <svg class="contact__text-facebook">
-                  <use xlink:href="./img/sprite.svg#icon-facebook2"></use>
-                </svg>
-                <p><a href="https://www.facebook.com/groups/5384168368329844/?ref=share" target="_blank"
-                    rel="noopener noreferrer" class="contact__text-link">Machala Laundry
-                    Service</a>
-                </p>
-              </div>
-            </div>
+              </li>
+              <li class="contact__address--text contact__box-2">Connect with us on these platforms &rarr;</li>
+              <li class="contact__address--text contact__box-3">
+                <a href="mailto:Easyboi@myself.com">
+                  <svg class="contact__address--text-mail">
+                    <use xlink:href="./img/sprite.svg#icon-mail2"></use>
+                  </svg>
+                </a>
+                <span><a href="mailto:Easyboi@myself.com"
+                    class="contact__address--text-link">Easyboi@myself.com</a></span>
+              </li>
+              <li class="contact__address--text contact__box-4">
+                <a href="tel:09034789024">
+                  <svg class="contact__address--text-phone">
+                    <use xlink:href="./img/sprite.svg#icon-phone"></use>
+                  </svg>
+                </a>
+                <span><a href="tel:09034789024" class="contact__address--text-link">09034789024</a></span>
+              </li>
+              <li class="contact__address--text contact__box-5">
+                <a href="#">
+                  <svg class="contact__address--text-whatsapp">
+                    <use xlink:href="./img/sprite.svg#icon-whatsapp"></use>
+                  </svg>
+                </a>
+                <span><a href="#" class="contact__address--text-link">07061516180</a></span>
+              </li>
+              <li class="contact__address--text contact__box-6">
+                <a href="https://www.facebook.com/groups/5384168368329844/?ref=share" target="_blank"
+                  rel="noopener noreferrer">
+                  <svg class="contact__address--text-facebook">
+                    <use xlink:href="./img/sprite.svg#icon-facebook2"></use>
+                  </svg>
+                </a>
+                <span><a href="https://www.facebook.com/groups/5384168368329844/?ref=share" target="_blank"
+                    rel="noopener noreferrer" class="contact__address--text-link">Machala Laundry Service</a></span>
+              </li>
+            </ul>
           </div>
 
           <div class="attribution">
             <p>&copy;2022 Laundry Service | All rights reserved | Designed by <a
                 href="https://www.linkedin.com/in/mikkylanky/" target="_blank" rel="noopener noreferrer">meekyberry</a>
-            </p>
-            <p>
-              <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                <img class="attribution__validator" src="./img/vcss-blue.jpg" alt="Valid CSS!" loading="lazy" />
-              </a>
             </p>
           </div>
         </section>

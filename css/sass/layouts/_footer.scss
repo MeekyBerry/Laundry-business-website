@@ -5,138 +5,94 @@
 
   &__box {
     padding: 3rem;
+
+    &-1 {
+      width: 100%;
+    }
+
+    &-2 {
+      width: 100%;
+      font-style: italic;
+      color: var(--spray);
+    }
   }
 
   &__heading {
-    color: var(--neon-blue);
+    color: var(--spray);
 
     &-icon {
       width: 10rem;
       height: 10rem;
-      fill: var(--lynx-screen-blue);
+      fill: var(--aero);
     }
   }
 
   &__address {
-    font-size: 2rem;
-
-    @include respond(tab-land) {
-      display: grid;
-      grid:
-        "box1 box1" 1fr
-        "box2 box3" 1fr
-        "box4 box5" 1fr;
-      justify-items: center;
-    }
-
-    @include respond(laptop) {
-      font-size: 1.3rem;
-      grid: "box1 box1 box2 box3 box4 box5" 1fr;
-    }
-  }
-
-  @include respond(tab-land) {
-    &__box1 {
-      grid-area: box1;
-    }
-
-    &__box2 {
-      grid-area: box2;
-    }
-
-    &__box3 {
-      grid-area: box3;
-    }
-
-    &__box4 {
-      grid-area: box4;
-    }
-
-    &__box5 {
-      grid-area: box5;
-    }
-  }
-
-  &__box1 {
-    color: var(--lynx-screen-blue);
-
-    @include respond(phone-normal) {
-      font-size: 2.5rem;
-    }
-
-    @include respond(tab-port) {
-      font-size: 2rem;
-    }
-
-    @include respond(laptop) {
-      font-size: 1.3rem;
-    }
-  }
-
-  &__text {
-    padding: 1.5rem 0;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 5rem;
 
-    svg {
-      width: 5rem;
-      height: 5rem;
-      transition: all 0.5s;
+    &--text {
+      list-style-type: none;
+      padding: 1rem;
 
-      @include respond(laptop) {
-        width: 3rem;
-        height: 3rem;
+      span {
+        display: none;
+
+        @include respond(laptop) {
+          display: block;
+          font-size: 1.8rem;
+        }
       }
 
-      &:hover {
-        transform: scale(1.5);
-      }
-    }
-
-    &-location {
-      fill: var(--tomato-red);
-    }
-
-    &-phone {
-      fill: var(--energise);
-    }
-
-    &-mail {
-      fill: var(--ticino-blue);
-    }
-
-    &-whatsapp {
-      fill: var(--energise);
-    }
-
-    &-facebook {
-      fill: var(--ticino-blue);
-    }
-
-    &-link {
-      &:link,
-      &:visited {
-        display: inline-block;
-        padding: 0.5rem;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: 700;
-        color: var(--lynx-screen-blue);
-        background-image: linear-gradient(
-          60deg,
-          transparent 50%,
-          var(--lynx-white) 50%
-        );
-        background-size: 220%;
-        transition: all 0.5s;
+      svg {
+        width: 5rem;
+        height: 5rem;
       }
 
-      &:active,
-      &:hover {
-        color: var(--american-green);
-        background-position: 100%;
-        letter-spacing: 0.5rem;
+      &-location {
+        fill: var(--tomato-red);
+      }
+
+      &-phone {
+        fill: var(--energise);
+      }
+
+      &-mail {
+        fill: var(--ticino-blue);
+      }
+
+      &-whatsapp {
+        fill: var(--energise);
+      }
+
+      &-facebook {
+        fill: var(--ticino-blue);
+      }
+
+      &-link {
+        &:link,
+        &:visited {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: var(--spray);
+          background-image: linear-gradient(
+            60deg,
+            transparent 50%,
+            var(--lynx-white) 50%
+          );
+          background-size: 220%;
+          transition: all 0.8s;
+        }
+
+        &:active,
+        &:hover {
+          color: var(--american-green);
+          background-position: 100%;
+          letter-spacing: 0.5rem;
+        }
       }
     }
   }
@@ -144,6 +100,7 @@
 
 .attribution {
   text-align: center;
+  font-size: 1.8rem;
 
   a {
     &:link,
@@ -152,10 +109,5 @@
       color: var(--lynx-screen-blue);
       font-style: var(--italics);
     }
-  }
-
-  &__validator {
-    width: 8.8rem;
-    height: 3rem;
   }
 }
