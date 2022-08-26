@@ -19,19 +19,27 @@
   }
 
   @include respond(iphone6-8) {
-    height: 13vh;
+    height: 15vh;
   }
 
   @include respond(iphone) {
-    height: 11vh;
+    height: 13vh;
   }
 
   @include respond(windows-phone) {
-    height: 17vh;
+    height: 11vh;
   }
 
   @include respond(tab-port) {
     height: 25vh;
+  }
+
+  @include respond(ipad) {
+    height: 15vh;
+  }
+
+  @include respond(ipad12) {
+    height: 12vh;
   }
 
   @include respond(laptop) {

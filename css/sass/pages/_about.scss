@@ -13,7 +13,6 @@
     flex-direction: column;
 
     @include respond(laptop) {
-      font-size: 2rem;
       flex-direction: row;
       align-items: center;
       gap: 2rem;
@@ -35,12 +34,16 @@
       width: 50rem;
     }
 
+    @include respond(iphone6-8) {
+      width: 44rem;
+    }
+
     @include respond(iphone) {
-      width: 40rem;
+      width: 45rem;
     }
 
     @include respond(tab-port) {
-      width: 70rem;
+      width: 65rem;
     }
 
     @include respond(tab-land) {
@@ -52,7 +55,7 @@
     }
 
     @include respond(large-screen) {
-      width: 100rem;
+      width: 90rem;
     }
 
     &--caption {

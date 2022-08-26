@@ -212,6 +212,18 @@ video {
   /* ----------- iPad 1, 2, Mini and Air ----------- */
   /* ----------- iPad Pro 12.9 ----------- */
   /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
 }
 @media only screen and (max-width: 23.4em) {
   .header {
@@ -225,22 +237,32 @@ video {
 }
 @media only screen and (min-device-width: 23.43em) and (max-device-width: 41.68em) {
   .header {
-    height: 13vh;
+    height: 15vh;
   }
 }
-@media only screen and (min-device-width: 23.43em) and (max-device-width: 56em) and (-webkit-min-device-pixel-ratio: 3) {
+@media only screen and (min-device-width: 23.43em) and (max-device-width: 57.87em) and (-webkit-min-device-pixel-ratio: 3) {
   .header {
-    height: 11vh;
+    height: 13vh;
   }
 }
 @media only screen and (min-device-width: 30em) and (max-device-width: 50em) {
   .header {
-    height: 17vh;
+    height: 11vh;
   }
 }
 @media only screen and (min-width: 37.5em) {
   .header {
     height: 25vh;
+  }
+}
+@media only screen and (min-device-width: 48em) and (max-device-width: 69.5em) {
+  .header {
+    height: 15vh;
+  }
+}
+@media only screen and (min-device-width: 64em) and (max-device-width: 85.37em) {
+  .header {
+    height: 12vh;
   }
 }
 @media only screen and (min-width: 75em) {
@@ -622,7 +644,7 @@ nav ul a:link, nav ul a:visited {
     height: 95vh;
   }
 }
-@media only screen and (min-device-width: 23.43em) and (max-device-width: 56em) and (-webkit-min-device-pixel-ratio: 3) {
+@media only screen and (min-device-width: 23.43em) and (max-device-width: 57.87em) and (-webkit-min-device-pixel-ratio: 3) {
   .home {
     height: 95vh;
   }
@@ -669,28 +691,8 @@ nav ul a:link, nav ul a:visited {
   font-family: var(--font-Dosis);
   font-weight: var(--bold);
   position: absolute;
-  top: 10rem;
-  left: 5rem;
-  color: var(--ma-white);
-  /* ----------- iPhone 6, 7 and 8 ----------- */
-  /* ----------- iPhone plus above----------- */
-  /* -----------  Galaxies ----------- */
-  /* ----------- iPad 1, 2, Mini and Air ----------- */
-  /* ----------- iPad Pro 12.9 ----------- */
-  /* ----------- Windows Phone ----------- */
-  /* ----------- iPhone 6, 7 and 8 ----------- */
-  /* ----------- iPhone plus above----------- */
-  /* -----------  Galaxies ----------- */
-  /* ----------- iPad 1, 2, Mini and Air ----------- */
-  /* ----------- iPad Pro 12.9 ----------- */
-  /* ----------- Windows Phone ----------- */
-  /* ----------- iPhone 6, 7 and 8 ----------- */
-  /* ----------- iPhone plus above----------- */
-  /* -----------  Galaxies ----------- */
-  /* ----------- iPad 1, 2, Mini and Air ----------- */
-  /* ----------- iPad Pro 12.9 ----------- */
-  /* ----------- Windows Phone ----------- */
-  /* ----------- iPhone 6, 7 and 8 ----------- */
+  top: 5rem;
+  color: var(--ma-white); /* ----------- iPhone 6, 7 and 8 ----------- */
   /* ----------- iPhone plus above----------- */
   /* -----------  Galaxies ----------- */
   /* ----------- iPad 1, 2, Mini and Air ----------- */
@@ -723,49 +725,27 @@ nav ul a:link, nav ul a:visited {
 }
 @media only screen and (max-width: 23.4em) {
   .home__text {
-    left: 3rem;
+    top: 15rem;
   }
 }
 @media only screen and (min-device-width: 22.5em) and (max-device-width: 57.2em) {
   .home__text {
-    top: 15rem;
-    line-height: 2.2;
-  }
-}
-@media only screen and (min-device-width: 23.43em) and (max-device-width: 41.68em) {
-  .home__text {
-    left: 5rem;
-  }
-}
-@media only screen and (min-device-width: 23.43em) and (max-device-width: 56em) and (-webkit-min-device-pixel-ratio: 3) {
-  .home__text {
-    top: 15rem;
-    left: 5rem;
-    line-height: 2;
-  }
-}
-@media only screen and (min-width: 37.5em) {
-  .home__text {
-    line-height: 1.3;
-  }
-}
-@media only screen and (min-device-width: 48em) and (max-device-width: 69.5em) {
-  .home__text {
-    top: 20rem;
-    line-height: 1.8;
+    top: 35rem;
   }
 }
 @media only screen and (min-device-width: 64em) and (max-device-width: 85.37em) {
   .home__text {
-    top: 10rem;
-    left: 15rem;
+    top: 35rem;
+  }
+}
+@media only screen and (min-width: 75em) {
+  .home__text {
+    top: 15rem;
   }
 }
 @media only screen and (min-width: 100em) {
   .home__text {
-    top: 20rem;
-    left: 10rem;
-    line-height: 1.5;
+    top: 35rem;
   }
 }
 .home__text-slide {
@@ -780,7 +760,9 @@ nav ul a:link, nav ul a:visited {
   text-transform: uppercase;
 }
 .home__text-box {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .home__text--msg {
   font-weight: 500;
@@ -788,6 +770,7 @@ nav ul a:link, nav ul a:visited {
 }
 .home__text--quick {
   width: 100%;
+  text-align: center;
   text-transform: uppercase;
   font-size: 5rem;
   font-weight: 800;
@@ -833,7 +816,6 @@ nav ul a:link, nav ul a:visited {
 }
 @media only screen and (min-width: 75em) {
   .about__desc {
-    font-size: 2rem;
     flex-direction: row;
     align-items: center;
     gap: 2rem;
@@ -885,20 +867,31 @@ nav ul a:link, nav ul a:visited {
   /* ----------- iPad 1, 2, Mini and Air ----------- */
   /* ----------- iPad Pro 12.9 ----------- */
   /* ----------- Windows Phone ----------- */
+  /* ----------- iPhone 6, 7 and 8 ----------- */
+  /* ----------- iPhone plus above----------- */
+  /* -----------  Galaxies ----------- */
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  /* ----------- iPad Pro 12.9 ----------- */
+  /* ----------- Windows Phone ----------- */
 }
 @media only screen and (max-width: 23.4em) {
   .about__img {
     width: 50rem;
   }
 }
-@media only screen and (min-device-width: 23.43em) and (max-device-width: 56em) and (-webkit-min-device-pixel-ratio: 3) {
+@media only screen and (min-device-width: 23.43em) and (max-device-width: 41.68em) {
   .about__img {
-    width: 40rem;
+    width: 44rem;
+  }
+}
+@media only screen and (min-device-width: 23.43em) and (max-device-width: 57.87em) and (-webkit-min-device-pixel-ratio: 3) {
+  .about__img {
+    width: 45rem;
   }
 }
 @media only screen and (min-width: 37.5em) {
   .about__img {
-    width: 70rem;
+    width: 65rem;
   }
 }
 @media only screen and (min-width: 56.25em) {
@@ -913,7 +906,7 @@ nav ul a:link, nav ul a:visited {
 }
 @media only screen and (min-width: 100em) {
   .about__img {
-    width: 100rem;
+    width: 90rem;
   }
 }
 .about__img--caption {

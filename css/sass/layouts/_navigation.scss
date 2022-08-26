@@ -18,10 +18,6 @@ nav {
     margin-top: -8rem;
   }
 
-  // @include respond(iphone6-8) {
-  //   // margin-top: -10rem;
-  // }
-
   @include respond(tab-land) {
     background: unset;
     box-shadow: unset;
