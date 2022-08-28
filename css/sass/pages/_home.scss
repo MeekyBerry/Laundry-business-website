@@ -2,11 +2,6 @@
   height: 88vh;
   width: 100%;
   margin-top: 10rem;
-  // background-image: linear-gradient(
-  //   105deg,
-  //   var(--energise),
-  //   var(--american-green)
-  // );
   overflow: hidden;
 
   @include respond(iphone6-8) {
@@ -39,14 +34,18 @@
     height: 100%;
     width: 100%;
 
-    &--slide {
+    &--img-slide {
       width: 100%;
       height: 100%;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
       backface-visibility: hidden;
-      animation: slideIn 70s linear infinite forwards;
+      animation-name: slideIn;
+      animation-duration: 70s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-fill-mode: forwards;
     }
   }
 
@@ -80,9 +79,10 @@
     }
 
     &-slide {
-      color: var(--pensive);
+      color: var(--dark-royalty);
+      font-size: 4rem;
+      word-spacing: 2rem;
       font-style: italic;
-      white-space: nowrap;
       animation: slide-left 12s linear infinite 3s;
 
       span {
