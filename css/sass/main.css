@@ -1285,67 +1285,67 @@ nav ul a:link, nav ul a:visited {
 
 @-webkit-keyframes slideIn {
   0% {
-    background-image: linear-gradient(var(--dead-green), var(--wild-forest)), url("../../../img/machine-1.jpg");
+    background-image: linear-gradient(transparent, var(--wild-forest)), url("../../../img/machine-1.jpg");
   }
   10% {
-    background-image: linear-gradient(var(--wild-forest), var(--dead-green)), url("../../../img/clothes-1.jpg");
+    background-image: linear-gradient(var(--wild-forest), transparent), url("../../../img/clothes-1.jpg");
   }
   20% {
-    background-image: linear-gradient(var(--dead-green), var(--wild-forest)), url("../../../img/machine-2.jpg");
+    background-image: linear-gradient(transparent, var(--wild-forest)), url("../../../img/machine-2.jpg");
   }
   30% {
-    background-image: linear-gradient(var(--wild-forest), var(--american-green)), url("../../../img/machine-3.jpg");
+    background-image: linear-gradient(var(--wild-forest), transparent), url("../../../img/machine-3.jpg");
   }
   40% {
-    background-image: linear-gradient(var(--press-green), var(--sage-garden)), url("../../../img/building-1-min.jpeg");
+    background-image: linear-gradient(transparent, var(--sage-garden)), url("../../../img/building-1-min.jpeg");
   }
   55% {
-    background-image: linear-gradient(var(--american-green), var(--sage-garden)), url("../../../img/full-card-min.jpeg");
+    background-image: linear-gradient(var(--american-green), transparent), url("../../../img/full-card-min.jpeg");
   }
   65% {
-    background-image: linear-gradient(var(--sage-garden), var(--dead-green)), url("../../../img/machine-4.jpg");
+    background-image: linear-gradient(transparent, var(--dead-green)), url("../../../img/machine-4.jpg");
   }
   75% {
-    background-image: linear-gradient(var(--dead-green), var(--sage-garden)), url("../../../img/Wizkid-min.jpg");
+    background-image: linear-gradient(var(--dead-green), transparent), url("../../../img/Wizkid-min.jpg");
   }
   90% {
-    background-image: linear-gradient(var(--sage-garden), var(--sage-garden)), url("../../../img/soap.jpg");
+    background-image: linear-gradient(transparent, var(--sage-garden)), url("../../../img/soap.jpg");
   }
   100% {
-    background-image: linear-gradient(var(--sage-garden), var(--wild-forest)), url("../../../img/machine-5.jpg");
+    background-image: linear-gradient(var(--sage-garden), transparent), url("../../../img/machine-5.jpg");
   }
 }
 
 @keyframes slideIn {
   0% {
-    background-image: linear-gradient(var(--dead-green), var(--wild-forest)), url("../../../img/machine-1.jpg");
+    background-image: linear-gradient(transparent, var(--wild-forest)), url("../../../img/machine-1.jpg");
   }
   10% {
-    background-image: linear-gradient(var(--wild-forest), var(--dead-green)), url("../../../img/clothes-1.jpg");
+    background-image: linear-gradient(var(--wild-forest), transparent), url("../../../img/clothes-1.jpg");
   }
   20% {
-    background-image: linear-gradient(var(--dead-green), var(--wild-forest)), url("../../../img/machine-2.jpg");
+    background-image: linear-gradient(transparent, var(--wild-forest)), url("../../../img/machine-2.jpg");
   }
   30% {
-    background-image: linear-gradient(var(--wild-forest), var(--american-green)), url("../../../img/machine-3.jpg");
+    background-image: linear-gradient(var(--wild-forest), transparent), url("../../../img/machine-3.jpg");
   }
   40% {
-    background-image: linear-gradient(var(--press-green), var(--sage-garden)), url("../../../img/building-1-min.jpeg");
+    background-image: linear-gradient(transparent, var(--sage-garden)), url("../../../img/building-1-min.jpeg");
   }
   55% {
-    background-image: linear-gradient(var(--american-green), var(--sage-garden)), url("../../../img/full-card-min.jpeg");
+    background-image: linear-gradient(var(--american-green), transparent), url("../../../img/full-card-min.jpeg");
   }
   65% {
-    background-image: linear-gradient(var(--sage-garden), var(--dead-green)), url("../../../img/machine-4.jpg");
+    background-image: linear-gradient(transparent, var(--dead-green)), url("../../../img/machine-4.jpg");
   }
   75% {
-    background-image: linear-gradient(var(--dead-green), var(--sage-garden)), url("../../../img/Wizkid-min.jpg");
+    background-image: linear-gradient(var(--dead-green), transparent), url("../../../img/Wizkid-min.jpg");
   }
   90% {
-    background-image: linear-gradient(var(--sage-garden), var(--sage-garden)), url("../../../img/soap.jpg");
+    background-image: linear-gradient(transparent, var(--sage-garden)), url("../../../img/soap.jpg");
   }
   100% {
-    background-image: linear-gradient(var(--sage-garden), var(--wild-forest)), url("../../../img/machine-5.jpg");
+    background-image: linear-gradient(var(--sage-garden), transparent), url("../../../img/machine-5.jpg");
   }
 }
 @-webkit-keyframes fade-bottom {
