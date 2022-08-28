@@ -2,11 +2,11 @@
   height: 88vh;
   width: 100%;
   margin-top: 10rem;
-  background-image: linear-gradient(
-    105deg,
-    var(--energise),
-    var(--american-green)
-  );
+  // background-image: linear-gradient(
+  //   105deg,
+  //   var(--energise),
+  //   var(--american-green)
+  // );
   overflow: hidden;
 
   @include respond(iphone6-8) {
@@ -46,8 +46,7 @@
       background-size: cover;
       background-repeat: no-repeat;
       backface-visibility: hidden;
-      animation: slideIn 70s linear infinite normal forwards 1s;
-      transform: translateX(0);
+      animation: slideIn 70s linear infinite forwards;
     }
   }
 
@@ -73,22 +72,22 @@
     }
 
     @include respond(laptop) {
-      top: 15rem;
+      top: 5rem;
     }
 
     @include respond(large-screen) {
-      top: 35rem;
+      top: 30rem;
     }
 
     &-slide {
       color: var(--pensive);
       font-style: italic;
       white-space: nowrap;
-      animation: slide-left 10s linear infinite;
+      animation: slide-left 12s linear infinite 3s;
 
       span {
-        margin-right: 20rem;
-        text-transform: uppercase;
+        margin-right: 100%;
+        text-transform: capitalize;
       }
     }
 
@@ -99,8 +98,8 @@
     }
 
     &--msg {
-      font-weight: 500;
-      color: var(--white-solid);
+      color: var(--lime-flip);
+      font-style: oblique;
     }
 
     &--quick {

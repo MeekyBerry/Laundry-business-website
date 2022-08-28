@@ -43,7 +43,7 @@
   }
 
   @include respond(laptop) {
-    height: 20vh;
+    height: 22vh;
   }
 
   &__1 {
@@ -134,7 +134,7 @@
     &--icon {
       display: flex;
       align-items: center;
-      gap: 1rem;
+      gap: 0.3rem;
     }
 
     svg {
