@@ -38,7 +38,13 @@
       list-style-type: none;
       padding: 1rem;
 
-      span {
+      @include respond(laptop) {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+
+      &-hidden {
         display: none;
 
         @include respond(laptop) {
@@ -48,8 +54,8 @@
       }
 
       svg {
-        width: 5rem;
-        height: 5rem;
+        width: 4rem;
+        height: 4rem;
       }
 
       &-location {
@@ -91,7 +97,6 @@
         &:hover {
           color: var(--american-green);
           background-position: 100%;
-          letter-spacing: 0.5rem;
         }
       }
     }
