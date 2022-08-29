@@ -1320,7 +1320,7 @@ nav ul a:link, nav ul a:visited {
   font-style: normal;
   font-weight: 900;
   src: url("../../fonts/poppins-v20-latin-900.eot"); /* IE9 Compat Modes */
-  src: local(""), url("../../fonts/poppins-v20-latin-900.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins-v20-latin-900.woff2") format("woff2"), url("../../fonts/poppins-v20-latin-900.woff") format("woff"), url("../../fonts/poppins-v20-latin-900.ttf") format("truetype"); /* Safari, Android, iOS */
+  src: local(""), url("../../fonts/poppins-v20-latin-900.eot?#iefix") format("embedded-opentype"), url("../../fonts/poppins-v20-latin-900.woff2") format("woff2"), url("../../fonts/poppins-v20-latin-900.woff") format("woff"), url("../../fonts/poppins-v20-latin-900.ttf") format("truetype"); /* Safari, Android, iOS */
   font-display: swap;
 }
 /* dosis-500 - latin */
