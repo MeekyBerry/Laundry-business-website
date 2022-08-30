@@ -19,7 +19,7 @@
   }
 
   @include respond(iphone6-8) {
-    height: 15vh;
+    height: 11vh;
   }
 
   @include respond(iphone) {
@@ -35,7 +35,7 @@
   }
 
   @include respond(ipad) {
-    height: 15vh;
+    height: 11vh;
   }
 
   @include respond(ipad12) {

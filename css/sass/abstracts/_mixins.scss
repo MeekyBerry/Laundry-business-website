@@ -60,37 +60,37 @@
   /////////   MOBILE PORTRAIT & LANDSCAPE //////
   /* ----------- iPhone 6, 7 and 8 ----------- */
   @if $breakpoint == iphone6-8 {
-    @media only screen and (min-device-width: 23.43em) and (max-device-width: 41.68em) {
+    @media only screen and (min-width: 23.43em) and (max-width: 41.68em) {
       @content;
     } /// 375px - 667px
   }
   /* ----------- iPhone plus above----------- */
   @if $breakpoint == iphone {
-    @media only screen and (min-device-width: 23.43em) and (max-device-width: 57.87em) and (-webkit-min-device-pixel-ratio: 3) {
+    @media only screen and (min-width: 23.43em) and (max-width: 57.87em) and (-webkit-min-pixel-ratio: 3) {
       @content;
     } /// 375px - 926px
   }
   /* -----------  Galaxies ----------- */
   @if $breakpoint == galaxy {
-    @media only screen and (min-device-width: 22.5em) and (max-device-width: 57.2em) {
+    @media only screen and (min-width: 22.5em) and (max-width: 57.2em) {
       @content;
     } /// 360px - 915px
   }
   /* ----------- iPad 1, 2, Mini and Air ----------- */
   @if $breakpoint == ipad {
-    @media only screen and (min-device-width: 48em) and (max-device-width: 69.5em) {
+    @media only screen and (min-width: 48em) and (max-width: 69.5em) {
       @content;
     } /// 768px - 1024px
   }
   /* ----------- iPad Pro 12.9 ----------- */
   @if $breakpoint == ipad12 {
-    @media only screen and (min-device-width: 64em) and (max-device-width: 85.37em) {
+    @media only screen and (min-width: 64em) and (max-width: 85.37em) {
       @content;
     } /// 1024px - 1366px
   }
   /* ----------- Windows Phone ----------- */
   @if $breakpoint == windows-phone {
-    @media only screen and (min-device-width: 30em) and (max-device-width: 50em) {
+    @media only screen and (min-width: 30em) and (max-width: 50em) {
       @content;
     } /// 480px - 800px
   }
