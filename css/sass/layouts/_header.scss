@@ -19,11 +19,11 @@
   }
 
   @include respond(iphone6-8) {
-    height: 11vh;
+    height: 13vh;
   }
 
   @include respond(iphone) {
-    height: 13vh;
+    height: 10vh;
   }
 
   @include respond(windows-phone) {
@@ -43,7 +43,7 @@
   }
 
   @include respond(laptop) {
-    height: 22vh;
+    height: 21vh;
   }
 
   &__1 {

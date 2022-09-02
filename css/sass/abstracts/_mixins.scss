@@ -64,9 +64,9 @@
       @content;
     } /// 375px - 667px
   }
-  /* ----------- iPhone plus above----------- */
+  /* ----------- iPhone 6, 7, 8 plus and above----------- */
   @if $breakpoint == iphone {
-    @media only screen and (min-width: 23.43em) and (max-width: 57.87em) and (-webkit-min-pixel-ratio: 3) {
+    @media only screen and (min-width: 23.43em) and (max-width: 57.87em) {
       @content;
     } /// 375px - 926px
   }
@@ -93,5 +93,11 @@
     @media only screen and (min-width: 30em) and (max-width: 50em) {
       @content;
     } /// 480px - 800px
+  }
+  /* ----------- Mac book Air ----------- */
+  @if $breakpoint == mac-book {
+    @media only screen and (min-width: 78em) and (min-height: 50em) {
+      @content;
+    } /// 1250px - 800px
   }
 }

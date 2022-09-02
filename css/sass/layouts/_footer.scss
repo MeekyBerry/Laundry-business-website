@@ -8,6 +8,8 @@
 
     &-1 {
       width: 100%;
+      display: flex;
+      justify-content: center;
     }
 
     &-2 {
@@ -41,7 +43,8 @@
       @include respond(laptop) {
         display: flex;
         justify-content: center;
-        gap: 0.5rem;
+        align-items: center;
+        gap: 1rem;
       }
 
       &-hidden {
@@ -49,7 +52,7 @@
 
         @include respond(laptop) {
           display: block;
-          font-size: 1.8rem;
+          font-size: 1.5rem;
         }
       }
 

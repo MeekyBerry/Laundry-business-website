@@ -28,6 +28,10 @@
     height: 100%;
     width: 100%;
     position: relative;
+
+    @include respond(mac-book) {
+      margin-top: 7rem;
+    }
   }
 
   &__bg {
@@ -94,7 +98,6 @@
     }
 
     &--msg {
-      color: var(--lime-flip);
       font-style: oblique;
     }
 

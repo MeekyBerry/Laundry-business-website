@@ -19,14 +19,5 @@
   "homepage": "https://github.com/MeekyBerry/Laudry#readme",
   "dependencies": {
     "live-server": "^1.2.2"
-  },
-  "devDependencies": {
-    "critical": "^4.0.1",
-    "css-loader": "^6.7.1",
-    "css-minimizer-webpack-plugin": "^4.0.0",
-    "mini-css-extract-plugin": "^2.6.1",
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0",
-    "webpack-remove-empty-scripts": "^0.8.1"
   }
 }

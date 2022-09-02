@@ -44,10 +44,10 @@
     <!--  FAVICON LINKS  -->
 
     <!--  PRELOAD TAG  -->
-    <link rel="preload" href="./css/sass/main.min.css" as="style" />
+    <link rel="preload" href="./css/sass/main.css" as="style" />
     <link rel="preload" href="./script.js" as="script" />
     <!--  PRELOAD TAG  -->
-    <link rel="stylesheet" href="./css/sass/main.min.css" />
+    <link rel="stylesheet" href="./css/sass/main.css" />
     <script src="./script.js" defer=""></script>
   </head>
 
@@ -251,13 +251,13 @@
                   <svg class="contact__address--text-location">
                     <use xlink:href="./img/sprite.svg#icon-map-pin-alt"></use>
                   </svg>
-                  <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                  <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                     <span itemprop="streetAddress">Providence Plaza Akpu Junction Okpanam Road</span>,
                     <span itemprop="addressLocality">Asaba</span>.
                     <span itemprop="addressRegion">Delta State</span>.
-                  </p>
+                  </span>
                 </li>
-                <li class="contact__address--text contact__box-2">Connect with us on these platforms →</li>
+                <li class="contact__address--text contact__box-2">Connect with us on these platforms &rarr;</li>
                 <li class="contact__address--text contact__box-3">
                   <a href="mailto:Easyboi@myself.com">
                     <svg class="contact__address--text-mail">
@@ -265,7 +265,7 @@
                     </svg>
 
                   </a>
-                  <span><a href="mailto:Easyboi@myself.com"
+                  <span class="contact__address--text-hidden"><a href="mailto:Easyboi@myself.com"
                       class="contact__address--text-link">Easyboi@myself.com</a></span>
                 </li>
                 <li class="contact__address--text contact__box-4">
@@ -274,7 +274,8 @@
                       <use xlink:href="./img/sprite.svg#icon-phone"></use>
                     </svg>
                   </a>
-                  <span><a href="tel:09034789024" class="contact__address--text-link">09034789024</a></span>
+                  <span class="contact__address--text-hidden"><a href="tel:09034789024"
+                      class="contact__address--text-link">09034789024</a></span>
                 </li>
                 <li class="contact__address--text contact__box-5">
                   <a href="https://whatsapp.com/dl/" target="_blank" rel="noopener noreferrer">
@@ -282,8 +283,8 @@
                       <use xlink:href="./img/sprite.svg#icon-whatsapp"></use>
                     </svg>
                   </a>
-                  <span><a href="https://whatsapp.com/dl/" target="_blank" rel="noopener noreferrer"
-                      class="contact__address--text-link">07061516180</a></span>
+                  <span class="contact__address--text-hidden"><a href="https://whatsapp.com/dl/" target="_blank"
+                      rel="noopener noreferrer" class="contact__address--text-link">07061516180</a></span>
                 </li>
                 <li class="contact__address--text contact__box-6">
                   <a href="https://www.facebook.com/groups/5384168368329844/?ref=share" target="_blank"
@@ -292,8 +293,9 @@
                       <use xlink:href="./img/sprite.svg#icon-facebook2"></use>
                     </svg>
                   </a>
-                  <span><a itemprop="url" href="https://www.facebook.com/groups/5384168368329844/?ref=share"
-                      target="_blank" rel="noopener noreferrer" class="contact__address--text-link">Machala Laundry
+                  <span class="contact__address--text-hidden"><a itemprop="url"
+                      href="https://www.facebook.com/groups/5384168368329844/?ref=share" target="_blank"
+                      rel="noopener noreferrer" class="contact__address--text-link">Machala Laundry
                       Service</a></span>
                 </li>
               </ul>
