@@ -2,7 +2,7 @@ RewriteEngine On
 RewriteCond %{HTTPS} !=on
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-ErrorDocument 404/error404 page/error.html
+ErrorDocument 404/error404/error.html
 
 <IfModule mod_expires.c>
   ExpiresActive On
