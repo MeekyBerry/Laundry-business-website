@@ -22,7 +22,7 @@ nav {
     background: unset;
     box-shadow: unset;
     border-radius: unset;
-    width: 50%;
+    // width: 50%;
   }
 
   &.active {
@@ -78,7 +78,6 @@ nav {
     }
 
     a {
-
       &:link,
       &:visited {
         position: relative;
@@ -93,7 +92,6 @@ nav {
       }
 
       @include respond(tab-land) {
-
         &:link,
         &:visited {
           font-size: 2rem;

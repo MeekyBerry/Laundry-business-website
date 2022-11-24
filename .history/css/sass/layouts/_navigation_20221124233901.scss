@@ -2,7 +2,7 @@ nav {
   margin-top: -4rem;
   background: linear-gradient(var(--heavenly-white), var(--color-white));
   padding: 2rem 0;
-  width: 5rem;
+  // width: 5rem;
   display: flex;
   border: none;
   align-items: center;
@@ -78,7 +78,6 @@ nav {
     }
 
     a {
-
       &:link,
       &:visited {
         position: relative;
@@ -93,7 +92,6 @@ nav {
       }
 
       @include respond(tab-land) {
-
         &:link,
         &:visited {
           font-size: 2rem;

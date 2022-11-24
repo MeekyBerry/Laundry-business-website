@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 17vh;
+  height: 15vh;
   width: 100%;
   padding: 1rem;
   background: linear-gradient(var(--heavenly-white), var(--color-white));
@@ -91,10 +91,12 @@
       position: inherit;
       left: 7rem;
       font-family: "Rubik Bubbles", cursive;
-      background-image: linear-gradient(var(--hippie-blue),
-          var(--lynx-screen-blue),
-          var(--tomato-red),
-          var(--lynx-screen-blue));
+      background-image: linear-gradient(
+        var(--hippie-blue),
+        var(--lynx-screen-blue),
+        var(--tomato-red),
+        var(--lynx-screen-blue)
+      );
       background-clip: text;
       color: transparent;
     }
@@ -103,9 +105,11 @@
       position: inherit;
       left: 12rem;
       font-family: "Rubik Wet Paint", sans-serif;
-      background-image: linear-gradient(var(--tomato-red),
-          var(--lynx-screen-blue),
-          var(--mandarin-red));
+      background-image: linear-gradient(
+        var(--tomato-red),
+        var(--lynx-screen-blue),
+        var(--mandarin-red)
+      );
       background-clip: text;
       color: transparent;
     }
@@ -144,7 +148,6 @@
     }
 
     a {
-
       &:link,
       &:visited {
         text-decoration: none;
