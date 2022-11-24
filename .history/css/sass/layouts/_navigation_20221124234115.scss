@@ -78,7 +78,6 @@ nav {
     }
 
     a {
-
       &:link,
       &:visited {
         position: relative;
@@ -93,7 +92,6 @@ nav {
       }
 
       @include respond(tab-land) {
-
         &:link,
         &:visited {
           font-size: 2rem;
@@ -115,7 +113,7 @@ nav {
   background-color: var(--heavenly-white);
   border: 0;
   cursor: pointer;
-  padding: 2rem;
+  // padding: 2rem;
   position: relative;
   top: 0;
   left: 0;

@@ -78,7 +78,6 @@ nav {
     }
 
     a {
-
       &:link,
       &:visited {
         position: relative;
@@ -93,7 +92,6 @@ nav {
       }
 
       @include respond(tab-land) {
-
         &:link,
         &:visited {
           font-size: 2rem;
