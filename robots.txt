@@ -1,3 +1,9 @@
+
+#Begin Attracta SEO Tools Sitemap. Do not remove
+ Sitemap: http://cdn.attracta.com/sitemap/6386427.xml.gz
+#End Attracta SEO Tools Sitemap. Do not remove
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
