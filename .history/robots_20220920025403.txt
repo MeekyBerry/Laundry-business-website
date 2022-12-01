@@ -1,4 +1,4 @@
 
 #Begin Attracta SEO Tools Sitemap. Do not remove
- Sitemap: http://cdn.attracta.com/sitemap/6386427.xml.gz
+sitemap: http://cdn.attracta.com/sitemap/6386427.xml.gz
 #End Attracta SEO Tools Sitemap. Do not remove
