@@ -1,4 +1,6 @@
-
-#Begin Attracta SEO Tools Sitemap. Do not remove
-sitemap: http://cdn.attracta.com/sitemap/6386427.xml.gz
-#End Attracta SEO Tools Sitemap. Do not remove
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://machalalaundryservice.com/</loc>
+<lastmod>2022-09-20</lastmod>
+</url>
+</urlset>
